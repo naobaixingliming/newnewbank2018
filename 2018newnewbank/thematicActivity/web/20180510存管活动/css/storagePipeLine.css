@@ -1,0 +1,786 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft noto sans", "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+.popup {
+	z-index: 1000;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 567px;
+	margin-left: -283px;
+	min-height: 243px;
+	margin-top: -121px;
+	border-radius: 5px;
+	border-top: 3px solid #f44975;
+	background: #f5f5f5;
+}
+
+.shadow3 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	z-index: 999;
+}
+
+.popup-btn {
+	text-align: center;
+}
+
+.popup-btn a {
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	width: 30%;
+	border-radius: 5px;
+	background: #f44975;
+	margin: 0 20px;
+}
+
+.popup-btn a.cancleBtn {
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	color: #ccc;
+}
+
+a.nextBtn,
+a.prevBtn {
+	position: absolute;
+	bottom: 30px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 20px;
+	width: 30%;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #da4533;
+	color: #da4533;
+}
+
+a.prevBtn {
+	left: 90px;
+}
+
+a.nextBtn {
+	right: 90px;
+}
+
+a.notPointer {
+	cursor: not-allowed;
+	border: 1px solid #dcdcdc;
+	color: #ccc;
+}
+
+.popup-p {
+	color: #f44975!important;
+	text-align: center;
+	padding: 55px 40px 40px;
+}
+
+.popup-hint {
+	z-index: 1000;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 840px;
+	margin-left: -420px;
+	min-height: 450px;
+	margin-top: -220px;
+	border-radius: 5px;
+	border-top: 10px solid #f8a629;
+	background: #fff;
+}
+
+.rootNode {
+	width: 100%;
+	min-width: 1200px;
+}
+
+.onePage.banner {
+	width: 100%;
+	min-width: 1200px;
+	height: 884px;
+	background: url(https://images-web.newnewbank.com/banner20171124.png) no-repeat center top;
+}
+
+.ruleExplain {
+	width: 1186px;
+	height: 360px;
+	background: url(https://images-web.newnewbank.com/ruleScript20171124.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 12px;
+}
+
+.leftBox,
+.rightBox {
+	width: 554px;
+	height: 290px;
+	margin-top: 26px;
+}
+
+.leftBox {
+	margin-left: 30px;
+}
+
+.rightBox {
+	margin-left: 10px;
+}
+
+.yellow-circle {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	line-height: 36px;
+	border-radius: 50%;
+	border: 1px solid #fcc41a;
+	font-size: 20px;
+	color: #fdc819;
+}
+
+.color_da4533 {
+	color: #da4533;
+}
+
+.color_fdc819 {
+	color: #fdc819;
+}
+
+.color_fce287 {
+	color: #fce287;
+}
+
+.color_f6ca76 {
+	color: #f6ca76;
+}
+
+.color_c98100 {
+	color: #c98100;
+}
+
+.color_a46900 {
+	color: #a46900;
+}
+
+.color_ffc800 {
+	color: #ffc800;
+}
+
+.color_905c00 {
+	color: #905c00;
+}
+
+.color_eb170d {
+	color: #eb170d;
+}
+
+.padding-top-20 {
+	padding-top: 20px;
+}
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-top-35 {
+	padding-top: 35px;
+}
+
+.padding-top-40 {
+	padding-top: 40px;
+}
+
+.padding-top-45 {
+	padding-top: 45px;
+}
+
+.padding-left-10 {
+	padding-left: 10px;
+}
+
+.padding-left-120 {
+	padding-left: 120px;
+}
+
+.padding-right-20 {
+	padding-right: 20px;
+}
+
+.padding-right-40 {
+	padding-right: 40px;
+}
+
+.padding-top-80 {
+	padding-top: 80px;
+}
+
+.padding-bottom-25 {
+	padding-bottom: 25px;
+}
+
+.rollCircle {
+	width: 100%;
+	height: 710px;
+	background: url(https://images-web.newnewbank.com/mirror_red20171124.png) no-repeat;
+}
+
+.userInfo {
+	width: 80%;
+	height: 100px;
+	position: absolute;
+	bottom: 30px;
+	left: 60px;
+}
+
+.cashPopup {
+	width: 628px;
+	height: 416px;
+	background: url(https://images-web.newnewbank.com/popup_redPacket20171124_03.png) no-repeat;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -208px;
+	margin-left: -314px;
+	z-index: 1000;
+}
+
+.font_60 {
+	font-size: 60px;
+}
+
+.keepBtn {
+	width: 353px;
+	height: 91px;
+	background: url(https://images-web.newnewbank.com/keepBtn20171127.png) no-repeat;
+	color: #c16d00;
+	line-height: 70px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #ffc800;
+}
+
+.closeBtn {
+	position: absolute;
+	top: 65px;
+	right: 55px;
+	width: 60px;
+	text-align: right;
+}
+
+.leftData {
+	width: 336px;
+	height: 400px;
+	border-right: 1px dashed #d2d2d2;
+}
+
+.rightData {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 504px;
+	height: 100%;
+}
+
+.mar-left-50 {
+	margin-left: 50px;
+}
+
+.padding-top-60 {
+	padding-top: 60px;
+}
+
+.w-150 {
+	width: 150px;
+}
+
+.w-420 {
+	width: 420px;
+}
+
+.w-pre-100 {
+	width: 100%;
+}
+
+.bgColor_f5f5f5 {
+	background-color: #f5f5f5;
+}
+
+.table tr th {
+	padding: 5px 0;
+}
+
+.table tr.tr td {
+	padding-top: 35px;
+}
+
+.table tr td {
+	padding: 16px 0;
+}
+
+.closeDetail {
+	width: 48px;
+	height: 48px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAVFBMVEUAAAD4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin4pin++O76vWD6vF75sUP947vRiz+iAAAAFnRSTlMA9BkUj+7PzLd3WCcFlHHb2WlmUE5wbOr5lQAAATJJREFUSMellluOgzAQBHvMm0DIs4Hk/vfcFVrFCbTBWeq7CokPzwwWJHVanjKz7FSmdYINkmPBD4rjWuNS4wJrHTRNZZRY1Sj/kDNIflj614wr2HXuX7jB5dM/c5Pzu39jBLe3/zVGYK8/b3JGkTd/QcVIKkw444sH1zA3Be2b34+cMTzpafFLYvSM82LoB3osAXAndeF9zx1AQVVonwWQkKrQPulQUxfaZ42UutA+U5TUhfZZoqMutM8ORl1onwZKhr4fKUHAH0ZdGEz7pC4ydAE/UHQotR8qSqTSDxYpauWHixpO+CuFAwrt66LwD8j78+JBz3H2RJ8DFzzmTxQto2n9mInC3LeD7L+jEocsfhh/P+7jF8q+lbW9FPev3e3Fvv902D5ONG46f8jp/Fl+/AfhnZn1K61ywQAAAABJRU5ErkJggg==) no-repeat;
+	position: absolute;
+	top: -24px;
+	right: -5px;
+}
+
+.head-banner {
+	width: 100%;
+	height: 836px;
+	background: url(https://images-web.newnewbank.com/pc-headBanner20180510.png) no-repeat center top;
+}
+
+.one-page {
+	width: 100%;
+	height: 1155px;
+	background: url(https://images-web.newnewbank.com/pc-middle20180510.jpg) no-repeat center top;
+}
+
+.two-page {
+	width: 100%;
+	height: 846px;
+	background: url(https://images-web.newnewbank.com/pc-footer20180510.png) no-repeat center top;
+}
+
+.rule-box {
+	width: 1206px;
+	height: 405px;
+	background: url(https://images-web.newnewbank.com/pc-ruleBox20180510.png) no-repeat;
+}
+
+.left-box {
+	width: 546px;
+	height: 320px;
+	margin-top: 20px;
+	margin-left: 110px;
+}
+
+.color_ff9761 {
+	color: #ff9761;
+}
+
+.color_e84059 {
+	color: #e84059;
+}
+
+.color_f23608 {
+	color: #f23608;
+}
+
+.integral-box {
+	position: absolute;
+	bottom: 67px;
+	left: 20px;
+	width: 512px;
+	height: 26px;
+	line-height: 26px;
+}
+
+.right-box {
+	width: 460px;
+	padding: 70px 0 0 50px;
+	line-height: 30px;
+}
+
+.turntable_bg_1,
+.turntable_bg_2 {
+	width: 506px;
+	height: 621px;
+}
+
+.turntable_bg_1 {
+	background: url(https://images-web.newnewbank.com/pc-turntable_bg_1.png) no-repeat;
+}
+
+.turntable_bg_2 {
+	background: url(https://images-web.newnewbank.com/pc-turntable_bg_2.png) no-repeat;
+}
+
+.turntable_bg_1 .pointerBtn,
+.turntable_bg_2 .pointerBtn2 {
+	width: 215px;
+	height: 246px;
+	position: absolute;
+	left: 50%;
+	top: 125px;
+	margin-left: -107px;
+	z-index: 8;
+}
+
+.turntable_bg_1 .rotate,
+.turntable_bg_2 .rotate {
+	width: 440px;
+	height: 440px;
+	position: absolute;
+	left: 31px;
+	top: 33px;
+}
+
+.hintLeft,
+.hintRight {
+	width: 98px;
+	height: 96px;
+	position: absolute;
+	bottom: 80px;
+}
+
+.hintLeft {
+	right: -40px;
+	background: url(https://images-web.newnewbank.com/pc-hintRight20180510.png) no-repeat;
+}
+
+.hintRight {
+	background: url(https://images-web.newnewbank.com/pc-hintLeft20180510.png) no-repeat;
+	left: -40px;
+}
+
+.right-page {
+	margin-left: 140px;
+}
+
+.getChange {
+	width: 277px;
+	height: 78px;
+	background: url(https://images-web.newnewbank.com/pc-getchangeBtn20180510.png) no-repeat;
+	color: #fec29d;
+	padding-top: 22px;
+}
+
+.win-prize {
+	width: 901px;
+	height: 648px;
+	margin: 0 auto;
+}
+
+.rollCircle-yellow {
+	width: 100%;
+	height: 100%;
+	background: url(https://images-web.newnewbank.com/pc-grade20180510.png) no-repeat;
+}
+
+.rollBox {
+	overflow: hidden;
+	height: 400px;
+	position: absolute;
+	top: 100px;
+	left: 60px;
+}
+
+.rollBox ul {
+	margin-left: 60px;
+}
+
+.w-210 {
+	width: 210px;
+}
+
+.w-160 {
+	width: 160px;
+}
+
+.w-110 {
+	width: 110px;
+}
+
+.rollBox ul li {
+	padding: 30px 0;
+}
+
+.lookBtn {
+	position: absolute;
+	bottom: 40px;
+	right: 100px;
+	cursor: pointer;
+}
+
+.color_f45837 {
+	color: #f45837;
+}
+
+.padding-top-90 {
+	padding-top: 90px;
+}

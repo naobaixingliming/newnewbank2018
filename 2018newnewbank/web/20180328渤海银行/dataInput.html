@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>账户注册</title>
+		<!--尾部引用样式  start-->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/v2/homeIndex/base.css" />
+		<!--尾部引用样式  end-->
+		<link rel="stylesheet" type="text/css" href="css/bankOfBohai.css" />
+
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_f2f2f2 overflow">
+			<div class="w_1200 content bgColor_fff">
+				<div class="headImg"></div>
+				<div class="inputInfo">
+					<ul class="padding-left-260">
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 ">手机号码:</span>
+							<span class="color_666 font_16 mar-left-30">15170031714</span>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">存管密码:</span>
+							<div class="relative float_left ">
+								<input class="w-250 border-7f9db9" type="" name="virtualKey" />
+								<label>
+									<i class="keyIcon pointer" data-key=0></i>
+								</label>
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30">存管密码请设置为6-10位数字</span>
+							<div class="hint">提示文字</div>
+							<div class="softkeys softkeys-1 virtualKey" data-target="input[name='virtualKey']"></div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">确认存管密码:</span>
+							<div class="relative float_left ">
+								<input class="w-250 border-7f9db9" type="" name="vKeyboard" />
+								<label>
+									<i class="keyIcon pointer" data-key=1></i>
+								</label>
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30"></span>
+							<div class="hint">提示文字</div>							
+							<div class="softkeys softkeys-2 virtualKey" data-target="input[name='vKeyboard']"></div>
+						</li>
+						
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">开户银行:</span>
+							<div class="relative float_left ">
+								<select name="">
+									<option value="">请选择银行</option>
+									<option value="">农业银行</option>
+									<option value="">建设银行</option>
+								</select>
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30"></span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">银行卡号:</span>
+							<div class="relative float_left ">
+								<input class="w-250" type="" name="" id="" value="" placeholder="请输入银行卡号···" />
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30"></span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">身份证号码:</span>
+							<div class="relative float_left ">
+								<input class="w-250" type="" name="" id="" value="" placeholder="请输入身份证号码···" />
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30"></span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">真实姓名:</span>
+							<div class="relative float_left ">
+								<input class="w-250" type="" name="" id="" value="" placeholder="请输入真实姓名···" />
+							</div>
+							<i class="color_f44975 float_left star mar-left-10 mar-right-13">*</i>
+							<span class="color_f44975 font_14 line-height-30"></span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">图形验证码:</span>
+							<div class="relative float_left ">
+								<input class="w-118" type="" name="" id="" value="" />
+							</div>
+							<img src="img/web-vercode20180328.png" class="verCodeImg float_left mar-right-13" />
+							<span class="color_2c90f7 font_16 pointer line-height-30">换一张</span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat field-box">
+							<span class="text_right w-120 color_666 font_16 float_left mar-right-26 line-height-30">短信验证码:</span>
+							<div class="relative float_left ">
+								<input class="w-118" type="" name="" id="" value="" />
+							</div>
+							<button class="line-height-30 pointer getVerCode">获取验证码</button>
+							<span class="color_2c90f7 font_14 pointer line-height-30">没有收到短信？</span>
+							<div class="hint">提示文字</div>
+						</li>
+						
+						<li class="clearfloat padding-bottom-25">
+							<div class="w-120 float_left h-30"></div>
+							<span class="relative float_left mar-right-10 ">
+								<input type="checkbox" checked="checked" class="input_check" id="check">
+								<label for="check"></label>
+							</span>
+							<span class="font_14 color_666">已阅读并同意
+								<a class="color_2c90f7" href="javascript:;">《渤海银行网络交易资金服务协议》</a>
+								 / 
+								 <a class="color_2c90f7" href="javascript:;">《渤海银行代扣服务服务协议》</a>
+							</span>
+						</li>
+						
+						<li>
+							<a class="sureBtn w-300 mar-left-150" href="javascript:;" btn-triggle="expandUp">确 定</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!--  底部  -->
+			<div id="foot">
+				<div class="footLink2 clearfix" style="background-color: #fff;">
+					<div class="w1200">
+						<div class="ftk1 fl">
+							<dl class="ftkDl">
+								<dt>关于</dt>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutCompany.html">公司介绍</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutTeam.html">管理团队</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk2 fl">
+							<dl class="ftkDl">
+								<dt>安全</dt>
+								<dd>
+									<a href="https://www.newnewbank.com/html/safety_control.html">安全保障</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/aboutProduct.html">产品介绍</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/newAboutUs/contactus.html">联系我们</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk3 fl">
+							<dl class="ftkDl">
+								<dt>服务</dt>
+								<dd>
+									<a href="#">会员权益</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/html/help.html">帮助中心</a>
+								</dd>
+								<dd>
+									<a href="https://www.newnewbank.com/expertplan/index.shtml">礼品商城</a>
+								</dd>
+							</dl>
+						</div>
+						<div class="ftk-ma fl clearfix">
+							<div class="fl ftkm1"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg9_20160513.jpg"><br/>关注微信公众号</div>
+							<div class="fl"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg10_20160513.jpg"><br/>立即领特权金</div>
+						</div>
+						<div class="icon-ft fl">
+							<div class="icon-ft-qq">
+								<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODA2NzE1MF8xOTE5MzNfNDAwNzg4NTE2Nl8yXw" target="_blank" class="iq1_2"></a>
+								<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=8f60c83a3f0e5ff22dd601733965a2a8e4eccbac49f69282a4edb41c3718b6ab" class="iq2_2"></a>
+							</div>
+							<p class="icon-ft-p">客服热线：(工作日9:00~21:00)</p>
+							<div class="icon-ft-tel">400-788-5166</div>
+							<div class="icon-ft-tubiao">
+								<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="ios-ft2"></a>
+								<a href="https://www.newnewbank.com/subject/20160429/20160429.html" target="_blank" class="anz-ft2"></a>
+								<a href="http://weibo.com/newnewbank" class="weib-ft2" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="friend-box">
+					<div class="w1200 clearfix">
+						<div class="fl fr-left">
+							<div class="fl">友情链接：</div>
+							<div class="fl fr-list">
+								<a href="https://www.newnewbank.com/financingNews/toView.shtml" target="_blank">投资理财资讯</a>
+								<a href="http://www.p2peye.com/" target="_blank">网贷天眼</a>
+								<a href="http://www.wdzj.com/" target="_blank">网贷之家</a>
+								<a href="https://pay.sina.com.cn/index" target="_blank">新浪支付</a>
+								<a href="https://www.weicaifu.com/" target="_blank">微财富</a>
+								<a href="http://www.wangdaidp.com/" target="_blank">网贷点评网</a>
+								<a href="http://www.p2p001.com/" target="_blank">第一网贷</a>
+								<a href="${webpath}financingNews/toTagMap.shtml" target="_blank" style="display:none">地图</a>
+								<a href="${webpath}html/siteMap.html" target="_blank">网站地图</a>
+							</div>
+							<div class="clear"></div>
+							<div class="copy-fr">深圳市金牛牛互联网金融服务有限公司<span>|</span>
+								<a href="http://www.miibeian.gov.cn/" target="_blank" style="color: inherit;">粤ICP备14051198号</a><span>|</span>
+								<a href="${webpath}html/icp.html" target="_blank" style="color: inherit;">增值电信业务经营许可证粤B2-20160396</a>
+							</div>
+							<div class="copy-fr">版权所有 (C) newnewbank.com</div>
+						</div>
+						<div class="fr copy-img">
+							<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg11_20160513.jpg"></a>
+							<a href="https://ss.knet.cn/verifyseal.dll?sn=e150214440300577673clf000000&ct=df&a=1&pa=0.620487422721416" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg12_20160513.jpg"></a>
+							<a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=www.newnewbank.com&lang=zh_cn" target="_blank"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg13_20160513.jpg"></a>
+							<a href="#"><img src="https://images-web.oss-cn-hangzhou.aliyuncs.com/pc_jpg14_20160513.jpg"></a>
+							<a style="background: white;" class="record_nav_e" key="547849daefbfb0170ad8c14c" logo_size="83x30" logo_type="business" rel="nofollow" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.newnewbank.com&amp;at=business" target="_blank">
+								<script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script><span id="aqLogoHook" style="display: none;"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/softkeys-0.0.1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function keysoft($et){				
+				$et.softkeys({
+					target: $et.data('target'),
+					layout: [
+						[
+							['`', '~'],
+							['1', '!'],
+							['2', '@'],
+							['3', '#'],
+							['4', '$'],
+							['5', '%'],
+							['6', '^'],
+							['7', '&amp;'],
+							['8', '*'],
+							['9', '('],
+							['0', ')'],
+							['-', '_'],
+							['=', '+'],
+							'delete'
+						],
+						[
+							'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', ['[', '{'],
+							[']', '}']
+						],
+						[
+							'capslock',
+							'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', [';', ':'],
+							["'", '&quot;'],
+							['\\', '|']
+						],
+						[
+							'shift',
+							'z', 'x', 'c', 'v', 'b', 'n', 'm', [',', '&lt;'],
+							['.', '&gt;'],
+							['/', '?'],
+							['@']
+						]
+					]
+				});
+			}
+			var iTag=false;
+			var iTag2=false;
+			$('.keyIcon').on('click', function(event) {
+				$(this).parents('.field-box').find('.softkeys').css('display', 'block');				
+				var key=this.dataset.key;
+				var t;
+				if(key==0&&!iTag){
+					t=$('.softkeys-1');
+					keysoft(t);
+					iTag=true;
+				}else if(key==1&&!iTag2){
+					t=$('.softkeys-2');
+					keysoft(t);
+					iTag2=true;
+				}										
+				event.stopPropagation();
+			});
+			
+			$(document).on('click', function(event) {				
+				var evt = event.srcElement ? event.srcElement : event.target;
+				if($(evt).hasClass('softkeys')||$(evt).parents('.virtualKey').hasClass('softkeys') ) return false;				
+				else {
+					$('.softkeys').hide(); 
+				}
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<style type="text/css">
+			.shadow-over {
+				position: fixed;
+				background: rgba(0, 0, 0, .4);
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				-webkit-backface-visibility: hidden;
+				-webkit-animation: ngdialog-fadein .5s;
+				animation: ngdialog-fadein .5s;
+			}
+			
+			.float_right {
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ngdialog ngdialog-theme-default">
+			<div class="shadow-over"></div>
+			<div class="modal-dialog modal-lg" ng-class="{'modal-sm': size == 'sm', 'modal-lg': size == 'lg'}">
+				<div class="modal-content" modal-transclude="">
+					<div class="modal-header ">
+						<button type="button" data-dismiss="modal" aria-hidden="true" class="close" ng-click="cancel()">×</button>
+					</div>
+					<div class="modal-body clearFloat " style="min-height:100px;overflow-y:auto">
+						<div class="table-responsive">
+							<table id="table-ext-2" class="table table-striped  table-hover">
+								<thead>
+									<tr>
+										<th><span class="padding-left-30">用户姓名</span></th>
+										<th>身份证号码</th>
+										<th>手机号码</th>
+										<th>推荐码</th>
+										<th>订单ID</th>
+										<th>投资日期</th>
+										<th>投资金额</th>
+										<th>投资状态</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div class="media padding-left-30">
+												<p class="media-heading ng-binding">计算逾期任务</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">执行成功</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">2017-11-08 14:27:55</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">执行</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="media padding-left-30">
+												<p class="media-heading ng-binding">计算逾期任务</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">执行成功</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">2017-11-08 14:27:55</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">执行</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+										<td>
+											<div class="media">
+												<p class="media-heading ng-binding">192</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div>
+								<div class="float_right ng-scope" style="margin-right:50px">
+									<ul class="pagination ng-table-pagination  ng-scope">
+										<li class="disabled">
+											<a href="">«</a>
+										</li>
+										<li class="active">
+											<a href=""><span class="ng-binding">1</span></a>
+										</li>
+										<li>
+											<a href=""><span class="ng-binding">2</span></a>
+										</li>
+										<li>
+											<a href="">»</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

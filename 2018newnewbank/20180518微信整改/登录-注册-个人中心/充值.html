@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>充值</title>
+		<link rel="stylesheet" type="text/css" href="../css/common/global20180518.css" />
+		<!--底下弹框 银行   start-->
+		<link href="./css/libs/mui.picker.css" rel="stylesheet" />
+		<link href="./css/libs/mui.poppicker.css" rel="stylesheet" />
+		<!--底下弹框银行  end-->
+
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_efeff4">
+			<div class="padding-top-bottom-20">
+				<div class="flex-con">
+					<div class="flex-child text_center font_24 active-cur">
+						快捷支付
+						<i class="border-red-bottom"></i>
+					</div>
+					<div class="flex-child text_center font_24">
+						银联在线支付
+						<i class="border-red-bottom"></i>
+					</div>
+				</div>
+				<p class="under_line bgColor_cecece"></p>
+			</div>
+			<div class="contain ">
+				<!--快捷支付 start-->
+				<section class="payment none active">
+					<div class="bgColor_fff">
+						
+						<div class="h-100 line-height-100 flex_container mar-side-30">
+							<i class="font_24 color_333 flex_grow">卡号</i>
+							<i class="font_22 color_666">6225201622221898</i>
+							<i class="align_self_center mar-left-20 eyeIcon eyeOpenIcon"></i>
+						</div>
+						<p class="under_line  mar-left-30"></p>
+																			
+						<div class="h-100 line-height-100 flex_container mar-side-30">
+							<i class="font_24 color_333 flex_grow">已绑银行</i>
+							<i class="font_22 color_999">招商银行</i>							
+						</div>
+						<p class="under_line  mar-left-30"></p>
+						
+						<div class="h-100 line-height-100 flex_container mar-side-30">
+							<i class="font_24 color_333">单次充值限额</i>
+							<input type="text" cursorcolor class="font_24 text_right flex_grow" placeholder="请输入充值金额，不超过5万元" />						
+						</div>
+						<p class="under_line"></p>
+	
+					</div>
+					<div class="color_ccc font_20" style="margin: 0.3125rem 0.546875rem 0;">
+						<i class="warmIcon float_left"></i>暂不支持已绑定卡作为充值卡，请使用网上银行或银联在线支付功能！
+					</div>
+				</section>
+				<!--快捷支付 end-->
+				<!--银联在线支付  start-->
+				<section class="payment bgColor_fff none">
+					<div class="siggle-line relative ">
+						<i class="font_24 color_333 getBankName" id="timeResult">银行</i>
+						<span class="clickBank" id='showTimePicker'>
+							<i class="bankText font_24 color_999">请选择</i>
+							<i class="arrow "></i>
+						</span>
+					</div>
+					<p class="under_line"></p>
+					<p style="height: 0.234375rem;background-color: #efeff4;"></p>
+					<div class="siggle-line relative ">
+						<i class="font_24 color_999" style="margin-right: 0.3125rem;">充值金额</i>
+						<input type="text" class="inputEle telPhone" placeholder="不少于1元" style="">
+						<i class="deleteIconPo"></i>
+					</div>
+					<p class="under_line"></p>
+				</section>
+				<!--银联在线支付  end-->
+			</div>
+
+		</div>
+		<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/libs/mui.min.js"></script>
+		<script src="../js/libs/mui.picker.js"></script>
+		<script src="../js/libs/mui.poppicker.js"></script>
+		<script src="../js/bank.data.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					//-------------------银行选择----------------------
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showTimePickerButton = doc.getElementById('showTimePicker');
+					var timeResult = doc.getElementById('timeResult');
+					showTimePickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							//timeResult.innerText = items[0].text+ items[1].text ;
+							timeResult.innerText = items[1].text;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+		<script type="text/javascript">
+			(function() {
+				var loginVm = {
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//卡号可见							
+						$('.delegate').delegate('.eyeOpenIcon', 'click', function() {
+							$(this).addClass('eyeCloseIcon').removeClass('eyeOpenIcon');
+							$(this).siblings('.cardNumber').html('<em style="letter-spacing: .05rem;">31025******258888</em>');
+						});
+						$('.delegate').delegate('.eyeCloseIcon', 'click', function() {
+							$(this).addClass('eyeOpenIcon').removeClass('eyeCloseIcon');
+							$(this).siblings('.cardNumber').text('6225201622221898');
+						});
+						//导航切换
+						$('.flex-con .flex-child').on('click', function() {
+							$(this).addClass('active-cur').siblings('.flex-child').removeClass('active-cur');
+							var index = $(this).index();
+							$('.contain .payment').eq(index).addClass('active').siblings('.payment').removeClass('active');
+
+						});
+
+					}
+				}
+				loginVm.init();
+			})()
+		</script>
+	</body>
+
+</html>

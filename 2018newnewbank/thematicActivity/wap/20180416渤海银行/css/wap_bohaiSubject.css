@@ -1,0 +1,555 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+	max-height: 999999px;
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul li {
+	list-style: none;
+}
+
+span {
+	display: inline-block;
+}
+
+em {
+	font-style: normal;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0
+}
+
+button,
+input,
+select,
+textarea {
+	/*font-size: 100%;*/
+	/*vertical-align: middle;*/
+	outline: 0
+}
+
+input:focus:-moz-placeholder,
+input:focus::-webkit-input-placeholder {
+	color: transparent
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+input,
+button,
+textarea {
+	-webkit-appearance: none;
+}
+
+button,
+input {
+	border: 0;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+textarea {
+	resize: none
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+{
+	-webkit-appearance: none;
+}
+
+textarea {
+	-webkit-appearance: none;
+}
+
+
+/*字体大小 start*/
+
+.font_16 {
+	font-size: 0.4rem;
+}
+
+.font_18 {
+	font-size: 0.45rem;
+}
+
+.font_20 {
+	font-size: 0.5rem;
+}
+
+.font_22 {
+	font-size: 0.55rem;
+}
+
+.font_24 {
+	font-size: 0.6rem;
+}
+
+.font_26 {
+	font-size: 0.65rem;
+}
+
+.font_28 {
+	font-size: 0.7rem;
+}
+
+.font_30 {
+	font-size: 0.75rem;
+}
+
+.font_32 {
+	font-size: 0.8rem;
+}
+
+.font_36 {
+	font-size: 0.9rem;
+}
+
+.font_40 {
+	font-size: 1rem;
+}
+
+.font_48 {
+	font-size: 1.2rem;
+}
+
+.font_50 {
+	font-size: 1.25rem;
+}
+
+.font_60 {
+	font-size: 1.5rem;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000;
+}
+
+.color_333 {
+	color: #333;
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_fff {
+	color: #fff;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.relative {
+	position: relative;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.content_center {
+	justify-content: center;
+}
+
+.content_left {
+	justify-content: flex-start;
+}
+
+.content_right {
+	justify-content: flex-end;
+}
+
+.vertical_center {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+
+.all_center {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-parent {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-child {
+	-webkit-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: 0%;
+	position: relative;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_indent {
+	text-indent: 2em;
+}
+
+.line_height {
+	line-height: 0.6rem;
+}
+
+.letter_space {
+	letter-spacing: 0.025rem;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #f5f5f5;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.white_space {
+	white-space: nowrap;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #999;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #999;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #999;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #999;
+}
+.rootNode {
+				min-height: 100vh;
+			}
+			
+			header {
+				height: 7.225rem;
+				background: url(https://images-wap.newnewbank.com/wap-headBanner20180416.png) no-repeat;
+				background-size: cover;
+			}
+			
+			.color_00428e {
+				color: #00428e;
+			}
+			
+			.color_96a1e8 {
+				color: #96a1e8;
+			}
+			
+			.color_5399fc {
+				color: #5399fc;
+			}
+			
+			.color_f3f7ff {
+				color: #f3f7ff;
+			}
+			
+			.bgColor_0d41b4 {
+				background-color: #0d41b4;
+			}
+			
+			.bgColor_4f37b8 {
+				background-color: #4f37b8;
+			}
+			
+			.bgColor_f3f7ff {
+				background-color: #f3f7ff;
+			}
+			
+			.promint-box {
+				box-shadow: 0 .125rem .75rem 0 #e2e2f1;
+				top: -.75rem;
+				left: 0;
+				border-radius: .125rem;
+				margin-left: .4rem;
+				margin-right: .4rem;
+			}
+			
+			.safe-text {
+				padding: .9rem .75rem;
+			}
+			
+			.left-img-around {
+				width: 4.875rem;
+				margin-right: 0.25rem;
+			}
+			
+			.line-height-32 {
+				line-height: 0.8rem;
+			}
+			
+			.star-line {
+				width: 14.85rem;
+				height: 1rem;
+			}
+			
+			.line-blue {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlIAAAAoCAMAAAACJ+TPAAAAb1BMVEUAAAAAS48AS48AS48AS48AS48AS48AS48AS48AS48AS49cqlFkskskcHcuenAzgG05hWlPnFpXpVRhr05otklruUcQXIQpdXRKl10JVYkNWYcfa3o9imZBj2NFk2BToVdtvEUUYIIXYoAZZX4caHxYtfF5AAAACnRSTlMAuQqnCbgEbBhojM5ZuwAAAShJREFUeNrt2lluwkAQRdG2MYaYeZ4hHva/xlR1/pKSoqD+MNQ9O3i3LYSHAAAAAAAAAAB4SjkajMoAQdskimFVVcMiINA2iSKrVOZtt4G2yVZ73G2gbRJ5XB1leQBtU6z2uNtA22SrPe420DbZao+7DbRNY1D9NAig7fPG1W/jgDdr+yl2aqumaqMm0Vo9xEodxV3cxFUs1ULN1UHM1EV0Xde2bdM0dV3vxVmc+jP77ViX1OnbWeyVHIUciByLHM5FzNRBzdVCLdVV3MRdHNVKPcRaTaKNmkZbtVNyNYW/8OP8Ipy2dfoX0kJbbnR7z2tbn4/jTLTlpUHveW2bZx5Xm2ibbLfH1SbaJpLHz8S8rTbRNpHyw+PHrCbaAgAAAAAAAAAA4L++AFcaJMSB7s3qAAAAAElFTkSuQmCC) no-repeat;
+				background-size: cover;
+			}
+			.line-white{
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlIAAAAoCAMAAAACJ+TPAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAM7sa1dp6dPprFYoOCcvCwERn+SlMAAAA20lEQVR42u3YS1ICQRBF0YRuoPlr7X+xogwI7JqoKUSQ5+zgvkFlRAUAAAAAAL8zvA/BF9um2E5t2gYXts2pbp/qdXfYNsWmXW0C2yZVl+zusG2KdbtZB7ZNqC7Z3WHbrOqS3R22zb31JW/+HdumOE6z7OkYvNi2ywc6t7mKX73/YWhz5+UzxOKRxln1Kchxat+Ni6eIhxpW7d7KI2Xbv3ZXrO6ybVp3xeou2yYZxtutr1PdZdu07orVXbZNshuv1bvAtlndFau7bJvksH/bH4IL2wIAAAAAAPBTHw2lIUCyPOTBAAAAAElFTkSuQmCC) no-repeat;
+				background-size: cover;
+			}
+			.mar-top-46{
+				margin-top: 1.15rem;
+			}
+			.green-border{
+				border: 1px solid #70be46;
+    			border-radius: 0.125rem;
+    			margin-left: .4rem;
+				margin-right: .4rem;
+				background-color:#f3f7ff ;
+			}
+			.border-before:before{
+				content: '';
+				position: absolute;
+				width: 15rem;
+				height: 10.2rem;
+				top: .1rem;
+				right: .3rem;
+				border: 1px solid #70be46;
+    			border-radius: 0.125rem;
+			}
+			.padding-top-bottom-50{
+				padding-top: 1.25rem;
+				padding-bottom: 1.25rem;
+			}
+			.padding-side-30{
+				padding-left: .75rem;
+				padding-right: .75rem;
+			}
+			.padding-30{
+				padding: 0.75rem;
+			}
+			.paddding-top-50{
+				padding-top: 1.25rem;
+			}
+			.padding-bottom-5{
+				padding-bottom: 0.125rem;
+			}
+			.padding-bottom-50{
+				padding-bottom: 1.25rem;
+			}
+			.padding-side-40{
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+			.padding-top-bottom-10{
+				padding-top: 0.25rem;
+				padding-bottom: 0.25rem;
+			}
+			.padding-top-50{
+				padding-top: 1.25rem;				
+			}
+			.mar-top-bottom-40{
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+			.mar-top-bottom-70{
+				margin-top: 1.75rem;
+				margin-bottom: 1.75rem;
+			}
+			.mar-bottom-70{
+				margin-bottom: 1.75rem;
+			}
+			
+			.mar-side-36{
+				margin-left: 0.9rem;
+				margin-right: 0.9rem;
+			}
+			.mar-right-45{
+				margin-right: 1.125rem;
+			}
+			.left-pos{
+				padding-left: 4.5rem;
+			}
+			.left-pos:before{
+				content: '';
+				position: absolute;
+				top: .2rem;
+				left: 1rem;
+				width: 3.5rem;
+				height: 2.5rem;				
+			}
+			.left-pos-1:before{
+				background: url(https://images-wap.newnewbank.com/wap-goodIcon1-20180416.png) no-repeat;
+				background-size:2.475rem 2.3rem;
+			}
+			.left-pos-2:before{
+				background: url(https://images-wap.newnewbank.com/wap-goodIcon2-20180416.png) no-repeat;
+				background-size:2.675rem 2.3rem;
+			}
+			.left-pos-3:before{
+				background: url(https://images-wap.newnewbank.com/wap-goodIcon3-20180416.png) no-repeat;
+				background-size:2.4rem 2.1rem;
+			}
+			.why-box li{
+			    background-color: rgba(25, 84, 154, .1);
+			    box-shadow: 0 0 1.25rem 0.75rem rgba(89, 132, 227, 0.1) inset;
+			    border-radius: 0.5rem;
+			    margin: 0 0.75rem .2rem;
+			    position: relative;
+			}
+			.pos-padding{
+				padding: 0.75rem 0.75rem 0.75rem 4rem;
+			}
+			.blue-circle-bg{
+				width: 2.25rem;
+			    height: 2.25rem;
+			    border-radius: 50%;
+			    border: 0.15rem solid rgba(34, 81, 182, 1);
+			    background-color: #366de8;
+			    position: absolute;
+			    top: 1.2rem;
+    			left: .7rem;
+			}
+			.icon-left-1{
+				width: 1.125rem;
+				height: 1.15rem;
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAuCAMAAACLUGAGAAAAdVBMVEUaVZq5y+CfuNXW4O3+/v/4+vzb5O/6+/3y9fnl7PTU3+zi6vLp7/X+/v/v8/jo7vXM2ej1+Pv3+fvx9Png6PGAocf9/v74+vzz9vrr8ffe5vDQ3OqmvdiXstH+/v/9/v7Z4+6wxNz8/f77/P35+vwiW57///9mEFl8AAAAJnRSTlMaRTdi+8Zs1ap/YHiN+JuGVLvCo3Mr6cuykW9aOjLy8mdA4N/PG4CUn2QAAAERSURBVEjH7dTLboMwEIXhQ+1AAiVgCHfIpZd5/0esUQcliosZddFV/5UlPgvJHhk/FZjLxQSQFWuy6ViMxfw6466b+XUTh2RLgIRsoQT3sPXbPGRyX8uwy9ewiJ/44xM/we1+Cg5PVrBWeErphbs4XrnZRIAd7mAJPzD28AOWMsZenj3gdICnIWXOOIe3fOGKsYArIGIs4BGgnUlYnSIN2D3l+LLZWBKlgCFxBridpfh8AxA0Mtzwe1QFgir8qqqplV/kdTQ9zOuHXxc8JjywkV/viF7/WFdtMYKbjJn8OiNqwR2JjuuaxQ7cnmj/rwX6My+J3tR3xm5UXEFU8DIiagPMdSSs57/IKmc91DL8HuALrpZSCekog/MAAAAASUVORK5CYII=) no-repeat;
+				background-size:cover ;
+			}
+			.icon-left-2{
+				width: 1.2rem;
+				height: 1.15rem;
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAtCAMAAADflBjwAAAAjVBMVEUaVZrL2Ojv8/jz9vrV4O3////1+PufuNW5y+A3aqb8/f7+/v/6+/34+vzz9vrv8/jt8vf+/v/3+fvx9Png6PHO2+qmvdj9/v7F1OVdh7hMerD8/f77/P37/P3q8Pbo7vXj6vPX4e2+z+KZs9KIpst+oMZ2mcL5+vz2+fvt8vfm7PTU3+za5O9tkr7///+qidjcAAAALnRSTlMaU5uqYvy4N0Ud6PjUxrGelPPEo3RXOexOIyDh29aOh3tlSTMuKijPvZmBX2knCtBc7wAAAUtJREFUSMftz8luwjAUheGTJgaceWQI81ygPe//eLVwFYGwrUhddNF+m0g3989V0JGXiBZRJvHqSoe1ISiZeBYJS0OQ8A0Wb0x+EOwqX5u4gomvVTuE7DiCTgjyPLhzB3rnTKog0FN3gLvgrwaCdf+gpkBMv3/gM8aKxaFvcCi4wlgw7RukFGMgJzPZJ5AZmatnW5Jx0KqggkWmgjaIybKFMktJRgsyhYVaWERUCzNoWxUrS1jo1/H2YTSu1z55gNFRMF3XY8N4A6MNxREGA84lFIlncsF3mHjk1XyAHowGjEZ4MYrUAbP9hOHLrw1DFntYNIKTKZ5MQ4oGVreI4nJC55QLigAO6oMsqmYGZdZUBRlO4fSZCSrhchlSEZm+57LP5/w2z4foZRisyHyrt3sm5Aj4D34pkCNP+yBrT9tJx35Jg8ReNDS64cEXb5NEq/nwffcAAAAASUVORK5CYII=) no-repeat;
+				background-size:cover ;
+			}
+			.icon-left-3{
+				width: 1.125rem;
+				height: 1.15rem;
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAtCAMAAADm86mrAAAAolBMVEUaVZrv8/jV4Oz+/v/+/v/////J1+dahbf7/P31+Pvn7fS6y+E7bqj+/v/7/P36+/33+fvN2unA0eOKqMxId679/v78/f76+/31+Pvz9vrs8ffp7/Xn7fTj6vPg6PHb5O+lvNdtkr79/v78/f73+fvy9fnj6vPi6vLf5/GatNN4m8T3+fvz9vrY4u7R3evF1OWzxt34+vzw9Pjt8veswtv///+EDObxAAAANXRSTlMam2L68/xSIti6gkUd993TwVZKLh/v5s+0q5OJhXlzajkm6+K9p3x2bzQoxa5lW05ByaGZPLjyF4IAAAGtSURBVEjH7VTZkoIwEES5QRFEFLlR5HK9d/7/13YCiLiCwrtdZSWTaSY9phOqHZwh5FR/3ACOA+gjgHE/Zn6wIoEBMFamzU3ecxe+ykIDzJrrJk+SZUWjGYaupiutgz0XSHqzS+WQhLpm74utTL2N7ZDcfvwkV3eWpMLxVfUPrguvSnkJ22aT/2wR2bdF266Ziinnec3E9nyqAxbyveaCjWyN6oSL6VPDIgBweHceEsAyrIUrANb789sBXBvfzj4cN48V5WpqAMw7iQ+9Yt2I+dl6IkBQTGY9iqNFqv5+UTmVHWIplWuvnWXfO99lc66UaDxW3ZIwRtfNoMA2Jh0fxWkRCSkpti4DOrqUakxo4JLr4iOKcoeug+polbKUqC4Le2/JrcCpQogb/LGRFTtXsgwjpBPf7oKim7Iw4y7IXQ2lQsY+K1tI8HMVRxzcxoGBcb5fbRlTAn/PebgZDr46omqg6/3HS+BNDa5hBPX1/5aD5sMxGfjOfOlf+kdk8hB6QEM6gK4BrEvba33oOgvTE3WaAqv30r4mlxXIHr0Qlk/OKqT6gbcVRrH59uQf29lKfVChyc8AAAAASUVORK5CYII=) no-repeat;
+				background-size:cover ;
+			}
+			.content-page{
+				box-shadow:0 0.25rem 0.5rem #e3e5f8 ;
+				position: relative;
+			}
+			.storageMode{
+				width:11.85rem ;
+				height: 16.05rem;
+				background: url(https://images-wap.newnewbank.com/wap-storageMode20180416.png) no-repeat;
+				background-size: cover;
+			}
+
+
+	

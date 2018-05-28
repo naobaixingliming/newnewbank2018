@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.swiper-slide {
+				width: 100%;
+				/*height: 500vh;*/
+			}
+			
+			.swiper-slide:nth-of-type(1) {
+				background-color: beige;
+			}
+			
+			.swiper-slide:nth-of-type(2) {
+				background-color: #007AFF;
+			}
+			
+			.swiper-slide:nth-of-type(3) {
+				background-color: #C4E6F5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<p style="height: 100vh;">1</p>
+					<p style="height: 100vh;background-color: red;">2</p>
+				</div>
+				<!--<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>-->
+			</div>
+			<!-- 如果需要分页器 -->
+			<!--<div class="swiper-pagination"></div>-->
+
+			<!-- 如果需要导航按钮 -->
+			<!--<div class="swiper-button-prev"></div>-->
+			<!--<div class="swiper-button-next"></div>-->
+
+			<!-- 如果需要滚动条 -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<!--  banner end  -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container', {
+				scrollbar: '.swiper-scrollbar',
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				mousewheelControl: true,
+				freeMode: true
+			});
+			swiper.on("TouchEnd", function(swiper) {
+				//下拉加载  
+				//							if(swiper.isEnd ) {
+				//								//					$("#NextPage").click();
+				//								console.log('下拉刷新');
+				//							}
+				//上拉刷新  
+				//							if(swiper.translate > 100) {
+				//								console.log('上拉刷新');
+				//								
+				//							}
+				if(swiper.translate > 0) { //判断下拉刷新  
+					console.log('下拉刷新');
+				} else if(swiper.translate < -100) { //判断上拉加载新数据  
+					if(swiper.isEnd) {
+						//mySwiper.isEnd这个函数用来判断时候滑动到底部，但是不能单独的用这个来写，
+						//还需要在外层写一个swiper.translate<-100，是为了需要先判断是手势是上拉还是下拉，否则可能造成了点击页面，还没设计到上下拉就执行里面的函数了，这里的40也不                  是固定的，只是为了先判断手势方向，再判断是否到底
+						alert('上拉刷新');
+
+					}
+
+				}
+			});
+			//			var mySwiper = new Swiper('.all-container', {
+			//				scrollbar: '.swiper-scrollbar',
+			//				direction: 'vertical',
+			//				slidesPerView: 'auto',
+			//				mousewheelControl: true,
+			//				freeMode: true,
+			//				onTouchEnd: function(swiper) {
+			//					if(swiper.translate > 60) { //判断下拉刷新  
+			////						$('.uptipsgray').addClass('visible'); //下拉刷新的div显示  
+			////						loadNewData(); //加载更多数据  
+			//						alert('下拉刷新');
+			//					} else if(swiper.translate < -40) { //判断上拉加载新数据  
+			//						if(mySwiper.isEnd) {
+			//							//mySwiper.isEnd这个函数用来判断时候滑动到底部，但是不能单独的用这个来写，还需要在外层写一个swiper.translate<-40，是为了需要先判断是手势是上拉还是下拉，否则可能造成了点击页面，还没设计到上下拉就执行里面的函数了，这里的40也不                  是固定的，只是为了先判断手势方向，再判断是否到底  
+			//							alert('上拉刷新');
+			////							$('.tipsgray').addClass('visible');
+			////							loadHistoryData();
+			//						}
+			//
+			//					}
+			//				}
+			//			});
+		</script>
+
+	</body>
+
+</html>

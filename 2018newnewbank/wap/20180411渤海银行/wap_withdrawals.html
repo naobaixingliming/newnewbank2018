@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>提现</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8" src="js/adapter.0.6.4.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/wap_bohaiBank.min.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode overflow">
+
+			<div class="info-item mar-top-10 bgColor_fff">
+				<div class="one-line mar-left-36 ">
+					<p class="color_999 font_22 padding-top-20 padding-left-18">托管平台存管账户</p>
+					<div class="h-90 flex_parent">
+						<div class="flex_child font_28 color_999 padding-left-18 ">
+							<p class="h-100-pre vertical_center "><i class="bhLogo-icon"></i></p>
+						</div>
+						<div class="color_999 mar-right-40 font_30 letter_space"><i class="h-100-pre vertical_center">000******1011</i></div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="info-item mar-top-6 bgColor_fff padding-top-16">
+				<div class="one-line mar-left-36">
+					<div class="h-90 flex_parent">
+						<div class="w-130 padding-left-18 color_333 font_26"><i class="h-100-pre vertical_center">提现方式</i></div>
+						<div class="flex_child font_22 color_999 mar-right-40">
+							<div class="h-100-pre vertical_center">
+								<label class="item-label mar-right-40">
+							        <input class="item-radio" type="radio" name="item-radio">
+							        <span class="item-radioInput"></span>T+1工作日到账
+							    </label>
+								<label class="item-label">
+							        <input class="item-radio" type="radio" checked name="item-radio">
+							        <span class="item-radioInput"></span>T+0两小时到账
+							    </label>
+							</div>
+						</div>
+					</div>
+					<p class="under_line"></p>
+				</div>
+
+				<div class="one-line mar-left-36">
+					<div class="h-90 flex_parent">
+						<div class="w-186 padding-left-18 color_333 font_26"><i class="h-100-pre vertical_center">提现手续费</i></div>
+						<div class="flex_child font_28 color_999 mar-right-40">
+							<p class="h-100-pre vertical_center flex-end"><i class="line-through">0元</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-item mar-top-10 bgColor_fff padding-top-16">
+				<div class="one-line mar-left-36">
+					<div class="h-90 flex_parent">
+						<div class="w-186 padding-left-18 color_333 font_26"><i class="h-100-pre vertical_center">账户余额</i></div>
+						<div class="flex_child font_28 color_999 mar-right-40">
+							<p class="h-100-pre vertical_center flex-end"><i class="color_f44975">0元</i></p>
+						</div>
+					</div>
+					<p class="under_line"></p>
+				</div>
+				<div class="one-line mar-left-36">
+					<div class="h-150 flex_parent">
+						<input class="padding-left-18 caret-color flex_child font_26" type="text" placeholder="请输入提现金额" />
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<a class="sureBtn bgColor_f44975 all_center color_fff font_30 mar-top-30">确认提交</a>
+			</div>
+			
+			<div class="font_18 color_999 line-height-30 padding-top-40 padding-bottom-25 padding-side-40">
+				<p>温馨提示：</p>
+				①T+1次工作日15:00左右到账，T+0每月前3次免手续费，2小时内到账；<br>
+				②若是周末或节假日提现，则提现自动顺延到节后第一个工作日处理；<br> 
+				③若超出提现时间，资金未到账，请联系牛牛bank客服：400-788-5166。
+			</div>
+			
+		</div>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				if('addEventListener' in document) {
+					document.addEventListener('DOMContentLoaded', function() {
+						FastClick.attach(document.body);
+					}, false);
+				}
+				
+				$('body').on('focus', 'input[placeholder]', function () {
+			        var valueBak = $(this).attr('xplaceholder');
+			        if (!valueBak) {
+			            $(this).attr('xplaceholder', $(this).attr('placeholder'));
+			        }
+				        $(this).attr('placeholder', '');
+				    }).on('blur', 'input[placeholder]', function () {
+				        $(this).attr('placeholder', $(this).attr('xplaceholder'));
+			    });
+				
+			}())
+		</script>
+	</body>
+
+</html>

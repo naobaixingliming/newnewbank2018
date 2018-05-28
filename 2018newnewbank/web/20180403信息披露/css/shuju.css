@@ -1,0 +1,261 @@
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.eleMain {
+	margin-left: 110px;
+	font-size: 12px;
+	margin-top: 40px;
+	margin-bottom:60px;
+}
+
+.banner{
+	width: 100%;
+	height: 630px;
+	text-align: center;
+	background: url(https://images-web.newnewbank.com/shuju_banner20171017.png)no-repeat top center;
+}
+
+.font_32{
+	font-size: 32px;
+}
+
+.color{
+	color: #fff;
+}
+
+.m_b_10{
+	margin-bottom:10px;
+}
+
+.font_16{
+	font-size: 16px;
+}
+
+.font_18{
+	font-size: 18px;
+}
+
+.p_t75{
+	padding-top: 75px;
+}
+
+.font_14{
+	font-size: 14px;
+}
+
+.m_t70{
+	margin-top:70px;
+}
+
+.font_60{
+	font-size: 60px;
+}
+
+.font_20{
+	font-size: 20px;
+}
+
+.table{
+	width:100%;
+	height:100px;
+	padding-top: 28px;
+	background: rgba(0,0,0,.1);
+	margin-top:55px;
+	text-align: center;
+}
+
+.table table tr td{
+	padding-bottom:20px;
+}
+
+.color_a6b9d9{
+	color: #a6b9d9;
+}
+
+.bg_col_fff{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+
+.text_center{
+	text-align: center;
+}
+
+.m_l_t{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 110px;
+}
+
+.color_333{
+	color: #333;
+}
+
+.color_666{
+	color: #666;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.border{
+	width: 1155px;
+	margin:0 auto;
+	background: #fff;
+	margin-top: 45px;
+	border-radius: 20px;
+}
+
+.huankuan_left{
+	float: left;
+	width: 768px;
+	height:370px;
+	border-right: 1px dashed rgba(0,0,0,.2);
+}
+
+.huankuan_right{
+	float: right;
+	width:385px;
+}
+
+.m_t_58{
+	margin-top: 50px;
+}
+
+.li{
+	margin-top: 120px;
+}
+
+.li li{
+	float: left;
+}
+
+.font_22{
+	font-size: 22px;
+}
+
+.color_999{
+	color: #999;
+}
+
+.jiekuan{
+	padding-left:55px;
+	background: url(https://images-web.newnewbank.com/jiekuan20171017.png)no-repeat;
+	background-position:0 6px;
+	margin-left:44px;
+	margin-right: 90px;
+}
+
+.chujie{
+	padding-left:55px;
+	background: url(https://images-web.newnewbank.com/chujie_20171017.png)no-repeat;
+	background-position:0 6px;
+	margin-right:106px;
+}
+
+.guanxi{
+	padding-left:55px;
+	background: url(https://images-web.newnewbank.com/guanxi20171017.png)no-repeat;
+	background-position:0 6px;
+}
+
+
+
+.right_h{
+	height:165px;
+	margin-left: 20px;
+}
+
+.m_t30{
+	margin-top: 30px;
+}
+
+#right_top{
+	position: absolute;
+	margin-top:-5px;
+	margin-left:210px;
+}
+
+#right_under{
+	position: absolute;
+	margin-top:0px;
+	margin-left:210px;
+}
+
+.color_ff8447{
+	color: #ff8447;
+}
+
+.color_0fb2ac{
+	color: #0fb2ac;
+}
+
+.m_t95{
+	margin-top: 95px;
+}
+
+.height_375{
+	height: 375px;
+}
+
+.height_295{
+	height: 295px;
+}
+
+.hang{
+	margin-left: 83px;
+}
+
+.hang li{
+	float: left;
+	width: 243px;
+	height:100px;
+	border-radius: 20px;
+	margin-left: 62px;
+	margin-top: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+
+.bg_color_0090e2{
+	background:#0090e2;
+}
+
+.bg_color_45a4e8{
+	background:#45a4e8;
+}
+
+.bg_color_ffab47{
+	background:#ffab47;
+}
+
+.bg_color_1782e6{
+	background:#1782e6;
+}
+
+.bg_color_0fb2ac{
+	background:#0fb2ac;
+}
+
+.bg_color_ff8447{
+	background:#ff8447;
+}
+
+.m_t_24{
+	margin-top: 24px;
+	margin-bottom:10px;
+}
+
+.m_b_70{
+	margin-bottom: 70px;
+}

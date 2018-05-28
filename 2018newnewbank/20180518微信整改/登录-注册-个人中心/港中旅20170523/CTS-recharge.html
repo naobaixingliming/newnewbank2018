@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>充值</title>
+		<link rel="stylesheet" type="text/css" href="../css/loginRegister.min.css" +Math.random()/>
+		<link rel="stylesheet" type="text/css" href="../css/ctsAll.css" />
+		
+	</head>
+
+	<body>
+		<div class="wholeInterface">
+			<div class="bgColor_fff padding-bottom-40 mar-bottom-10">
+				<p class="font_24 color_333 padding-top-bottom-30 padding-left-40">请选择充值金额(元)</p>
+				<div class="clearfloat select  mar-left-right-35">
+					<button class="moneyNum float_left active-bule">￥50,000</button><button class="moneyNum float_right">￥100,000</button>
+					<button class="moneyNum float_left">￥150,000</button><button class="moneyNum float_right">￥200,000</button>
+				</div>
+			</div>
+			<a class="h-90 line-height-90 color_666 font_24 text_center bgColor_fff href" href="" style="display: block;">其他金额></a>
+			<button class="h-90 line-height-90 color_fff font_36 text_center bgColor_2196e8 sureRecharge">确定充值</button>
+
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>	
+		<script type="text/javascript">
+			!function() {		
+				$('.select .moneyNum').on('click',function(){
+					$(this).addClass('active-bule').siblings('.moneyNum').removeClass('active-bule');
+				})
+				
+			}()
+		</script>
+	</body>
+
+</html>

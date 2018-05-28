@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/shuju.css" />
+		<link rel="stylesheet" href="css/all.css" />
+		<script src="js/echarts.min.js"></script>
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="w_1200">
+				<div class="font_32 color m_b_10 p_t75">牛牛bank平台数据</div>
+				<div class="font_16 color">数据截止至：2017-08-07 09:45:12</div>
+				<div class="font_16 color m_t70 m_b_10">累积交易金额</div>
+				<div class="color">
+					<span class="font_60">30</span>
+					<span class="font_18">亿</span>
+					<span class="font_60">8888</span>
+					<span class="font_18">万</span>
+					<span class="font_60">5844.00</span>
+				</div>
+				<div class="table">
+					<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+						<tr class="font_14 color_a6b9d9">
+							<td>安全运营（天）</td>
+							<td>累积注册人数（人）</td>
+							<td>累积为用户赚取收益（元）</td>
+							<td>累积交易笔数（笔）</td>
+							<td>累积出借人数（人）</td>
+							<td>累积借款人数（人）</td>
+						</tr>
+						<tr class="font_20 color">
+							<td>88</td>
+							<td>8888</td>
+							<td>5555</td>
+							<td>4454524</td>
+							<td>780012</td>
+							<td>452154</td>
+						</tr>
+
+					</table>
+
+				</div>
+			</div>
+		</div>
+		<div class="bg_col_fff">
+			<div class="w_1200 h-700 m_t70">
+				<p class="font_20 m_b_10 text_center color_333">牛牛bank近12个月交易额</p>
+				<p class="font_14 text_center color_666">数据截止至：2017-08-07 09:45:12</p>
+				<div class="relative">
+					<p class="font_14  m_l_t">（单位：万元）</p>
+					<div id="main" class="eleMain " style="width:900px ;height:400px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="w_1200 m_t70">
+			<p class="font_20 m_b_10 text_center color_333 bold">当前借款信息</p>
+			<p class="font_14 text_center color_666">数据截止至：2017-08-07 09:45:12</p>
+			<div class="border_cs height_375">
+				<div class="huankuan_left">
+					<p class="font_16 color_666 text_center m_t_58 m_b_10">借贷余额</p>
+					<p class="text_center"><span class="font_60">30</span>
+						<span class="font_18">亿</span>
+						<span class="font_60">8888</span>
+						<span class="font_18">万</span>
+						<span class="font_60">5844.00</span>
+						<span class="font_18">元</span>
+					</p>
+					<div class="li">
+						<li class="jiekuan">
+							<p class="font_16 color_999">当前借款人数</p>
+							<p class="font_22">888</p>
+						</li>
+						<li class="chujie">
+							<p class="font_16 color_999">当前出借人数</p>
+							<p class="font_22">888</p>
+						</li>
+						<li class="guanxi">
+							<p class="font_16 color_999">关联关系借款余额</p>
+							<p class="font_22">888</p>
+						</li>
+					</div>
+				</div>
+				<div class="huankuan_right">
+					<div class="right_h">
+						<p class="font_14 color_999 m_t30">前十大借款人待还金额占比</p>
+						<p class="color_0fb2ac">88.88%</p>
+					    <div id="right_top" style="width:140px;height:140px;"></div>
+					</div>
+				    <div class="right_h">
+				    	<p class="font_14 color_999">前十大借款人待还金额占比</p>
+						<p class="color_ff8447">88.88%</p>
+				    	<div id="right_under" style="width:140px;height:140px;"></div>
+				    </div>
+                     
+				</div>
+			</div>
+			<p class="font_20 m_b_10 text_center color_333 m_t95 bold">当前借款信息</p>
+			<p class="font_14 text_center color_666">数据截止至：2017-08-07 09:45:12</p>
+			<div class="border_cs height_295 m_b_70">
+				<div class="hang">
+					<li class="bg_color_0090e2">
+						<p class="font_16 m_t_24">逾期笔数（笔）</p>
+						<p class="font_20">0</p>
+					</li>
+					<li class="bg_color_45a4e8">
+						<p class="font_16 m_t_24">逾期金额（元）</p>
+						<p class="font_20">0</p>
+					</li>
+					<li class="bg_color_ffab47">
+						<p class="font_16 m_t_24">逾期笔数（笔）</p>
+						<p class="font_20">0</p>
+					</li>
+					<li class="bg_color_1782e6">
+						<p class="font_16 m_t_24">逾期90天以上借款笔数（笔）</p>
+						<p class="font_20">0</p>
+					</li>
+					<li class="bg_color_0fb2ac">
+						<p class="font_16 m_t_24">逾期90天以上借款金额（元）</p>
+						<p class="font_20">0</p>
+					</li>
+					<li class="bg_color_ff8447">
+						<p class="font_16 m_t_24">代偿金额（元）</p>
+						<p class="font_20">0</p>
+					</li>
+				</div>
+			</div>
+            
+		</div>
+
+		<script type="text/javascript">
+			var myChart = echarts.init(document.getElementById('main'));
+			//			app.title = '坐标轴刻度与标签对齐';
+			option = {
+				//				title:['坐标轴刻度与标签对齐'],
+				color: ['#f44975'],
+				tooltip: {
+					trigger: 'axis',
+					axisPointer: { // 坐标轴指示器，坐标轴触发有效
+						type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+					}
+				},
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis: [{
+					type: 'category',
+					data: ['2016.08', '2016.09', '2016.10', '2016.11', '2016.12', '2017.01', '2017.02', '2017.03', '2017.04', '2017.05', '2017.06', '2017.07'],
+					axisTick: {
+						alignWithLabel: true
+					}
+				}],
+				yAxis: [{
+					type: 'value'
+				}],
+				series: [{
+					name: '交易额',
+					type: 'bar',
+					barWidth: '40%',
+					data: [5200, 5450, 6900, 11000, 7800, 10000, 10000, 11000, 12000, 10500, 14500, 13000]
+				}]
+			};
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+		</script>
+
+		<script type="text/javascript">
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('right_top'));
+
+			// 指定图表的配置项和数据
+			var option = {
+				color: ['#0fb2ac', '#fce88a'],
+				series: [{
+					name: '',
+					type: 'pie',
+					radius: ['0%', '70%'],
+					avoidLabelOverlap: false,
+					label: {
+						normal: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							show: true,
+							textStyle: {
+								fontSize: '30',
+								fontWeight: 'bold'
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+							value: 88.88,
+							name: ''
+						},
+						{
+							value: 12.22,
+							name: ''
+						},
+					]
+				}]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+		</script>
+		<script type="text/javascript">
+			// 基于准备好的dom，初始化echarts实例
+			var myChart = echarts.init(document.getElementById('right_under'));
+
+			// 指定图表的配置项和数据
+			var option = {
+				color: ['#ff8447', '#fce88a'],
+				series: [{
+					name: '',
+					type: 'pie',
+					radius: ['0%', '70%'],
+					avoidLabelOverlap: false,
+					label: {
+						normal: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							show: true,
+							textStyle: {
+								fontSize: '30',
+								fontWeight: 'bold'
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+							value: 88.88,
+							name: ''
+						},
+						{
+							value: 12.22,
+							name: ''
+						},
+					]
+				}]
+			};
+
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+		</script>
+	</body>
+
+</html>

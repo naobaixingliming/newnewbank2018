@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=edge" >
+		<meta http-equiv="x-ua-compatible" content="IE=7,9,10" >
+		<meta charset="UTF-8">
+		<title>庆祝银行存管上线</title>
+		<link rel="stylesheet" type="text/css" href="css/doubleTwelve.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode">
+			<!--popup start-->
+			<div id="popup"></div>
+			<!--现金 弹框  start-->
+			<div class="hideEle none">
+				<div class="shadow3"></div>
+				<div class="cashPopup">
+					<a href="javascript:void(0);" class="closeBtn color_999">关闭</a>
+					<div>
+						<p class="color_eb170d font_30 text_center padding-top-80">恭喜抽中现金红包</p>
+						<p class="color_eb170d bold text_center">
+							<i class="font_70 " id="cash"></i>
+							<i class="font_60">元</i>
+						</p>
+					</div>
+					<p class="text_center padding-top-45 keep1">
+						<a class="font_30 keepBtn keepBtnSg " href="javascript:;">继续抽奖</a>
+					</p>
+					<p class="text_center padding-top-45 keep2">
+						<a class="font_30 keepBtn keepBtnBg " href="javascript:;">继续抽奖</a>
+					</p>
+					<p class="font_14 color_fff padding-top-20">
+						<i class="padding-left-120 ">温馨提示：现金红包直接发放至账户余额，详情请  </i>
+						<a class="color_ffc800 border-bottom" href="javascript:;">查看资金明细</a>
+					</p>
+				</div>
+			</div>
+			<!--现金 弹框  end-->
+			<!--我的奖品提示  弹框  start-->
+			<div class="hintEle none">
+				<div class="shadow3"></div>
+				<div class="popup-hint ">
+					<div class="leftData float_left">
+						<p class="text_center color_da4533"><i class="font_40 padding-top-45">790元</i></br><i class="color_999 font_16">合计抽中现金红包</i></p>
+						<ul class="color_999 font_16 mar-left-50 padding-top-60">
+							<li><i class="w-150">累计抽奖次数：</i><i class="mar-left-50">6次</i></li>
+							<li class="padding-top-30"><i class="w-150">累计消耗积分：</i><i class="mar-left-50">105分</i></li>
+							<li class="padding-top-30"><i class="w-150">A转盘抽奖次数：</i><i class="mar-left-50">5次</i></li>
+							<li class="padding-top-30"><i class="w-150">B转盘抽奖次数：</i><i class="mar-left-50">1次</i></li>
+						</ul>
+					</div>
+					<div class="rightData">
+						<div class="w-420 margin_center">
+							<i class="closeDetail"></i>
+							<p class="text_center color_da4533 font_24 padding-top-40 padding-bottom-25">抽奖记录</p>
+							<table border="0" cellspacing="0" cellpadding="0" class="color_999 w-pre-100 text_center table">
+								<tr class="font_18 bgColor_f5f5f5">
+									<td>次数</td>
+									<td>时间</td>
+									<td>奖品</td>
+								</tr>
+								<tr class="tr">
+									<td>①</td>
+									<td>2017.11.23 18:12:14</td>
+									<td>40元现金红包</td>
+								</tr>
+								<tr>
+									<td>②</td>
+									<td>2017.11.23 18:12:14</td>
+									<td>40元现金红包</td>
+								</tr>
+								<tr>
+									<td>③</td>
+									<td>2017.11.23 18:12:14</td>
+									<td>40元现金红包</td>
+								</tr>
+								<tr>
+									<td>④</td>
+									<td>2017.11.23 18:12:14</td>
+									<td>40元现金红包</td>
+								</tr>
+							</table>
+							<p class="text_center font_18 ">
+								<a class="prevBtn notPointer" href="javascript:;">上一页</a>
+								<a href="javascript:;" class="nextBtn">下一页</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--我的奖品提示  弹框  end-->
+			<!--popup end-->
+			<div class="oneLiner">
+				<div class="onePage banner">
+					<div class="w_1200 margin_center relative" style="height: 100%;">
+						<div class="ruleExplain ">
+							<ul class="clearfloat">
+								<li class="float_left leftBox text_center">
+									<p class="font_24 color_fff padding-top-45">活动期间我的累计年化投资额</p>
+									<p class="font_36 color_fdc819 padding-top-20">￥101,058.00</p>
+									<p class="font_36 color_fdc819 padding-top-45 none">请
+										<a href="javascript:">登录</a>后查看</p>
+									<p class="font_16 color_fff padding-top-45">可用抽奖积分：101 分</p>
+									<p class="font_fdc819 color_fdc819 padding-top-40">累计年化投资额每满1万元,即可获得1积分,积分可用于参与大转盘抽奖.</p>
+								</li>
+								<li class="float_left rightBox">
+									<p class="text_center padding-top-30">
+										<span class="yellow-circle">活</span>
+										<span class="yellow-circle">动</span>
+										<span class="yellow-circle">规</span>
+										<span class="yellow-circle">则</span>
+									</p>
+									<div class="font_16 color_fff" style="margin: 20px 30px 0 45px;line-height: 33px;">
+										<p>① &nbsp; 活动时间：2017年12月4日-2017年12月15日；</p>
+										<p>② &nbsp; 活动期间年化投资额累计每满1万可以获得1个抽奖积分；</p>
+										<p>③ &nbsp; 此次活动有两个转盘，<i class="color_fdc819">A转盘最高现金红包80</i>，抽奖一次花费1积分；<i class="color_fdc819">B转盘最高现金红包888</i>，抽奖一次花费10积分；</p>
+										<p>④ &nbsp; 抽中的现金红包，即刻到账；</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="linear">
+				<div class="twoPage">
+					<div class="w_1200 margin_center clearfloat">
+						<!--1-->
+						<div class="left-page float_left ">
+							<div class="turntable_bg_1 relative">
+								<div class="pointer pointerBtn pointBtn">
+									<img src="https://images-web.newnewbank.com/startLuckBtn20171124.png" alt="pointer" />
+								</div>
+								<div class="rotate">
+									<img class="rotateBtn" id="rotateBtn" src="https://images-web.newnewbank.com/turntable20171124.png" alt="turntable" />
+								</div>
+								<p class="hintLeft font_18 color_fce287 text_center">
+									<i class="padding-top-30 padding-left-10">消耗1积分</br>
+									即可抽奖</i>
+								</p>
+							</div>
+						</div>
+						<div class="right-page float_right">
+							<div class="rollCircle relative">
+								<p class="bold color_f6ca76 font_26 text_center padding-top-20 padding-left-10">A转盘中奖名单</p>
+								<i class="record color_f6ca76 font_18 text_center bgColor_d13232">我的抽奖记录</i>
+								<div class="userInfo color_f6ca76">
+									<p>
+										<i class="font_14 ">A转盘已消耗积分</i>
+										<i class="font_30 float_right padding-right-40" style="margin-top: -10px;">5</i>
+									</p>
+									<p class="padding-top-20 font_20">
+										<i class=" ">我   的  奖  品 </i>
+										<a class=" color_f6ca76 float_right padding-right-20 lookBtn" href="javascript:;"> 查看 > </a>
+									</p>
+								</div>
+								<!--222-->
+								<div id="rollBox" class="rollBox ">
+									<ul id="ulBox">
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>30元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>40元现金红包</i>
+										</li>
+										<!--<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>50元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>60元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>70元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>50元现金红包</i>
+										</li>-->
+									</ul>
+									<ul id="appendBox"></ul>
+								</div>
+								<!--222-->
+							</div>
+							<p class="text_center">
+								<a href="javascript:;" class="getChange font_22">获取抽奖机会</a>
+							</p>
+						</div>
+						<!--1-->
+					</div>
+				</div>
+				<div>
+					<p class="top-star"></p>
+				</div>
+				<div class="threePage">
+					<div class="w_1200 margin_center">
+						<p class="text_center" style="padding: 90px 0 80px;">
+							<i class="font_34 color_fff title-small">百分百中奖，888元现金红包等你拿</i>
+						</p>
+						<!--数据 start-->
+						<div class="right-page-1 float_left">
+							<div class="rollCircle-yellow relative">
+								<p class="bold color_c98100 font_26 text_center padding-top-20 padding-left-10">B转盘中奖名单</p>
+
+								<div class="userInfo color_905c00">
+									<p>
+										<i class="font_14 ">A转盘已消耗积分</i>
+										<i class="font_30 float_right padding-right-40" style="margin-top: -10px;">20</i>
+									</p>
+									<p class="padding-top-20 font_20">
+										<i>我   的  奖  品 </i>
+										<a class="color_905c00 float_right padding-right-20 lookBtn" href="javascript:;"> 查看 > </a>
+									</p>
+								</div>
+								<div id="rollBox1" class="rollBox">
+									<ul id="ulBox1">
+										<li class="font_16 color_666">
+											<i>158***6354</i>
+											<i>抽中 </i>
+											<i>488元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>688元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>688元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>288元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>182***6201</i>
+											<i>抽中 </i>
+											<i>588元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>688元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>188***6354</i>
+											<i>抽中 </i>
+											<i>288元现金红包</i>
+										</li>
+										<li class="font_16 color_666">
+											<i>182***6201</i>
+											<i>抽中 </i>
+											<i>588元现金红包</i>
+										</li>
+									</ul>
+									<ul id="appendBox1"></ul>
+								</div>
+								<i class="record color_a46900 font_18 text_center bgColor_ef9c07">我的抽奖记录</i>
+							</div>
+							<p class="text_center">
+								<a href="javascript:;" class="getChange font_22">获取抽奖机会</a>
+							</p>
+						</div>
+						<!--数据 end-->
+						<!--轮盘 start-->
+						<div class="left-page float_right ">
+							<div class="turntable_bg_2 relative">
+								<div class="pointer pointerBtn2 pointBtnBg">
+									<img src="https://images-web.newnewbank.com/startLuckBtn_blue20171124.png" alt="pointer" />
+								</div>
+								<div class="rotate">
+									<img class="rotateBtn" id="rotateBtnBg" src="https://images-web.newnewbank.com/turntable_yellow20171124.png" alt="turntable" />
+								</div>
+								<p class="hintRight font_18 color_fce287 text_center">
+									<i class="padding-top-35 padding-right-10">消耗10积分</br>
+									即可抽奖</i>
+								</p>
+							</div>
+						</div>
+						<!--轮盘 end-->
+					</div>
+				</div>
+				<div>
+					<p class="bottom-star"></p>
+				</div>
+				<div class="fourPage">
+					<div class="w_1200 margin_center">
+
+					</div>
+				</div>
+				<div class="footer">
+					<div class="w_1200 margin_center text_center " style="padding: 40px 0 30px;">
+						<p class="font_14 color_fff line_height">
+							2017牛牛bank All Rights Reserved</br>
+							活动最终解释权归深圳市金牛牛互联网金融服务有限公司所有
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/libs/jquery-1.9.1.min.js"></script>
+		<script src="js/libs/jquery.popup.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/libs/awardRotate.js"></script>
+		<script type="text/javascript">
+			//			参数			类型			说明									      默认值
+			//			angle		数字		旋转一个角度									0
+			//			animateTo	数字		从当前的角度旋转到多少度							0
+			//			step		函数		每个动画步骤中执行的回调函数，当前角度值作为该函数的第一个参数	无
+			//			easing		函数		自定义旋转速度、旋转效果，需要使用 jQuery.easing.js		无
+			//			duration	整数		旋转持续时间，以毫秒为单位							无
+			//			callback	函数		旋转完成后的回调函数								无
+			//			getRotateAngle		函数	返回旋转对象当前的角度							无
+			//			stopRotate	函数		停止旋转	
+
+				var doubleVm = {
+					bRotate: false,
+					
+					/*						 
+					 * 入口--初始化--------------------------------------
+					 *
+					 */
+					init:function(){
+						this.initObj.init();
+						this.rouletObj.init();  //轮盘抽奖
+						this.rollObj.init();	//循环滚动
+					},
+					
+					/*						 
+					 * 初始执行事件-------------------------------------
+					 *
+					 */
+					initObj: {
+						init:function(){
+							this.bindEvent(); 							
+						},
+						bindEvent:function(){
+							$('.lookBtn').on('click', function() {
+								if(doubleVm.bRotate) return;
+								$('.hintEle').show();
+							})
+							//关闭现金弹窗
+							$('.closeBtn').on('click', function() {
+								$('.hideEle').hide();
+							})
+							$('.closeDetail').on('click', function() {
+								$('.hintEle').hide();
+							});
+						}
+					},
+					
+					/*						 
+					 * 轮盘抽奖-------------------------------------
+					 *	doubleVm.rouletObj
+					 */
+					rouletObj: {
+						init: function() {
+							this.bindEvent();
+						},
+						rotateTimeOut: function() {
+							$('.rotateBtn').rotate({
+								angle: 0,
+								animateTo: 2160,
+								duration: 8000,
+								callback: function() {
+									alert('网络超时，请检查您的网络设置！');
+								}
+							});
+						},
+						//转盘-----小额抽奖
+						rotateFn: function(awards, angles, txt) {
+							doubleVm.bRotate = !doubleVm.bRotate;
+							$('#rotateBtn').stopRotate();
+							$('#rotateBtn').rotate({
+								angle: 0,
+								animateTo: angles + 1800, //angle是图片上各奖项对应的角度，1800是让指针固定旋转圈数
+								duration: 3000,
+								callback: function() {
+									$('#cash').html(txt);
+									$('.hideEle').show();
+									doubleVm.bRotate = !doubleVm.bRotate;
+								}
+							})
+						},
+						//转盘-----大额抽奖
+						rotateFnBg: function(awards, angles, txt) {
+							doubleVm.bRotate = !doubleVm.bRotate;
+							$('#rotateBtnBg').stopRotate();
+							$('#rotateBtnBg').rotate({
+								angle: 0,
+								animateTo: angles + 1800,
+								duration: 3000,
+								callback: function() {
+									$('#cash').html(txt);
+									$('.hideEle').show();
+									doubleVm.bRotate = !doubleVm.bRotate;
+								}
+							})
+						},
+						okRun: function() {
+							var item = doubleVm.rouletObj.getRand(1, 5);
+							switch(item) {
+								//var angle = [36, 108, 180, 252, 324];
+								case 1:
+									doubleVm.rouletObj.rotateFn(1, 36, '60');
+									break;
+								case 2:
+									doubleVm.rouletObj.rotateFn(2, 108, '80');
+									break;
+								case 3:
+									doubleVm.rouletObj.rotateFn(3, 180, '40');
+									break;
+								case 4:
+									doubleVm.rouletObj.rotateFn(4, 252, '70');
+									break;
+								case 5:
+									doubleVm.rouletObj.rotateFn(5, 324, '50');
+									break;
+							}
+							console.log(item);
+						},
+						okRunBg: function() {
+							var item = doubleVm.rouletObj.getRand(0, 4);
+							switch(item) {
+								case 0:
+									doubleVm.rouletObj.rotateFnBg(0, 324, '788');
+									break;
+								case 1:
+									doubleVm.rouletObj.rotateFnBg(1, 36, '588');
+									break;
+								case 2:
+									doubleVm.rouletObj.rotateFnBg(2, 108, '888');
+									break;
+								case 3:
+									doubleVm.rouletObj.rotateFnBg(3, 180, '488');
+									break;
+								case 4:
+									doubleVm.rouletObj.rotateFnBg(4, 252, '688');
+									break;
+							}
+							console.log(item);
+						},
+						bindEvent: function() {
+							//小额现金 --抽奖
+							$('.pointBtn').on('click', function() {
+								$('.keep1').show();
+								$('.keep2').hide();
+								doubleVm.rouletObj.goRun();
+							});
+							//小额现金 --继续 抽奖
+							$('.keepBtnSg').on('click', function() {
+								$('.hideEle').hide();
+								doubleVm.rouletObj.okRun();
+							});
+							//大额现金-- 抽奖
+							$('.pointBtnBg').on('click', function() {
+								$('.keep1').hide();
+								$('.keep2').show();
+								doubleVm.rouletObj.goRunBg();
+							});
+							//大额现金-- 继续 抽奖
+							$('.keepBtnBg').on('click', function() {
+								$('.hideEle').hide();
+								doubleVm.rouletObj.okRunBg();
+							});
+						},
+						goRun: function() {
+							if(doubleVm.bRotate) return;
+							$("#popup").popup({
+								text: "本次抽奖需消耗1积分<br><i class='color_666 font_16'>当前可用积分为：101分</i>",
+								aText: "确定抽奖",
+								alength: "2",
+								okCallBack: function() {
+									doubleVm.rouletObj.okRun();
+								},
+								cancelCallback: function() {
+									return;
+								}
+							});
+						},
+						goRunBg: function() {
+							if(doubleVm.bRotate) return;
+							$("#popup").popup({
+								text: "本次抽奖需消耗10积分<br><i class='color_666 font_16'>当前可用积分为：680分</i>",
+								aText: "确定抽奖",
+								alength: "2",
+								okCallBack: function() {
+									doubleVm.rouletObj.okRunBg();
+								},
+								cancelCallback: function() {
+									return;
+								}
+							});
+						},
+						getRand: function(n, m) {
+							return Math.floor(Math.random() * (m - n + 1) + n)
+						}
+					},
+										
+					/*						 
+					 * 循环滚动-------------------------------------
+					 *
+					 */
+					rollObj: {
+						init: function() {
+							this.rollCircle("rollBox", "appendBox", "ulBox");
+							this.rollCircle("rollBox1", "appendBox1", "ulBox1");
+						},
+						rollCircle: function(roll, app, ul) {
+							var speed = 10;
+							var rollBox = document.getElementById(roll);
+							var appendBox = document.getElementById(app);
+							var ulBox = document.getElementById(ul);
+							if(ulBox.offsetHeight>rollBox.offsetHeight){
+								appendBox.innerHTML = ulBox.innerHTML;
+							}
+							function Marquee() {
+								if(appendBox.offsetTop - rollBox.scrollTop <= 0) {
+									rollBox.scrollTop -= ulBox.offsetHeight;
+								} else {
+									rollBox.scrollTop++;
+								}
+							}
+							var MyMar = setInterval(Marquee, speed)
+						}
+					},
+					
+					/*						 
+					 * 分页-------------------------------------
+					 *
+					 */
+					pageObj: {	
+						item_size : $('#ul1').children('li').size(), //总的数量
+						limitNum : 5, 								 //显示条数
+						pageNum : 1,   								 //总页数
+						currentPage : 1, 							 //当前页
+						init: function() {
+							pageNum=Math.ceil(doubleVm.pageObj.item_size / doubleVm.pageObj.limitNum);
+							this.bindEvent();
+						},
+						bindEvent: function() {
+							var $_li = $('#ul1').children('li');
+							
+							$('#current_page').val(0); //隐藏域默认值
+
+							$('#ul1').children().slice(0, limitNum).css('display', 'block'); //默认显示数据		
+							//上一页
+							$('.prevBtn').on('click', function() {
+								if(doubleVm.pageObj.currentPage > 0) {
+									$('.nextBtn').removeClass('not-pointer');
+									doubleVm.pageObj.currentPage = parseInt($('#current_page').val()) - 1;
+									showNum(doubleVm.pageObj.currentPage);
+								} else {
+									$(this).addClass('not-pointer');
+								}
+							});
+							//下一页
+							$('.nextBtn').on('click', function() {
+								if(doubleVm.pageObj.currentPage + 1 < doubleVm.pageObj.pageNum) {
+									$('.prevBtn').removeClass('not-pointer');
+									currentPage = parseInt($('#current_page').val()) + 1;
+									showNum(doubleVm.pageObj.currentPage);
+								} else {
+									$(this).addClass('not-pointer');
+								}
+							});
+						},
+						showNum: function(page_num) {
+							startNum = page_num * doubleVm.pageObj.limitNum;
+							endNum = startNum + doubleVm.pageObj.limitNum;
+							$('#ul1').children().css('display', 'none').slice(startNum, endNum).css('display', 'block');
+							$('#current_page').val(page_num);
+						}
+					}
+					
+				}				
+				doubleVm.init();
+			
+		</script>
+	</body>
+
+</html>

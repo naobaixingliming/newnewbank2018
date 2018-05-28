@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/aaa.css" />
+		<style type="text/css">
+			.shadow {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				background-color: #000000;
+				opacity: .8;
+				filter: alpha(opacity=80);
+				z-index: 999;
+			}
+			
+			.op-5 {
+				opacity: .5;
+				filter: alpha(opacity=50);
+			}
+			
+			.padding-top-10 {
+				padding-top: 10px;
+			}
+			
+			.padding-top-70 {
+				padding-top: 70px;
+			}
+			
+			.padding-top-bottom-30 {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			
+			.bohai-content {
+				width: 574px;
+				position: fixed;
+				top: 20%;
+				left: 50%;
+				margin-left: -267px;
+				background-color: #FFFFFF;
+				border-radius: 12px;
+				padding-bottom: 30px;
+				overflow: hidden;
+				z-index: 1000;
+			}
+			
+			.headPopup {
+				width: 574px;
+				height: 174px;
+				background: url(https://images-web.newnewbank.com/web-headPopup20180426.png) no-repeat;
+			}
+			
+			.openUpBtn {
+				display: block;
+				width: 452px;
+				height: 60px;
+				line-height: 60px;
+				background-color: #f44975;
+				color: #FFFFFF;
+				text-align: center;
+				border-radius: 5px;
+				margin: 30px auto 0;
+			}
+			
+			.deleteBtn {
+				width: 35px;
+				height: 35px;
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAAUVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////8IN+deAAAAGnRSTlMACsEFhffzFfC2rntAJeXCz2Id3d6MY+ffh7TXsokAAAEdSURBVDjLlZTrksMgCIWpilETzbW38/4PututadQxY5dfOnyeAQQoMTkouxmYzapBUs06FQBwWAMDCKqj0mSvwW728nX2s2PovtDyE7TqMlWNyafIYGCXQnmxMEOCaPSVCHvoD+QNblSzG4yP4U5RpaY0yXiwdGb2/bzTejllFq1f2Sqo9/3qLh/fxV2JaPfKO8e6OIjLjgi4WCcOkga43TH+QhE5cIeBFGZKoQKhGYosPGVQjpCHpZUlpdDYCYwHQpJXMoEogzhDiIIhrHkXMTjvnA2ljgBDFDpFPOIvHpHFs+V5iWpeWX1EvT5pncVJndv/dZdf/Xu7f77sw3Y/t+eiPV//mNP2vLf3Rvryme2f56Fa7rGHgXkUe+wHskwT65gFDvQAAAAASUVORK5CYII=) no-repeat;
+				position: absolute;
+				top: 10px;
+				right: 15px;
+				cursor: pointer;
+			}
+			
+			.mar-side-40 {
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+			
+			.line-height-30 {
+				line-height: 30px;
+			}
+			
+			ul.ulFloat li {
+				float: left;
+				margin: 0 35px;
+			}
+			
+			.small-icon-01,
+			.small-icon-02,
+			.small-icon-03 {
+				width: 68px;
+				height: 73px;
+			}
+			
+			.small-icon-01 {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABJCAMAAACzU3BeAAABAlBMVEUAAACryv1OjO6ryv2EsPeryv2ryv2ryv2ryv1OjO6ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv2ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv2ryv1OjO5OjO6ryv1OjO6ryv1OjO6ryv1OjO5OjO5OjO5OjO6ryv2ryv2ryv2ryv2ryv2ryv2ryv1OjO6ryv1OjO5OjO5OjO5OjO5OjO5OjO5OjO6ryv2ryv1OjO5OjO6ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv1OjO5OjO6ryv1OjO6ryv1OjO5OjO5OjO5OjO5OjO5OjO6ryv1OjO5OjO6ryv1OjO5OjO6ryv1OjO5cfGLJAAAAVHRSTlMA8FTgAwf7KRLAF/3y49OQczoj4+fPwphWT0IQ7bII2WJfMA1/K/Xr38vIrKJaEKiWcEkg9NS5uLixqIqBfHppZTQuGBQMx7WIeGk8zZxrQBsOiyZf3AhwAAADI0lEQVRYw62YeVPaQBiHX8gmgCGRkBiBch8qCgXEi8MLxVur7W+//1cpZrBWSnaB9PmHHWb2mc1DYPJCQiJDdxvYMhtpRisSyWFiKJgOAKVEq7C2qcFIRGhCNH0L1C1aFvU0jlBCpQ+sOtBYo2VgJQPaevTrWw62TlVamMwGsJekGcYDDUpq0Z63wO7cAMkc4I4W7LmT8j2jCWzK0qhn055+sPNtxBPqAj2FRNc1FNKynlIiR8BxxOf+/OgpJ13wTizsKUdNxLF9zmQ95Z8iYGbok5Hp01PIpQv0/+yy4jhO0gqkFOxMNyZDGNJqvO3B8G49tot1WhXWgMuI6AJ1lVZGNfEycSmwKACXcFTKwKVA5JCiAS4oEGn06QgRCsRYM2gDUQqGo00k30lEpfrASIgCmSRsc35Tk0kKAsn1wyG3H6u63npkQokCleZwdf+zdajzbLVCVGtNFr1qMVzxl8y/DM71w+dwfqrs9GzOeXhZyc3VzBXka8tLYjTLNx+JI5PY7fcznJyIJCFNImnxNuVjvCqUhMgQSvI9/hzjdySRhISS92NMHFJJSCR57db0bLf7GkRS5lPKAST5h04ne9jpFFkACWsWi9mnYrEpkuB/XA4MX8mN91Irl+1YufzL+wL5SRTS5kv2s2y6snvTxSPf95PAoXl8ftvum9NFm9d8JQrNg2Xt7szZdJvJJf/s+TtB/l7Xf5BI4lOFPxUr5NGt2tz2cagiCV3fHfCDVrNSKca49zs5n+8oCCREleaJzg8OuH7SzBP5SjZEEu844XY7fE1EQonmUDCiE4mhjSkQERxRH2kKxAUGlEKOAuEiQ6qDSwqABYURvcAM8sxW9x6SmIsGo1VZx663ec3A3hutxhChj6fhHcFsJyJ5jLhFU6J9wPXJK56ezJFwtpMPKyHEz1TBbCcntQNtc00w28mxdoGczwB3DBxFFui5B2xkJLOdvKdRYvLZTtpzodlO0lPOyAVySXlP+WynDcaynvK/YLbglJi0pyxNA6hbX3ueqrQsVh24TUe9GyhhCHqKKSkAHLOwBUFPKSzdMCeGbXcoVvwGsZuJ+qB1k28AAAAASUVORK5CYII=) no-repeat;
+			}
+			
+			.small-icon-02 {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABJCAMAAACzU3BeAAABVlBMVEUAAACryv2ryv2Ks/inx/2ryv2ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv1Pje+ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv1TkO+ryv2ryv2ryv2ryv2ryv1OjO5OjO9OjO6ryv1OjO5OjO6ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv1OjO6ryv1Rju9OjO5OjO5Pje9OjO5OjO5OjO5OjO6ryv1ypPRPje+ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv2ryv1OjO5OjO5Zk/BOjO5OjO6ryv1OjO6ryv1OjO5OjO5OjO5OjO5/rPZOjO5OjO6ryv2ryv1OjO6ryv2ryv2ryv2ryv2ryv2ryv1UkO9OjO5OjO5Sj++ryv1OjO5OjO6ryv261P9OjO7S4/+gw/uWvPr0+P/b6P++1//s8//j7f/X5v/J3f+jxfycwPrLx1RhAAAAY3RSTlMA7+ACBRHjMAj9+vHpI/oqwriyj1ZCOxbu2tPQzHMJ9vGZZyb17cipamBQEA8N28GigWBVNykn/OjW0KykioF8emU3MhwZ+Kudlo51bks/IP7WtZ+Sdl5NSy4bGbWWlZB0LhdF0QrsAAADeklEQVRYw6WYaVfaQBhG32RCIBDCIqAgBSoilIJS3K3a1la7uHXf9ydq1a7//0sHT0tPamZikvsxkMvkkjnwhqSk1tMmMFl60tYoIKksuKG4zD1Qr7AgitHLBvSPC4NzI+0MUN7wrYjdSEC59O8iCmVg9bUvBbuiIz4ScR4yMXkjdnFHfhy4nqT/6K7FoeZ89JwqkAtJ/kr69gV7qjkmWmMJuDzq1fPmsKc7WktBQvYGYs+HPcVEnhoovhT3LA97yqNlgEyK3FgY9vTmRdF1xaP3BT0FabYTMFtM0NPHrgBKefrHq2VBTym300BzeFYhgUyS/MNyKtQ/JyYVrFMwuk3ob84aTWGEgsJWkR7kvYWyRoGJldDiLhUFCsEGzBjlkaZQZJGjNdwKJ2mjSRmkwkm6hk7jiFA4dINLroaUqPCSsM16/TPzkhSlkonq1uLi1tiuh0RFjIRc2/plc75YfS8JCZmzDPvEPv1uH1n7gSVvH9r24bevP2x78UNgydhP2/52fPydX9A0CTHlkgPY9snx10PbPhojIUpcJrljHdn26cnhqXwlikK6UDJbW+JN7EOexF60ehWJRIHQMVvnSznjSzU6M1ORSBRyZb66y1Ya1tgZ1tKzysoD/5LH/Jx6dEiHotamT0lvxbpD1HEcm5kgzZfkoB/lV3Sw49gD7zqPyQUIJYNFdHpzjs1Yq+24SnSR5FPn/I6e3iM3oFLcVdI4qFbObel7JJLAJFcac/Qfd3fEEpVced8jJxWu9SvZbPTJQf8R+ZbQXnXfsRuXZgU/pALJ8OaqXKsPLmTiGi8iyEpXUZRInt2lfqM6PbNiPaoyVosKJeMSyVztwfREZW92d5/V7vWWSCIxdBJRn6+zP0Hm5zdJQIRLdKNLoUghQ020w0luYY1yyIaTpJGnmImNMI4CVEbUQikW3KGVz/4ksTRWWWDJCKY04rzR0Qz6Da1D+ftvWBXOBnKSGSQKw/ulKZjtpERG4lh+JZvtvIteUpC46fxKWMtEYlvzMxsY90ddV1d8ccGbYwrILshmO++e14FynkS8LMJ4GvHuqT9n0lwJKC3NV0/5bCfv6T3bZZMePb3hnxdf67r1HM/7eQQzCfMKO9eTH/LD61WgXHD2vBHzP5eVgUw7Msi5sK3DEO8K+TMhFYC5XJwEkA08WmntJyVuMNPrcsVvMQilk0S6RCkAAAAASUVORK5CYII=) no-repeat;
+			}
+			
+			.small-icon-03 {
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABJCAMAAACzU3BeAAABBVBMVEUAAACryv2ryv1SgcKjw/hSgcKryv1SgcJSgcJSgcKkxPmryv2ryv2ryv2ryv1SgcKryv1SgcKryv2ryv2ryv1SgcKryv2ryv1SgcKryv2ryv2ryv2ryv2ryv3/6BWryv1SgcJSgcKryv2ryv1SgcKryv1SgcKryv2ryv1SgcJSgcKryv1SgcKryv1SgcKryv2ryv1SgcKryv2ryv2ryv3/6BWryv2ryv1SgcJSgcJwk6Sryv2ryv2ryv2ryv2ryv1SgcKryv2ryv2ryv2ryv1SgcKryv2ryv1SgcKryv2ryv1SgcJ9mpdSgcKryv1SgcL/6BX/6BVSgcKryv1SgcL/6BWIoYxkes0AAAAAU3RSTlMA8eBAAl/877EOBtEqEuOBCOHokHMg7sK4aFZPQjseFtT12szBtC4jmXD69OfIxamiemAlEBAN+Mvc1tW5uLGsm4qBfHpQNzEbGpZt6sNeRQ3+3yfG/CoAAAMRSURBVFjDrZhrV6JQGIVfkBBFUam8W14yJzO1m9qkppaW3Wc29v9/yiCzpukC5wj4fEKWPOtlH3SxDzGJTFI60FXbuTB5JDIEcFi+1AGIJ5IXxe4PGdrW6fLaaK4KVGauFfHrQyS3/t9EoQK0564U0okGeTP6+ZSOw+v46o68ClzV6AudcRdidtU8q8BRgWyoDYHU7Yp5ilmJMeOPXV6eN4KVpyPhTBIC6wskPf/Nk0l0U0Y555xnxcqTS6QPDCKcPPnkyrYT797b5MmIZkuAnpF4efJXEVDzH+/k0j5PNrcpoPV+VUHAoEbukbIixFOyOE1iQt7otKDNrYyOsElekdpILePNoBImz8RVZEyXiAL5YAY9TnmkyBdVZGmMjD9JDi3qI+JP0pE1UsF+yu6azTu2RZNNyRkxCDTS6UaAKRHBkRzUY5IUqz9wJGWGJDQqTclkWhqFmRIRcXJgu1jcJ4v9Ym+bLSEHXoJK6H0mJfjiRXJcP7b56EqSKBml4CfME7/JDt1RYjxMA1+YPhhkhyA7SvbpG/sOEoG0dUiEtUgEe8nFRa+xF3zas3gK7jV6FxduJRvp4ih4bMQOLGLGcXBUTG+4lFBMCSRCxjbtmNC2EUoElBh5lLwuFotfr0wJuJLzxc7O4pwt0dYhEam7Dgl0+3/FYqNZShtp5e3x8U0xD0rNRvHOUSKSHYF6M91Tiory00QxD3rpZj3gThIybAm5kyQ2bEjYSeLrmOQMZUviizOo65HImk9J1JRocsefJII+tZDzJ8lgTFlU/UlSyFNcx8yPowBRWo6jxr07whXrJUlKoS15lmziKEwmcw0trys0QfLf27DI6AYsagMIhffnpcXodsz2dBlhdjt+WUlCuPm8JFJGt7qdi24g3+8yuh2fwhFQdShwA6AfWSHPK6CS53Q7fp7as8TpdslM2EWerG7Hz5Pf7YY1Tp58siK6445dnmre3RaMfiJ9y9PlntC8DVQKH/O0tmDcMqsA1Vx0GefplgaZ8atg7gmJAPTL8iGAoedqFc611S6gpyZsxR/yKpja47je+wAAAABJRU5ErkJggg==) no-repeat;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bohaiPopup">
+			<div class="shadow"></div>
+			<div class="bohai-content">
+				<div class="headPopup text_center relative">
+					<p class="font_28 color_fff padding-top-70">开通银行存管账户</p>
+					<p class="font_18 color_fff op-5 padding-top-10">积极响应国家政策，保障您的资金安全</p>
+					<i class="deleteBtn"></i>
+				</div>
+				<div class="mar-side-40 overflow">
+					<div class="color_999 font_16 line-height-30 padding-top-bottom-30">
+						平台已接入渤海银行资金存管系统，充值、投资、提现等资金操作均需开通存管账户，支持多家银行储蓄卡。
+					</div>
+					<ul class="ulFloat clearfloat ">
+						<li class="text_center">
+							<i class="small-icon-01"></i>
+							<div class="font_16 color_999">资金更安全</div>
+						</li>
+						<li class="text_center">
+							<i class="small-icon-02"></i>
+							<div class="font_16 color_999">投资更放心</div>
+						</li>
+						<li class="text_center">
+							<i class="small-icon-03"></i>
+							<div class="font_16 color_999">合规有保障</div>
+						</li>
+					</ul>
+					<a class="color_fff font_24 bgColor_f44975 openUpBtn">立即开通</a>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

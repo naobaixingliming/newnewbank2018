@@ -1,0 +1,57 @@
+
+
+.right{
+	float: right;
+	width: 929px;
+	background:#fff;
+	padding-bottom: 78px;
+}
+
+.color_999{
+	color: #999;
+}
+
+.banner{
+	width: 911px;
+	height: 224px;
+	margin: 0 auto;
+	margin-top: 9px;
+	background:url(https://images-web.newnewbank.com/beian_banner20171013.png)no-repeat;
+}
+
+.title{
+	position: relative;
+	width: 185px;
+	height:45px;
+	left: 680px;
+	top:150px;
+	background: url(https://images-web.newnewbank.com/beian20171013.png)no-repeat;
+	background-size:30px 35px;
+	background-position:0 8px ;
+	font-size: 36px;
+	color: #109af3;
+	padding-left:40px;
+	letter-spacing:2px;
+}
+
+.table{
+	width: 726px;
+	margin-top: 80px;
+	margin-left: 95px;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	text-align: center;
+	font-size: 14px;
+}
+
+.table table tr td{
+	border-bottom:  1px solid #000;
+	border-right: 1px solid #000;
+	padding-top: 24px;
+    padding-bottom:20px;
+    color: #333;
+}
+
+.color_bule{
+	color: #1474de;
+}

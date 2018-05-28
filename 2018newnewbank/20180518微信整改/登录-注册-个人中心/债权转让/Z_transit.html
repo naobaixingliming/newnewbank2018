@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>转让中</title>
+		<link rel="stylesheet" type="text/css" href="../css/loginRegister.min.css" +Math.random()/>
+		<link rel="stylesheet" type="text/css" href="css/transferclaims.css" />
+		
+	</head>
+
+	<body>
+		<div id="loader-wrapper" class="bgColor_fff text_center none">
+			<img src="https://images-web.newnewbank.com/loading.gif"/>
+			<p class="color_666 font_22">加载中...</p>
+		</div>
+		<div id="confirmP" class="wholeInterface">
+			<!--弹框 1 start-->
+			<div class="invoking none">
+				<div class="shadow"></div>
+				<div class="popupText font_20 color_fff">
+					<div class=" ">
+						<p class="font_30 text_center">原始利率</p>
+						<p class="under_line mar-top-50 mar-bottom-30"></p>	
+						<p class="font_24 mar-left-right-20 scrText">
+							<i class="padding-bottom-10">原始利率是指客户转让债权前购标时的年化收益率；</i></br>
+							<i class="padding-bottom-10">购标时使用0.5%加息券；</i></br>
+							<i>债权转让的产品如有使用优惠，则转让成功后优惠将被取消；</i></br>					 
+						</p>
+					</div>									
+					<p class="text_center padding-top-160"><i class="deleteBtn"></i></p>
+				</div>				
+			</div>
+			<!--弹框1 end-->
+			<div class="relative bgColor_fff ">
+				<div class=" h-140 mar-left-right-40" >
+					<div class="padding-top-30 relative">
+						<!--l-icon01 衣  l-icon02 食  l-icon3 住  l-icon4 行  l-icon5 育  l-icon6 医  l-icon7 娱  l-icon8 寿  l-icon9 其他-->
+						<i class="l-icon l-icon01" ></i>
+						<div class="inline_block relative mar-left-30">
+							<p class="font_24 color_999" >金珠宝第17期</p>
+							<p class="font_22 color_999">年化收益率：<i class="color_f44975 font_24">11%</i></p>
+						</div>
+						<i class="transitIcon"></i>
+					</div>					
+				</div>
+				<div class="flex-parent bgColor_ebfaff" style="padding: 0.40625rem 0 0.3125rem;">
+					<span class="flex-child text_center">
+						<i class="font_24 color_333">200万</i></br>
+						<i class="font_22 color_999">转让金额</i>
+					</span>
+					<span class="flex-child text_center">
+						<i class="font_24 color_333">11.0%</i></br>
+						<i class="font_22 color_999">转让期限</i>
+					</span>
+					<span class="flex-child text_center">
+						<i class="font_24 color_333">2016-06-28</i></br>
+						<i class="font_22 color_999">项目到期日</i>
+					</span>
+				</div>
+			</div>
+			
+			<div class="bgColor_fff mar-top-10">							
+				<div class="mar-left-60 upDown">   
+					<p class="font_22 h-70 line-height-70">
+						<i class="w-pre25 color_999">购标日期：</i>       
+						<span class="color_999">2017.06.02</span>
+					</p>
+					<p class="under_line"></p>   
+					<p class="font_22 h-70 line-height-70">
+						<i class="w-pre25 color_999">持有日期：   </i>
+						<span class="color_999"> 52天</span>
+					</p>
+					<p class="under_line"></p>
+					<p class="font_22 h-70 line-height-70">
+						<i class="w-pre25 color_999">原始利率： </i>      
+						<span class="color_999">11.5%</span>
+						<i class="exclamation exclamation1 float_right mar-top_15 bgColor_7dbbd0" >i</i>
+					</p>
+					<p class="under_line "></p>       
+					<p class="font_22 h-70 line-height-70">
+						<i class="w-pre25 color_999">偿还方式： </i>
+						<span class="color_999">到期一次性还本付息</span>
+					</p>		
+				</div>
+			</div>
+			
+			<footer class="a-layer">
+				<button class="extractionYield font_28 color_fff text_center bgColor_f44975">查看</button>
+			</footer>
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('.arrow-down').on('click', function() {
+				$(this).toggleClass('arrow-down');
+				$('.upDown').slideToggle(80);				
+			});			
+			$('.exclamation1').on('click',function(){
+				$('.invoking').show();	
+			});						
+			$('.deleteBtn').on('click',function(){
+				$('.invoking').hide();
+			});
+			//确认转让   事件
+			$('.extractionYield').on('click',function(){
+				$('#loader-wrapper').show();								
+				$(this).addClass('bgColor_ccc').removeClass('bgColor_f44975');
+				$('.transitIcon').addClass('transitSuccIcon');
+				$('title').text('已转让');
+				setTimeout(function(){
+					$('#loader-wrapper').hide();
+				},500)
+			});
+		</script>
+	</body>
+
+</html>

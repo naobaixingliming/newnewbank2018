@@ -1,0 +1,113 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M340 640l384-384-60-62-324 324-152-152-60 60zM426 0c236 0 426 190 426 426s-190 426-426 426-426-190-426-426 190-426 426-426z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "check_circle"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "prevSize": 24,
+        "name": "check_circle",
+        "code": 59649
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M567.91 542.72c0 26.982-29.594 49.869-56.934 49.869s-52.634-24.832-52.634-51.763v-225.536c0-26.88 25.293-50.739 52.634-50.739s56.934 24.986 56.934 51.917v226.304zM512.205 753.613c-30.259 0-54.784-24.218-54.784-54.016s24.525-53.965 54.784-53.965c30.259 0 54.784 24.166 54.784 53.965s-24.525 54.016-54.784 54.016zM954.726 741.837c-36.71-59.597-347.085-577.536-363.827-602.675-33.178-49.869-116.429-48.947-149.658 2.458-15.872 24.576-336.896 552.755-370.79 603.136s-28.57 119.654 61.338 119.501c105.984-0.205 721.203-1.28 779.725 0.154 58.573 1.434 79.821-63.027 43.213-122.573z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "prompt"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "prompt",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 1,
+      "setId": 3,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "autoHost": true,
+      "showMetrics": true,
+      "showSelector": true,
+      "ie7": true,
+      "noie8": false,
+      "showMetadata": true,
+      "selector": "i",
+      "showVersion": true
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 2201320,
+      "bgColor": 16777215,
+      "classSelector": ".icon-check",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {
+      "UntitledProject": "Y2Y2OWI4ZjhiNzhiNWQ2MjAyOGUwNmU2MmM3YWI0NGIjMSMxNDg0MTg2OTAyIyMj"
+    },
+    "showLiga": false
+  }
+}

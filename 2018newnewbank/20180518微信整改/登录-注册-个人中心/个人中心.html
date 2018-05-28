@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="../css/common/global20180518.css" />
+		<!--footer....等css需要写在global.css的后面，否则会出现文字闪烁，没有加底部的页面不要加footer.css或者其他不相关的样式文件，其他页面类似，否则，可能会造成页面一些奇怪的bug-->
+		<!--底部导航样式 start-->
+		<link rel="stylesheet" type="text/css" href="../css/common/footer.1.0.2.css" />
+		<!--底部导航样式 end-->
+		<!--通用弹框 start-->
+		<link rel="stylesheet" type="text/css" href="../css/common/wap-popup.css" />
+		<!--通用弹框 end-->
+		<!--未实名认证、开通快捷支付、有优惠券 弹框 start-->
+		<link rel="stylesheet" type="text/css" href="../css/coupons-popup.css"/>
+		<!--未实名认证、开通快捷支付、有优惠券 弹框 end-->
+		
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_efeff4">
+			
+			<div class="bell-popup"></div>			
+			<!--开通银行存管账户弹框 2018-04-26 start-->
+			<div class="common-popup bohaiPopup">
+				<div class="shadow"></div>
+				<div class="bohai-content">
+					<div class="headPopup text_center">
+						<i class="font_30 color_fff padding-top-30">开通银行存管账户</i>
+					</div>
+					<div class="w-346 margin_center overflow">
+						<div class="relative ver-line-bef text_center"> <i class="text-pos font_20 color_999">积极响应国家政策</i></div>
+						<div class="color_666 font_20 line_height">
+							平台已接入渤海银行资金存管系统，充值、投资、提现等资金操作均需开通存管账户，支持多家银行储蓄卡。
+						</div>
+						<ul class="flex-parent padding-top-20 padding-bottom-30">
+							<li class="flex-child text_center">
+								<i class="small-icon-01"></i>
+								<div class="font_20 color_999">资金更安全</div>
+							</li>
+							<li class="flex-child text_center">
+								<i class="small-icon-02"></i>
+								<div class="font_20 color_999">投资更放心</div>
+							</li>
+							<li class="flex-child text_center">
+								<i class="small-icon-03"></i>
+								<div class="font_20 color_999">合规有保障</div>
+							</li>
+						</ul>
+						<a class="all_center text_center color_fff font_24 bgColor_f44975 openUpBtn">
+							立即开通
+						</a>
+					</div>
+					<i class="deleteBtn"></i>
+				</div>
+			</div>
+			<!--开通银行存管账户弹框 2018-04-26 end-->
+			<!--未实名认证  popup start-->
+			<div class="common-popup Six-noRealName none">
+				<div class="shadow-info"></div>
+				<div class="Six-goName">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border padding-bottom-50" >
+						<p class="padding-top-bottom-30"><i class="Six-head"></i></p>
+						<p class="font_30">未实名认证</p>
+						<p class="font_24">为保障个人账户资金安全需先实名</p>
+					</div>
+					<div class="bgColor_fff flex-parent font_26 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">去实名</a>
+					</div>
+				</div>
+			</div>
+			<!--未实名认证  popup end-->
+			<!--未实名认证  popup start-->
+			<div class="common-popup Six-noBank none">
+				<div class="shadow-info"></div>
+				<div class="Six-goBank">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border padding-bottom-50">
+						<p class="padding-top-40 padding-bottom-20"><i class="Six-bank"></i></p>
+						<p class="font_24">开通快捷支付</p>
+						<p class="font_24">充值、提现、资金快速到位</p>
+					</div>
+					<div class="bgColor_fff flex-parent font_26 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">去绑卡</a>
+					</div>
+				</div>
+			</div>
+			<!--未实名认证  popup end-->
+			<!--有优惠券  popup start-->
+			<div class="common-popup Six-hasCoupon none">
+				<div class="shadow-info"></div>
+				<div class="Six-coupon">
+					<div class="bgColor_f44975 color_fff text_center Six-top-border padding-bottom-50">
+						<p class="padding-bottom-10">
+							<span class="Six-circle bgColor_f44975 relative">
+								<i class="Six-couponIcon"></i><i class="color_fff font_20 font-pos ">优惠券</i>
+							</span>
+						</p>
+						<p class="font_24">您有1张优惠券即将到期</p>
+						<p class="font_24">请尽快使用</p>
+					</div>
+					<div class="bgColor_fff flex-parent font_26 text_center h-90 line-height-90 Six-bottom-border">
+						<a class="color_f44975 flex-child border-right" href="javascript:;">取消</a>
+						<a class="color_f44975 flex-child" href="javascript:;">充值投资</a>
+					</div>
+				</div>
+			</div>
+			<!--有优惠券  popup end-->
+			
+			<section class="one-page-homePge">
+				<div class="bgColor_f44975 h-300 relative padding-left-right">
+					<img src="http://images-wap.oss-cn-hangzhou.aliyuncs.com/wap_qrCode20161021.png" class="qrCode">
+					<div class="padding-top-30">
+						<p class="text_center inline_block float_left circle-shadow-box overflow">
+							<i class="sprite-account-photo"></i>
+						</p>
+						<div class="inline_block" >
+							<p class="color_fff font_24">下午好，王圈圈</p>
+							<i class="bgColor_dd305c font_24 color_fdedf0 relative circle-red"><em class="yellow-circle font_22">Ⅴ<sub class="font_10">1</sub></em>&nbsp;&nbsp;&nbsp;&nbsp;会员&nbsp;>&nbsp;</i>
+							<i class="bgColor_dd305c font_24 color_fdedf0 circle-red">银牌合伙人</i>
+						</div>
+					</div>
+					
+					<div class="accountInfo flex_container">
+						<div class="text_center flex-child border-right-line">
+							<p class="color_fdedf0 font_22">总资产(元)</p>
+							<p class="font_28 color_fff">￥3,000,050.56</p>
+						</div>
+						<div class="text_center flex-child ">
+							<p class="color_fdedf0 font_22">累计收益(元)</p>
+							<p class="font_28 color_fff">￥1,000,050.56</p>
+						</div>
+					</div>
+				</div>
+				<div class="bgColor_fff  font_22 color_333">
+					<div class="wrap text_center" id="wrap">
+						<div class="flex-parent padding-top-bottom-40">
+							<a class="flex-child">
+								<p class="s-icon s-ic-04"></p>
+								<i class="font_20 color_333">充值</i>
+							</a>
+							<a class="flex-child">
+								<p class="s-icon s-ic-05"></p>
+								<i class="font_20 color_333">提现</i>
+							</a>
+							<a class="flex-child">
+								<p class="s-icon s-ic-08"></p>
+								<i class="font_20 color_333">风险评估</i>
+							</a>
+							<a class="flex-child">
+								<p class="s-icon s-lmic-01"></p>
+								<i class="font_20 color_333">授权</i>
+							</a>
+							<a class="flex-child">
+								<p class="s-icon s-lmic-02"></p>
+								<i class="font_20 color_333">解授权</i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="xinlang-account-box">
+				<div class="flex_container h-64 padding-side-30">
+					<div class="align_self_center color_7dcae6 flex_grow font_24">新浪普通账户资产概况</div>
+					<div class="align_self_center  smallbell"></div>
+				</div>
+				<p class="under_line mar-side-12"></p>
+				<div class="flex_container mar-top-bottom-40">
+					<div class="text_center border-right-line flex_grow">
+						<p class="font_20 color_999">总资产（元）</p>
+						<p class="color_333 font_26">12345456.33</p>
+					</div>
+					<div class="text_center border-right-line flex_grow">
+						<p class="font_20 color_999">待还款项目</p>
+						<p class="color_333 font_26">3</p>
+					</div>
+					<div class="text_center flex_grow">
+						<p class="font_20 color_999">可用余额（元）</p>
+						<p class="color_333 font_26">145.33</p>
+					</div>
+				</div>
+				<p class="padding-bottom-30">
+					<a class="switchBtn margin_center justify_content_center flex_container font_26 color_fff"><i class="align_self_center">切换至新浪普通账户</i></a>
+				</p>
+			</div>
+
+			<div class="mar-top-20">
+				<section class="bgColor_fff">					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp1"></i>
+						<i class="font_24 color_666 flex_grow">账户余额</i>						
+						<i class="infotext font_24 color_666">0.00 元</i>
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line  mar-left-30"></p>
+					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp2"></i>
+						<i class="font_24 color_666 flex_grow">待收收益</i>						
+						<i class="infotext font_24 color_666">2354.89元</i>
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line  mar-left-30"></p>
+					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp3"></i>
+						<i class="font_24 color_666 flex_grow">资金明细</i>												
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line"></p>
+				</section>
+				
+				<section class="bgColor_fff mar-top-20" >
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp4"></i>
+						<i class="font_24 color_666 flex_grow">牛牛合伙人</i>						
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line  mar-left-30"></p>
+					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp5"></i>
+						<i class="font_24 color_666 flex_grow">邀请好友</i>						
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line  mar-left-30"></p>
+				
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp6"></i>
+						<i class="font_24 color_666 flex_grow">银行专区</i>						
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line  mar-left-30"></p>
+					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp8"></i>
+						<i class="font_24 color_666 flex_grow">VIP专区</i>						
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line"></p>
+				</section>
+				
+				<div class="bgColor_fff mar-top-20">					
+					<a class="h-100 line-height-100 flex_container padding-side-30" href="javascript:;">
+						<i class="align_self_center sprites sp7"></i>
+						<i class="font_24 color_666 flex_grow">账户设置</i>						
+						<i class="align_self_center mar-left-10 arrow"></i>						
+					</a>
+					<p class="under_line"></p>										
+				</div>
+			</div>
+			<!--底部导航栏  start-->
+			<footer class="foot-seat-nav">
+				<div class="navbar">
+					<a href="newHome.html" class="navBar_item  navBar_item_on">
+						<div class="navBar_icon nbi01"></div>
+						<p class="navBar_label">首页</p>
+					</a>
+					<a href="newFinancialProducts.html" class="navBar_item ">
+						<div class="navBar_icon nbi02"></div>
+						<p class="navBar_label">投资</p>
+					</a>
+					<a href="newActivityCenter.htm" class="navBar_item ">
+						<div class="navBar_icon_center nbi05"></div>
+						<p class="navBar_label">活动</p>
+					</a>
+					<a href="partnerIndex.htm" class="navBar_item ">
+						<div class="navBar_icon nbi03"></div>
+						<p class="navBar_label">合伙人</p>
+					</a>
+					<a href="newUserCenter.htm" class="navBar_item ">
+						<div class="navBar_icon nbi04"></div>
+						<p class="navBar_label">我的</p>
+					</a>
+				</div>
+			</footer>
+			<!--底部导航栏  end-->
+		</div>
+		<script src="../js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/wap-jquery.popup.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function(){
+				//黄色铃铛点击弹框事件
+				$('.smallbell').on('click',function(){
+					var textscript="<p class='color_f44975 font_30 text_center padding-bottom-20'>温馨提示</p><p class='font_22 color_333 text_center'>牛牛bank于2018年5月15日上线银行存管，<br>后续充值投资均在“银行存管账户”上进行，<br><em class='color_f44975'>原有新浪账户可进行提现操作，</em><br>您的在投资金不受影响，您可进入<em class='color_f44975'>“新浪普通账户”</em><br>查看资金明细。</p>"
+					$('.bell-popup').popup({
+						text: textscript,
+						aText: "确定",					
+						alength: "1",
+						okCallBack: function() {}
+					});				
+				});
+				
+				//删除弹框点击事件
+				$('.deleteBtn').on('click',function(){
+					$(this).parents('.common-popup').hide(200);
+				});
+				
+				
+			})()			
+		</script>
+	</body>
+
+</html>

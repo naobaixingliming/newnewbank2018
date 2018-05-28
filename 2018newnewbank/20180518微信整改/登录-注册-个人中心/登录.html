@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/common/global20180518.css" />
+		
+	</head>
+
+	<body>
+			
+		<div class="rootNode login-page">
+			<section class="bgColor_fff relative">
+				<form id="doLogin" method="post">
+					<div class="h-100 flex_container mar-side-30">
+						<input type="text" cursorcolor class="font_24 color_333 flex_grow" id="userName" name="userName" placeholder="请输入手机号码" maxlength="11">
+						<i class="align_self_center deleteIcon"></i>
+					</div>
+					<p class="under_line"></p>
+					<div class="h-100 flex_container mar-side-30">
+						<input type="text" cursorcolor class="font_24 color_333 flex_grow" name="picCode" id="picCode" placeholder="请输入图形验证码">
+						<img class="verificateIcon align_self_center" id="picImg" src="data:image/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAaCAIAAACvsEzwAAABw0lEQVR42uXYQUrFMBAG4NFLuHThzpXgFdyJl/AE8u4PWggMw/yZfyZpHg1YgjyTNunXSdI08gvHz+2mf0dL9z9kgnQU7Qau34/Mkf4d2LXB+/9WZhm6/v37k6T7mVsAeBguAF8b57PgbhU2mDi3td/Pb48tdavCIj1I0RJz6yDz4OgSBdu7d88CYVH+8iAvBjtz5VlY8MfXk0tY/+vLQ0u7gEm4CBipkZmAK+YtwGrDFu8LdvM+AfN3UhdmM22RaltOesccnNYgrpifXQFHc7X+G4GLIZoA2xzBVwtpMurSeoleXgS78FbMKRhr8GB3x6TJFKxmVaHf9moHTqfoZWCk8pVWZdggEovI5DzxWqos9YV8FdZnaQ7WgKdgHRHTr6UUIvXhHoHtyt4mjLBbYDqwazQy17t0t7fK0BQ3F2Erd8+CdN3jtGmwm30TMDEPgSuLZz4/2VJtogiOzFL8+m85+LV0EqzmK8FpnOs7HnVw1zwE1nHrnG48y9DWZAU5Co7M0QqMg7kl/B4myw/sJOc3NCrvYQ5Od3+SCGMPwRq7PWchO3rQJMIkyFqa72nhsrH7CE6ao2sV1k5QbXe4pUE+0h8HX08m5p5M1QAAAABJRU5ErkJggg==" alt="图形验证码">
+					</div>
+					<p class="under_line"></p>
+					<div class="h-100 flex_container mar-side-30">
+						<input type="text" cursorcolor class="font_24 color_333 flex_grow" id="verifyCode" name="verifyCode" placeholder="请输入验证码">
+						<a class="font_24 color_fff bgColor_7dcae6 text_center getSm align_self_center" id="getsms" type="button">获取验证码</a>
+						<input id="count" class="font_24 color_fff align_self_center text_center none" type="button" time="120" value="120秒后重试" >
+					</div>
+					<p class="under_line"></p>
+					<p class="font_30 color_fff text_center mar-side-30 mar-top-40 mar-bottom-20 bgColor_f44975 loginBtn" id="loginbtn" onclick="isOK()">登录</p>
+					<p class="text_center">
+						<span class="font_24 ">
+							<a href="https://mobile.newnewbank.com:443/setAccInfo/findLoginPwdIndex.shtml" class="color_666">忘记密码?</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a id="register" class="color_666" onclick="zhuCe()">立即注册</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a class="color_666" href="https://mobile.newnewbank.com:443/pwdLogin.shtml">密码登录</a>
+						</span>
+					</p>
+				</form>
+			</section>
+		
+			<!--20180515 start-->
+			<section class="bottom-fix-sroll">
+				<i class="pos-arrow"></i>
+				<div class="overflow h-100-pre">
+					<i class="white-text-line"></i>
+					<div class="sroll-box-y ">
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-left  text_right color_fff font_20 relative">
+								2018.05.15<br>
+								渤海银行存管系统正式上线
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-right float_right text_left color_fff font_20 relative">
+								2018.03.02<br>
+								牛牛bank向荷花镇捐赠<br>价值150彩超设备
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-left text_right color_fff font_20 relative">
+								2017.08.18<br>
+								成为深圳市金融商会<br>副会长单位
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-right float_right text_left color_fff font_20 relative">
+								2017.06.26<br>
+								牛牛bank不忘初心 助力<br>"公益千校计划"，捐款50万
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-left text_right color_fff font_20 relative">
+								2016.12.21<br>
+								牛牛bank再次捐款50万元<br> 助力"一起回家"公益活动
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-right float_right text_left color_fff font_20 relative">
+								2016.11.07 <br>
+								香港特首梁振英先生为牛牛bank<br>颁发"中国（深港）十大创新<br>金 融人物"奖
+							</p>
+						</div>
+						
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-left text_right color_fff font_20 relative">
+								2016.07.14 <br>
+								牛牛bank取得ICP证和EDI证
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-right float_right text_left color_fff font_20 relative">
+								2015.01.10<br>
+								北京新华社举行产品发布会
+							</p>
+						</div>
+						<div class="mar-bottom-40 clearfloat">
+							<p class="white-process process-left text_right color_fff font_20 relative">
+								2014.05.20 <br>
+								深圳市金牛牛互联网金融服务<br>有限公司 于前海注册成立
+							</p>
+						</div>						
+					</div>
+				</div>				
+			</section>
+			<!--20180515 end-->
+			
+		</div>
+		
+	</body>
+
+</html>

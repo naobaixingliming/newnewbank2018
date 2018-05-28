@@ -1,0 +1,77 @@
+
+
+.border{
+	border-left:2px solid #e4476f;
+	background: #f5f5f5;
+	color: #E4476F;
+	
+}
+
+.right{
+	float: right;
+	width: 929px;
+	background:#fff;
+	padding-bottom: 78px;
+}
+
+.color_999{
+	color: #999;
+}
+
+.banner{
+	width: 911px;
+	height: 224px;
+	margin: 0 auto;
+	margin-top: 9px;
+	background:url(https://images-web.newnewbank.com/fengxian_banner20171013.png)no-repeat;
+}
+
+.title{
+	position: relative;
+	width: 188px;
+	height:45px;
+	left: 680px;
+	top:148px;
+	background: url(https://images-web.newnewbank.com/fengxian20171013.png)no-repeat;
+	background-size:32px 32px;
+	background-position:0 8px ;
+	font-size: 36px;
+	color: #fff;
+	padding-left:42px;
+	letter-spacing:2px;
+}
+.jiagou{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 34px;
+	margin-bottom: 41px;
+	color: #333;
+}
+.img{
+	margin-left: 82px;
+}
+.liucheng{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 64px;
+	margin-bottom: 52px;
+	color: #333;
+}
+.guanli{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top:58px;
+	margin-bottom:41px;
+	color: #333;
+}
+.fangshi{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top:68px;
+	margin-bottom:80px;
+	color: #333;
+}

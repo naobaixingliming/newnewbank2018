@@ -1,0 +1,375 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+	.rootNode {
+				width: 100%;
+				margin: 0 auto;
+				background-color: #cb2728;
+			}
+			.onePage {
+				width: 100%;
+				min-width: 1200px;
+				height: 1202px;
+				background:#fff url(https://images-web.newnewbank.com/loading.gif) no-repeat center;
+			}
+			
+			.onePage .main {
+				height: 100%;
+				background: url(https://images-web.newnewbank.com/pc-banner20180115.png) center top;
+			}
+			.start-end-time{
+				color: #fbdbad;
+				font-size: 36px;
+				position: absolute;
+				top: 190px;
+    			left: 458px;
+			}
+			.showBox {
+			    width: 90%;
+			    height: 900px;
+			    position: absolute;
+			    bottom: -800px;
+			    left: 5%;
+			    background-color: #fe6d5d;
+			    filter: url(blur.svg#blur);
+			    -webkit-filter: blur(200px);
+			    -moz-filter: blur(200px);
+			    -ms-filter: blur(200px);
+			    filter: blur(200px);
+			    border-radius: 100%;
+			}
+			.firecrackers-l,.firecrackers-r{
+				width: 170px;
+				height: 283px;
+				position: absolute;
+				top: -135px;
+			}
+			.firecrackers-l{
+				left: 40px;
+				background: url(https://images-web.newnewbank.com/pc-firecrackersL20180115.png) no-repeat;
+			}
+			.firecrackers-r{
+				right: 40px;
+				background: url(https://images-web.newnewbank.com/pc-firecrackersR20180115.png) no-repeat;
+			}
+			.box-big{
+				width: 1200px;
+				height: 994px;
+				background: url(https://images-web.newnewbank.com/pc-bigBox20180115.png) no-repeat;
+			}
+			.twoPage{
+				margin-top: -60px;
+			}
+			.w-940{
+				width: 940px;
+				padding-top:150px ;
+			}			
+			.w-940 table{
+				width: 100%;
+				border: 3px solid #e24640;
+				border-radius:8px ;
+				box-sizing: border-box;
+			}
+			.w-940 table tr td{
+				text-align: center;
+				line-height: 66px;
+				font-size: 28px;
+			}
+			.w-940 table tr td{
+				border-right: 1px solid #e24640;
+				border-bottom: 1px solid #e24640;
+			}
+			.w-940 table tr td.border-none{
+				border-right: none;
+			}
+			.w-940 table tr.border-b-none td{
+				border-bottom: none;
+			}
+			.color_a8322e{
+				color: #a8322e;
+			}
+			.goInvest {
+				width: 290px;
+				height:66px;
+			    border-radius: 33px;
+			    line-height: 66px;
+			    color: #a8322e;
+			    background: #ffc115;
+			    box-shadow: 0px 6px 0px #faa74d;			
+			}
+			.small-box{
+				width: 100%;
+				height: 524px;
+				background: url(https://images-web.newnewbank.com/pc-smallBox20180115.png) no-repeat;
+			}
+			.textScript{
+				padding:120px 0 0 80px  ;
+			}

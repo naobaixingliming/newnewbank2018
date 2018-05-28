@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>购买详情</title>
+		<link rel="stylesheet" type="text/css" href="../css/loginRegister.min.css" +Math.random()/>
+		<link rel="stylesheet" type="text/css" href="css/transferclaims.css" />
+		
+	</head>
+
+	<body style="background-color: #efeff4;">
+		<div id="loader-wrapper" class="bgColor_fff text_center none">
+			<img src="https://images-web.newnewbank.com/loading.gif"/>
+			<p class="color_666 font_22">加载中...</p>
+		</div>
+		
+		<div class="wholeInterface">
+			<!--main start-->
+			<div class="content-wrap">
+				<header class="relative">
+					<div class="bgColor_f44975 h-225" style="padding-bottom: 0.3125rem;">
+						<p class="font_24 color_f9abbb text_center" style="padding: 0.75rem 0 0.4rem;">预期年化收益率</p>
+						<p class="font_72 color_fff text_center">11.00<i class="font_36">%</i></p>
+					</div>
+					<div class="bgColor_f44975">
+						<div class="flex-parent" style="padding:0 0 0.75rem;">
+							<p class="flex-child text_center">
+								<span class=" font_30 color_555 relative">
+									<i class="font_22 color_f9abbb">剩余期限  </i></br>
+									<i class="font_28 color_fff">156天  </i>
+								</span>
+							</p>
+							<p class="flex-child text_center" style="margin-right: .4rem;">
+								<span class=" font_30 color_555 relative">
+								<i class="font_22 color_f9abbb">转让金额</i></br>
+								<i class="font_28 color_fff">100,025.36元  </i>
+							</span>
+							</p>
+							<p class="flex-child text_center" style="margin-right: .4rem;">
+								<span class=" font_30 color_555 relative">
+									<i class="font_22 color_f9abbb">到期时间</i></br>
+									<i class="font_28 color_fff">2017.06.05</i>
+								</span>
+							</p>
+						</div>
+					</div>
+				</header>
+				<div class="bgColor_fff">
+					<p class="h-70 line-height-70 font_26 color_333 padding-left-right-40">原始转让信息</p>
+					<p class="under_line mar-left-40"></p>
+					<div class="mar-left-40 padding-top-40">
+						<p class="font_22 padding-bottom-30"><i class="w-pre25 color_666">项目名称 </i><span class="color_333">金珠宝第17期 <i class="color_666">(金万丰珠宝项目)</i></span></p>
+						<p class="font_22 padding-bottom-30"><i class="w-pre25 color_666">原始年化 </i><span class="color_333">12% </span></p>
+						<p class="font_22 padding-bottom-30"><i class="w-pre25 color_666">项目期限 </i><span class="color_333">360天 </span></p>
+						<p class="font_22 padding-bottom-30"><i class="w-pre25 color_666">转让债权 </i><span class="color_333">50万 </span></p>
+						<p class="font_22 padding-bottom-40"><i class="w-pre25 color_666">还款方式 </i><span class="color_333">到期一次性还本付息</span></p>
+					</div>
+				</div>
+				<p class="color_999 font_22 text_center padding-top-60 padding-bottom-30"><span><i class="loadArrow float_left"></i>上拉查看详情</span></p>
+				<!--main end-->
+			</div>
+			<footer class="a-layer">
+				<div class="fix-bottom-nav flex-parent">
+					<a class="flex-child text_center bgColor_fff " href="javascript:;" style="padding: 0 0.5rem;">
+						<div class="font_30 color_333" style="line-height: 1.375rem">
+							<input type="text" placeholder="￥100,025.36" />
+						</div>
+					</a>
+					<a class="flex-child bgColor_f44975 text_center color_fff buyGoldBtn" href="javascript:;">
+						<div class="font_30 " style="line-height: 1.375rem">
+							立即抢购
+						</div>
+					</a>
+				</div>
+			</footer>
+		</div>
+		<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">			
+			//小于屏幕时
+			if(document.body.offsetHeight <= window.screen.availHeight ){ 
+				touch();
+			}else{
+				$(window).scroll(function() {				　　
+					var scrollTop = $(this).scrollTop();　　
+					var scrollHeight = $(document).height();　　
+					var windowHeight = $(this).height();　　
+					if(scrollTop + windowHeight == scrollHeight) {
+						touch();					　　
+					}
+				});
+			}
+						
+			function touch(){				
+				document.addEventListener('touchstart', function(e) {
+					e.preventDefault();
+				});				
+				var pressY = 0,
+					eleTop = 0; 
+				var listEle=document.getElementsByClassName('wholeInterface')[0],
+					jump=document.getElementsByClassName('jump')[0];
+				listEle.addEventListener('touchstart', start);
+				listEle.addEventListener('touchmove', move);
+				listEle.addEventListener('touchend', end);				
+				function start(ev) {
+					var e = ev.changedTouches[0];
+					pressY = e.pageY;
+					eleTop = this.offsetTop;
+				}				
+				function move(ev) {
+					var e = ev.changedTouches[0];					
+					listEle.style.top = (e.pageY - pressY) + eleTop + 'px';	
+					console.log((e.pageY - pressY)+','+parseInt(listEle.style.top));
+				}				
+				function end(ev) {
+					if(parseInt(listEle.style.top)<-60){
+						$('#loader-wrapper').show();
+						setTimeout(function(){
+							$('#loader-wrapper').hide();							
+						},500);
+						setTimeout(function(){
+							location.href="Z_productDetail.html";
+						},400);
+					}
+					listEle.style.top = '0px';					
+				}							
+			}
+			
+		</script>
+	</body>
+
+</html>

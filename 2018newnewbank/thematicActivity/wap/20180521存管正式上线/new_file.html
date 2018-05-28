@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			#main {
+				width: 100%;
+			}			
+			#main .swiper-container {
+				width: 95%;
+				padding-top: 0.5rem;
+			}			
+			#main .swiper-slide {
+				background-position: center;
+				background-size: 130% 120%;
+				width: 60%;
+			}			
+			#main .swiper-slide img {
+				display: block;
+				width: 100%;
+			}
+			
+			/*#main .swiper-button-next,
+			.swiper-button-prev {
+				top: 5rem;
+				width: 10%;
+			}*/
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- 轮播 -->
+			<div id="main">
+				<div class="swiper-container" id="looper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="http://f.51fanbei.com/preEnv/c9750fe39c67a56c.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="http://f.51fanbei.com/online/6ddc4381d35cbeed.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="http://f.51fanbei.com/online/b915a0c63749e5be.jpg" alt="">
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var swiper = new Swiper('#looper', {
+				touchRatio: -1, //利用touchRatio制作与拖动方向相反的Swiper
+				loop: true,
+				slidesPerView: 5,
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				coverflow: {
+					rotate: 0,    // 旋转的角度
+					stretch: 100, // 拉伸   图片间左右的间距和密集度
+					depth: 50, 	  // 深度   切换图片间上下的间距和密集度
+					modifier: 3,  // 修正值 该值越大前面的效果越明显
+					slideShadows: false // 页面阴影效果
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				}
+			});
+		</script>
+	</body>
+
+</html>

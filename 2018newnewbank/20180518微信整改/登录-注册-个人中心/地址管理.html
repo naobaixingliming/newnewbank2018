@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/adapter.0.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>地址管理</title>
+		<link href="../css/libs/mui.picker.css" rel="stylesheet" />
+		<link href="../css/libs/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/common/global20180518.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode bgColor_efeff4">
+			
+			<section class="bgColor_fff">				
+				<div class="h-80 line-height-80 flex_container mar-side-30">
+					<i class="font_24 color_333  flex_grow">收货人</i>
+					<i class="font_24 color_666">王圈圈</i>				
+				</div>
+				<p class="under_line  mar-left-30"></p>
+								
+				<div class="h-80 line-height-80 flex_container mar-side-30">
+					<i class="font_24 color_333  flex_grow">联系电话</i>
+					<i class="font_24 color_666">15170031714</i>				
+				</div>
+				<p class="under_line  mar-left-30"></p>
+				
+				<div class="h-80 line-height-80 flex_container mar-side-30 relative">	
+					<i class="font_24 color_333 ">所在地区</i>
+					<i class="font_24 flex_grow region" id='cityResult3'></i>						
+					<div class="color_999"  id='showCityPicker3' >
+						<i class="font_24 color_999 chooseText">请选择</i>
+						<i class="arrow"></i>
+					</div>							
+				</div>
+				<p class="under_line  mar-left-30"></p>
+				
+				<div class="h-80 line-height-80 flex_container mar-side-30">
+					<i class="font_24 color_333 ">街道</i>						
+				</div>	
+				<div class="mar-side-30">
+					<textarea cursorcolor class="textarea" name="" placeholder="请填写详细地址，不少于5个字"></textarea>		
+				</div>
+				<p class="under_line"></p>
+			</section>
+			
+			<section class="bgColor_fff mar-top-10">
+				<div class="h-100 line-height-100 mar-side-30 flex_container"> 
+					<i class="font_24 color_999 flex_grow">设为默认</i>
+					<div class="">
+						<!--默认选中： checked="checked"-->
+						<input type="checkbox" id="checkbox" class="checkBtn" >
+						<label for="checkbox"></label>						
+					</div>
+				</div>									
+				<p class="under_line"></p>
+			</section>
+			
+			<section class="bgColor_fff mar-top-10">
+				<div class="h-100 line-height-100 mar-side-30 flex_container">
+					<i class="font_24 color_f44975">删除地址</i>					
+				</div>									
+				<p class="under_line"></p>
+			</section>
+			
+			<footer class="a-layer">
+				<!--变红 ：bgColor_eee -被替换- bgColor_f44975-->
+				<button class="font_30 color_fff text_center bgColor_eee sureBtn">保存</button>
+			</footer>	
+			
+		</div>		
+		<script src="./js/libs/mui.min.js"></script>
+		<script src="./js/libs/mui.picker.js"></script>
+		<script src="./js/libs/mui.poppicker.js"></script>
+		<script src="./js/city.data-3.js" type="text/javascript" charset="utf-8"></script>	
+		<script>
+			(function($, doc) {
+				$.init();			
+				$.ready(function() {
+					//--------------------城市三级联动---------------------
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+							var chooseEle=document.querySelector('.chooseText');				
+							if(cityResult3.innerText !=''){
+								chooseEle.style.display="none";
+							}
+						});																			
+					}, false);
+				});				
+			})(mui, document);
+		</script>				
+	</body>
+
+</html>

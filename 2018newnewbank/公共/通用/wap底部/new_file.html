@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="format-detection" content="address=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<script src="js/flexible.0.3.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC"
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			span {
+				display: inline-block;
+			}
+			
+			i {
+				font-style: normal;
+				display: inline-block;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+			
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			input[type="text"],
+			input[type="password"],
+			{
+				-webkit-appearance: none;
+			}
+			
+			textarea {
+				-webkit-appearance: none;
+			}
+			/*字体大小 start*/
+			
+			.font_12 {
+				font-size: 0.1875rem;
+			}
+			
+			.font_13 {
+				font-size: 0.203125rem;
+			}
+			
+			.font_14 {
+				font-size: 0.21875rem;
+			}
+			
+			.font_15 {
+				font-size: 0.234375rem;
+			}
+			
+			.font_16 {
+				font-size: 0.25rem;
+			}
+			
+			.font_18 {
+				font-size: 0.28125rem;
+			}
+			
+			.font_20 {
+				font-size: 0.3125rem;
+			}
+			
+			.font_22 {
+				font-size: 0.34375rem;
+			}
+			
+			.font_24 {
+				font-size: 0.375rem;
+			}
+			
+			.font_26 {
+				font-size: 0.40625rem;
+			}
+			
+			.font_28 {
+				font-size: 0.4375rem;
+			}
+			
+			.font_30 {
+				font-size: 0.46875rem;
+			}
+			
+			.font_32 {
+				font-size: 0.5rem;
+			}
+			
+			.font_36 {
+				font-size: 0.5625rem;
+			}
+			
+			.font_40 {
+				font-size: 0.625rem;
+			}
+			
+			.font_48 {
+				font-size: 0.75rem;
+			}
+			
+			.font_50 {
+				font-size: 0.78125rem;
+			}
+			/*字体大小 end*/
+			/*字体颜色 start*/
+			
+			.color_000 {
+				color: #000;
+			}
+			
+			.color_333 {
+				color: #333;
+			}
+			
+			.color_666 {
+				color: #666;
+			}
+			
+			.color_999 {
+				color: #999;
+			}
+			
+			.color_fff {
+				color: #fff;
+			}
+			
+			.color_f44975 {
+				color: #f44975;
+			}
+			
+			.color_1c7ebe {
+				color: #1c7ebe;
+			}
+			/*字体颜色 end*/
+			/*背景颜色 start*/
+			
+			.bgColor_fff {
+				background-color: #fff;
+			}
+			
+			.bgColor_f44975 {
+				background-color: #f44975;
+			}
+			/*背景颜色 end*/
+			
+			.relative {
+				position: relative;
+			}
+			
+			.margin_center {
+				margin: 0 auto;
+			}
+			
+			.float_left {
+				float: left;
+			}
+			
+			.float_right {
+				float: right;
+			}
+			
+			.pointer {
+				cursor: pointer;
+			}
+			
+			.bold {
+				font-weight: bold;
+			}
+			
+			.overflow {
+				overflow: hidden;
+			}
+			
+			.inline_block {
+				display: inline-block;
+			}
+			
+			.text_center {
+				text-align: center;
+			}
+			
+			.line_height {
+				line-height: 0.390625rem;
+			}
+			
+			.letter_space {
+				letter-spacing: 0.015625rem;
+			}
+			
+			.under_line {
+				height: 0.015625rem;
+				background-color: #f5f5f5;
+			}
+			
+			.clearfloat:after {
+				display: block;
+				clear: both;
+				content: "";
+				visibility: hidden;
+				height: 0
+			}
+			
+			.clearfloat {
+				zoom: 1
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.none {
+				display: none;
+			}
+			
+			/*  底部菜单start  */
+			.foot-nav{
+				width:100%;
+				height:2rem;
+			}
+			.navbar {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;				
+				width: 100%;
+				height: 1.5625rem;
+				background-color: #FFFFFF;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+				-webkit-box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+				-moz-box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+			}
+			.navBar_item {
+				display: block;
+				position: relative;
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				-ms-flex: 1;
+				flex: 1;
+				padding: 0.0625rem 0 0;
+				-webkit-tap-highlight-color: transparent;
+				box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+			}			
+			.navBar_icon {
+				margin: 0.2rem auto 0.15625rem;
+				width: 0.625rem;
+				height: 0.625rem;
+			}			
+			.navBar_icon_center {
+				width:1.25rem;
+				height: 1.25rem;
+				text-align: center;
+				border: 0.15625rem solid #FFFFFF;
+				position: relative;
+				left: 50%;
+				margin-top: -0.6rem;
+				margin-left: -0.725rem;
+				border-radius: 50%;
+				box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+				-webkit-box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+				-moz-box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+				box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+			}					
+			.nbi01 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_home_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.nbi02 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_invest_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.nbi03 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_partner_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.nbi04 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_personal_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.nbi05 {
+				background: #f44975 url(img/icon_nav_gift_20160525.png) no-repeat 50% 50%;
+				background-size: 0.725rem 0.725rem;
+			}
+			.navBar_item_on .navBar_label {
+				color: #F44975;
+			}
+			.navBar_item_on .nbi01 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_home_on_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.navBar_item_on .nbi02 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_invest_on_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.navBar_item_on .nbi03 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_partner_on_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.navBar_item_on .nbi04 {
+				background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_personal_on_20160525.png) no-repeat 50% 50%;
+				background-size: 100% 100%;
+			}
+			
+			.navBar_icon img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.navBar_label {
+				text-align: center;
+				color: #333333;
+				margin-top: 0.03125rem;
+				font-size: 0.28125rem;
+			}
+			/*  底部菜单end  */
+		</style>
+	</head>
+
+	<body>
+		<!--  底部菜单start -->
+		<footer class="foot-nav">
+			<div class="navbar">
+				<a href="javascript:;" class="navBar_item navBar_item_on">
+					<div class="navBar_icon nbi01"></div>
+					<p class="navBar_label">首页</p>
+				</a>
+				<a href="javascript:;" class="navBar_item ">
+					<div class="navBar_icon nbi02"></div>
+					<p class="navBar_label">理财</p>
+				</a>
+				<a href="javascript:;" class="navBar_item ">
+					<div class="navBar_icon_center nbi05"></div>
+					<p class="navBar_label">客服</p>
+				</a>
+				<a href="javascript:;" class="navBar_item ">
+					<div class="navBar_icon nbi03"></div>
+					<p class="navBar_label">合伙人</p>
+				</a>
+				<a href="javascript:;" class="navBar_item ">
+					<div class="navBar_icon nbi04"></div>
+					<p class="navBar_label">我的</p>
+				</a>
+			</div>
+		</footer>
+		<!--  底部菜单end  -->
+	</body>
+
+</html>

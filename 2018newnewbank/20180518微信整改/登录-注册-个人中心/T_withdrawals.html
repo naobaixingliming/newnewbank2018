@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>提现</title>
+		<link rel="stylesheet" type="text/css" href="css/loginRegister.css" />
+		
+	</head>
+
+	<body>
+		<div id="withdrawal" class="wholeInterface">
+			<div class="h-64" style="margin: 0 0.546875rem ;">
+				<i class="warmIcon float_left mar-top_18"></i>
+				<a class="color_ccc font_20">单笔限额5万，当日累计限额50万</a>
+			</div>
+			
+			<div class="payment bgColor_fff ">
+				<div class="siggle-line">
+					<i class="font_24 color_333">卡号</i>
+					<span class="float_right delegate">
+						<i class="font_20 color_999 cardNumber" style="line-height: 0;">6225201622221898</i>
+						<i class="float_right eyeIcon eyeOpenIcon" style="margin-top: .6rem;margin-left: .4rem;"></i>
+					</span>
+				</div>
+				<p class="under_line"></p>
+				<p style="height: 0.234375rem;background-color: #efeff4;"></p>
+				<div class="siggle-line">
+					<i class="font_24 color_333">到账时间</i>
+					<span class="float_right">
+						<i class=" font_20 color_999" style="line-height: 0;">次日24点前到账</i>
+						<!--<i class="float_right completeGreenIcon" style="margin-left: .4rem;"></i>-->
+					</span>
+				</div>
+				<p class="under_line"></p>
+				<p style="height: 0.234375rem;background-color: #efeff4;"></p>
+				<div class="siggle-line relative ">
+					<i class="font_24 color_333" style="margin-right: 0.3125rem;">转出金额</i>
+					<input type="text" class="inputEle" placeholder="本次可转出：20.00元" style="width: 70%;font-size: 0.3125rem;">
+					<i class="deleteIconPo"></i>
+				</div>
+				<p class="under_line"></p>
+			</div>
+			
+			<p class="font_30 color_fff text_center loginBtn bgColor_f44975" style="margin-bottom: 0;">确定提现</p>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var withdrawalVm = {
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//卡号可见							
+						$('.delegate').delegate('.eyeOpenIcon', 'click', function() {
+							$(this).addClass('eyeCloseIcon').removeClass('eyeOpenIcon');
+							$(this).siblings('.cardNumber').html('<em style="letter-spacing: .05rem;">****************</em>');
+						});
+						$('.delegate').delegate('.eyeCloseIcon', 'click', function() {
+							$(this).addClass('eyeOpenIcon').removeClass('eyeCloseIcon');
+							$(this).siblings('.cardNumber').text('6225201622221898');
+						});
+
+					}
+				}
+				withdrawalVm.init();
+			})()
+		</script>
+	</body>
+
+</html>

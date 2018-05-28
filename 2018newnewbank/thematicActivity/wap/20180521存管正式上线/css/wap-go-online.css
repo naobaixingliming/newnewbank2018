@@ -1,0 +1,494 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+	max-height: 999999px;
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+ul li {
+	list-style: none
+}
+
+span {
+	display: inline-block
+}
+
+em {
+	font-style: normal
+}
+
+i {
+	font-style: normal;
+	display: inline-block
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: none
+}
+
+:focus {
+	outline: 0
+}
+
+button,
+input,
+select,
+textarea {
+	outline: 0
+}
+
+input:focus:-moz-placeholder,
+input:focus::-webkit-input-placeholder {
+	color: transparent
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+button,
+input,
+textarea {
+	-webkit-appearance: none
+}
+
+button,
+input {
+	border: 0;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent
+}
+
+textarea {
+	resize: none
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+{
+	-webkit-appearance: none
+}
+
+textarea {
+	-webkit-appearance: none
+}
+
+.font_16 {
+	font-size: 0.4rem
+}
+
+.font_18 {
+	font-size: 0.45rem
+}
+
+.font_20 {
+	font-size: 0.5rem
+}
+
+.font_22 {
+	font-size: 0.55rem
+}
+
+.font_24 {
+	font-size: 0.6rem
+}
+
+.font_26 {
+	font-size: 0.65rem
+}
+
+.font_28 {
+	font-size: 0.7rem
+}
+
+.font_30 {
+	font-size: 0.75rem
+}
+
+.font_32 {
+	font-size: 0.8rem
+}
+
+.font_36 {
+	font-size: 0.9rem
+}
+
+.font_40 {
+	font-size: 1rem
+}
+
+.font_48 {
+	font-size: 1.2rem
+}
+
+.font_50 {
+	font-size: 1.25rem
+}
+
+.font_60 {
+	font-size: 1.5rem
+}
+
+.font_bold {
+	font-weight: bold;
+}
+
+.color_000 {
+	color: #000
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666
+}
+
+.color_999 {
+	color: #999
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_f44975 {
+	color: #f44975
+}
+
+.bgColor_fff {
+	background-color: #fff
+}
+
+.bgColor_f44975 {
+	background-color: #f44975
+}
+
+.margin_center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.float_left {
+	float: left
+}
+
+.float_right {
+	float: right
+}
+
+.relative {
+	position: relative
+}
+
+.overflow {
+	overflow: hidden
+}
+
+.inline_block {
+	display: inline-block
+}
+
+._block {
+	display: block
+}
+
+.none {
+	display: none
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_indent {
+	text-indent: 2em
+}
+
+.letter_space {
+	letter-spacing: 0.025rem
+}
+
+.under_line {
+	height: 1px;
+	background-color: #f0f0f0;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.white_space {
+	white-space: nowrap;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #999
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #999
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #999
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #999
+}
+
+
+/*伸缩盒(Flexible Box)(新) start*/
+
+.flex_container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.justify_content_start {
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.justify_content_center {
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.justify_content_end {
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.space_between {
+	justify-content: space-between;
+}
+
+.align_self_center {
+	-webkit-align-self: center;
+	align-self: center;
+}
+
+.flex_grow {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+}
+
+
+/*伸缩盒(Flexible Box)(新) start*/
+
+header {
+	height: 5rem;
+	background: url(https://images-wap.newnewbank.com/wap-headBanner20180521.png) no-repeat;
+	background-size: cover;
+}
+
+.padding-top-60 {
+	padding-top: 1.5rem;
+}
+
+.padding-top-50 {
+	padding-top: 1.25rem;
+}
+
+.padding-top-40 {
+	padding-top: 1rem;
+}
+
+.padding-top-30 {
+	padding-top: 0.75rem;
+}
+
+.padding-side-24 {
+	padding: 0 0.6rem;
+}
+
+.padding-bottom-20 {
+	padding-bottom: 0.5rem;
+}
+
+.margin-bottom-30 {
+	margin-bottom: .75rem;
+}
+
+.mar-side-30 {
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+}
+
+.title-box {
+	padding: 0.3rem 1rem;
+	border: 1px solid #ddd;
+	box-shadow: 0.1rem 0.1rem 0 #ddd;
+	font-size: 0.65rem;
+	color: #707bfb;
+}
+
+.text-box-shadow {
+	width: 12.75rem;
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	box-shadow: 0 0 .5rem .1rem #eee;
+}
+
+.blue-box {
+	width: 4.5rem;
+	height: 8.5rem;
+	background-color: #aeb5fe;
+}
+
+.icon-bf-01:before,
+.icon-bf-02:before,
+.icon-bf-03:before {
+	position: absolute;
+	bottom: -.1rem;
+	right: -.2rem;
+	content: '';
+}
+
+.icon-bf-01:before {
+	width: 0.85rem;
+	height: 1rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAoCAMAAACsAtiWAAAAP1BMVEUAAABcav5jcP51gP5tev6CjP2lrf2Sm/ymrfyvtvxqd/57h/6PmP2Jk/2TnP2GkP2jq/yGkf2ZofygqPycpfz5KHf1AAAAFXRSTlMATU1ERzoHIAQPS0AvNCs3Cw4lFRonjQRHAAABhklEQVQ4y52USXLFIAxEaTHPGHz/s0amEhffwVmkNwL50ZaoQuKhU2ov/pLpCoinewXcqQkqICT/4mBrAKrvASTLE3LmsCkyoIoR4vIila3/+d9IOdeoCFd6fPsxztuYi7W2iYhLREqXsfw0y0AzT1pIpmNNfRjxoeMsWUcGFSO9Nbfv0LRDQzJixbvcA3Hu18p8Il7ndq/MFrGAbpOICH6LmAzUNgkqbouIpplx7SY2yDxfNSgx8URWhibxiogjMsHxBXHHcZhCwTZe7Mvt6hKFGfoWyaBbyPvbTSkVTaEWjvurm7IU/Hu5vrANu+Qr+n/UsnZEf3TkDlanYDm0tZaI8ih3LNsWEUVGdUuug1ZkBGTOqbVLL3VbtgXowiskt1qbjwOXgUugLvYyFXx+kqGYHeErQc4qTgXS52bWSECOn8kEhHquTs73SEAct2MOAMUyzP3qFQMq+3U+1SsXdBnOjRLnKKnj8XjHnEEUauWAwJabWdDOJAkskuls4kXNVqWq/fz+BXnjEkKSvEzuAAAAAElFTkSuQmCC) no-repeat;
+	background-size: cover;
+}
+
+.icon-bf-02:before {
+	width: .925rem;
+	height: .925rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlBAMAAAA3sD0wAAAALVBMVEUAAABmc/9mc/9mc/9lc/9lc/9mc/9lc/9lcv9lc/9lc/9lc/9lc/9lc/9lcv/mkGcNAAAAD3RSTlMATEQ9BwswHwM2DyYYKxPlEbP/AAABzklEQVQoz02Sz0tUURTHv4t5ONgknPtghmEouhMI00T4lBKC4kHZb+JBq6GCJo02Ek6LmuUDDSsjmEhqE4iioSt/bUSFwf9gVBTBhSgI+ld47j13Bj+bd9/3fc/3nHN5EH5+6s7fWgtxjpfdxKg7E2jxWpP/b71fU2dLTAX0Z/r+SN//t9QbQ/hIg5E9PG+obZFGdTGC8DC4FIrNr8Obk/MJLds0fRfeSs+gTWqvZcDcU3XMEokBU+oAQCOHRM3f0TlI1V8goceRogEc+bZRonEDuEB1PFAh2tQQDJNpYDgboZQ1RaKNqQiHGbAvbvo4ZwiVy+Y5j5Ivu7YHb1C+CXi1ztVA+vIMXQh+m6mIiHMNyYUr0AOmYK+nn96JVmHN3sSX0yfldCia9QklNjotGBeJG6UjybN9hcdkPifKXahcgyNlW3s8H+/h2CCT2MF7DHOKW6BY49ZjagIX6cBpv6rf2DiV5frmMMm+eJKqyYXr5p5bgR06E9p7xgvlijFKVZTsW5u+DZe4G3vlnFyE3zTGmCH5EZ7q3hDCD55GGi7SBzl937Q2+WHU/vSjryOvlqgYwjGjqbD7eSWggk0WjvNkKNRxjmdb+fzV927zM+nhcXdUh9OqAAAAAElFTkSuQmCC) no-repeat;
+	background-size: cover;
+}
+
+.icon-bf-03:before {
+	width: 0.85rem;
+	height: 0.775rem;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfBAMAAABwjQKCAAAALVBMVEUAAABmc/5lcv9mc/5mc/5mc/9kcv9kcv9lcv9lc/9lcv9mc/9lcv9mc/5lc/8DTzHNAAAAD3RSTlMATBpIRDkLBxYnEDMePyxuXGTTAAABHElEQVQoz2OAAqbL2xhQwcM44QUoAjxyDIvdUUQWBjBwSKOIBBYwMGxUQNYkCSSSLyCJsDgACU4ZJJGJDSDycgFcgA1o6CIGhsYHcBFuMQY2wQMMrGIIuycwcAhOACmFgSsMDFxANQwTF8DsFoKKlMDsLw5gAJoDdB+HDMyXCQwM7IYgBwRD7OcCOZjdEWRG4gSwCKsDiLwIEuEUB4soKoD9mgAivcEirgwIkUawSohLNxaATQDZnwjxzWawCBvI/hCIjU8gLpkMdJUQhLkIQpVMYGAJQI0CcYbGBjCLPXYBhLZk2AJmgEMDDN4C3QSR25oAYSgziKJF7kGkWIJ425chRfaNRocSFHScDJRgYJ/qKAgExiBgKCh8LwEAfLs6WoOmicgAAAAASUVORK5CYII=) no-repeat;
+	background-size: cover;
+}
+
+.blue-border {
+	border: 1px solid #707cfb;
+	border-radius: 0.1rem;
+}
+
+.padding-4 {
+	padding: .2rem;
+}
+
+.padding-top-50 {
+	padding-top: 1.25rem;
+}
+
+.padding-bottom-40 {
+	padding-bottom: 1rem;
+}
+
+.welfare-img-01,
+.welfare-img-02,
+.welfare-img-03 {
+	width: 8.65rem;
+	height: 5.775rem;
+	box-sizing: border-box;
+}
+
+.welfare-img-01 {
+	background: url(https://images-wap.newnewbank.com/wap-welfareImg01-20180521.jpg) no-repeat;
+	background-size: cover;
+}
+
+.welfare-img-02 {
+	background: url(https://images-wap.newnewbank.com/wap-welfareImg02-20180521.jpg) no-repeat;
+	background-size: cover;
+}
+
+.welfare-img-03 {
+	background: url(https://images-wap.newnewbank.com/wap-welfareImg03-20180521.jpg) no-repeat;
+	background-size: cover;
+}
+
+.w-400 {
+	width: 10rem;
+}
+.blue-border-register{
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 1px solid #707cfb;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 3rem;
+	right: 0.75rem;
+	box-shadow: 0.05rem 0.05rem 0.1rem #707cfb;
+	z-index: 100;
+}
+.blue-circle{
+	position: absolute;
+	top: -.05rem;
+    left: -.02rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background-color:#707cfb ;
+}
+#main {
+	width: 100%;
+}
+
+#main .swiper-container {
+	width: 95%;
+	padding-top: 0.5rem;
+}
+
+#main .swiper-slide {
+	background-position: center;
+	background-size: 130% 120%;
+	width: 60%;
+}
+
+#main .swiper-slide img {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.1rem;
+}

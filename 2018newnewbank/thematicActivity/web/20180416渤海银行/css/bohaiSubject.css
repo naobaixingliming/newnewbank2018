@@ -1,0 +1,582 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft YaHei", "Lucida Sans Unicode", "Myriad Pro", "Hiragino Sans GB", "Heiti SC";
+}
+
+html * {
+	outline: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	/*-webkit-tap-highlight-color: transparent;*/
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal;
+	display: inline-block;
+}
+
+em {
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+span {
+	display: inline-block;
+}
+
+
+/*字体大小 start*/
+
+.arial {
+	font-family: arial;
+}
+
+.font_12 {
+	font-size: 12px;
+}
+
+.font_13 {
+	font-size: 13px;
+}
+
+.font_14 {
+	font-size: 14px;
+}
+
+.font_15 {
+	font-size: 15px;
+}
+
+.font_16 {
+	font-size: 16px;
+}
+
+.font_18 {
+	font-size: 18px;
+}
+
+.font_20 {
+	font-size: 20px;
+}
+
+.font_22 {
+	font-size: 22px;
+}
+
+.font_24 {
+	font-size: 24px;
+}
+
+.font_26 {
+	font-size: 26px;
+}
+
+.font_28 {
+	font-size: 28px;
+}
+
+.font_30 {
+	font-size: 30px;
+}
+
+.font_32 {
+	font-size: 32px;
+}
+
+.font_36 {
+	font-size: 36px;
+}
+
+.font_40 {
+	font-size: 40px;
+}
+
+.font_42 {
+	font-size: 42px;
+}
+
+.font_48 {
+	font-size: 48px;
+}
+
+.font_50 {
+	font-size: 50px;
+}
+
+.font_70 {
+	font-size: 70px;
+}
+
+
+/*字体大小 end*/
+
+
+/*字体颜色 start*/
+
+.color_000 {
+	color: #000
+}
+
+.color_fff {
+	color: #fff
+}
+
+.color_333 {
+	color: #333
+}
+
+.color_666 {
+	color: #666;
+}
+
+.color_999 {
+	color: #999;
+}
+
+.color_a9a9a9 {
+	color: #a9a9a9;
+}
+
+.color_f44975 {
+	color: #f44975;
+}
+
+.color_1c7ebe {
+	color: #1c7ebe;
+}
+
+.color_fbb03b {
+	color: #fbb03b;
+}
+
+
+/*字体颜色 end*/
+
+
+/*背景颜色 start*/
+
+.bgColor_fff {
+	background-color: #fff;
+}
+
+.bgColor_f44975 {
+	background-color: #f44975;
+}
+
+.bgColor_fbb03b {
+	background-color: #fbb03b;
+}
+
+.bgColor_7fcbe5 {
+	background-color: #7fcbe5;
+}
+
+
+/*背景颜色 end*/
+
+.relative {
+	position: relative;
+}
+
+.w_1200 {
+	width: 1200px;
+}
+
+.margin_center {
+	margin: 0 auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.inline_block {
+	display: inline-block;
+}
+
+._block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.line_height {
+	line-height: 25px;
+}
+
+.letter_space {
+	letter-spacing: 1px;
+}
+
+.under_line {
+	height: 1px;
+	background-color: #eee;
+}
+
+.dotted_line {
+	border: 1px dotted #eee;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfloat {
+	zoom: 1
+}
+
+.clear {
+	clear: both;
+}
+
+.text_indent {
+	text-indent: 2em;
+}
+
+.w_1010 {
+	width: 1010px;
+}
+
+.onePage {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.onePage .main {
+	min-width: 1200px;
+	height: 589px;
+	margin: 0 auto;
+	background: url(data:image/gif;base64,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) no-repeat center;
+}
+
+.head-banner {
+	height: 100%;
+	background: url(https://images-web.newnewbank.com/pc-headBanner20180416_02.png) center top;
+}
+
+.bgColor_f3f7ff {
+	background-color: #f3f7ff;
+}
+
+.border-before:before {
+	content: '';
+	position: absolute;
+	width: 1008px;
+	height: 280px;
+	top: 5px;
+	right: -5px;
+	border: 1px solid #70be46;
+	border-radius: 5px;
+}
+
+.twoPage {
+	height: 685px;
+}
+
+.promint-box {
+	box-shadow: 0 5px 30px 0 #c4c4f8;
+	top: -70px;
+	left: 0;
+	border-radius: 5px;
+}
+
+.safe-text {
+	padding: 60px 40px 55px 334px;
+}
+
+.line-height-25 {
+	line-height: 25px;
+}
+
+.line-height-30 {
+	line-height: 30px;
+}
+
+.line-height-36 {
+	line-height: 36px;
+}
+
+.safe-text:before {
+	position: absolute;
+	top: 50px;
+	left: 60px;
+	content: '';
+	width: 219px;
+	height: 162px;
+	background: url(https://images-web.newnewbank.com/pc-leftImg20180416.png) no-repeat;
+}
+
+.star-line {
+	width: 967px;
+	height: 40px;
+}
+
+.line-white {
+	background: url(https://images-web.newnewbank.com/pc-lineBlue20180416.png) no-repeat;
+}
+
+.line-blue {
+	background: url(https://images-web.newnewbank.com/pc-lineWhite20180416.png) no-repeat;
+}
+
+.color_00428e {
+	color: #00428e;
+}
+
+.color_96a1e8 {
+	color: #96a1e8;
+}
+
+.color_5399fc {
+	color: #5399fc;
+}
+
+.color_f3f7ff {
+	color: #f3f7ff;
+}
+
+.bgColor_0d41b4 {
+	background-color: #0d41b4;
+}
+
+.bgColor_4f37b8 {
+	background-color: #4f37b8;
+}
+
+.padding-50 {
+	padding: 50px;
+}
+
+.padding-side-30 {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.padding-top-10 {
+	padding-top: 10px;
+}
+
+.padding-top-25 {
+	padding-top: 25px;
+}
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-top-60 {
+	padding-top: 60px;
+}
+
+.padding-top-80 {
+	padding-top: 80px;
+}
+
+.paddding-bottom-20 {
+	padding-bottom: 20px;
+}
+
+.padding-top-bottom-60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.green-border {
+	border: 1px solid #70be46;
+	border-radius: 5px;
+	background-color: #f3f7ff;
+}
+
+.mar-top-60 {
+	margin-top: 60px;
+}
+
+.good-icon-1 {
+	width: 158px;
+	height: 148px;
+	background: url(https://images-web.newnewbank.com/pc-goodIcon1-20180416.png) no-repeat;
+}
+
+.good-icon-2 {
+	width: 144px;
+	height: 133px;
+	background: url(https://images-web.newnewbank.com/pc-goodIcon2-20180416.png) no-repeat;
+}
+
+.good-icon-3 {
+	width: 142px;
+	height: 135px;
+	background: url(https://images-web.newnewbank.com/pc-goodIcon3-20180416.png) no-repeat;
+}
+
+.ulFloat li {
+	float: left;
+}
+
+.item-ul {
+	padding-left: 130px;
+	padding-top: 70px;
+}
+
+.item-ul li {
+	width: 180px;
+	text-align: center;
+	margin: 0 35px;
+}
+
+.icon-box {
+	height: 150px;
+}
+
+.threePage,
+.fourPage,
+.fivePage,
+.sixPage {
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+.why-box {
+	padding-left: 50px;
+}
+
+.why-box li {
+	width: 265px;
+	height: 410px;
+	background-color: rgba(25, 84, 154, .1);
+	box-shadow: 0 0 50px 30px rgba(89, 132, 227, 0.1) inset;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 20px;
+}
+
+.blue-circle-bg {
+	width: 116px;
+	height: 116px;
+	border-radius: 50%;
+	border: 6px solid rgba(34, 81, 182, 1);
+	background-color: #366de8;
+}
+
+.why-icon-01,
+.why-icon-02,
+.why-icon-03 {
+	width: 66px;
+	height: 66px;
+	margin-top: 25px;
+}
+
+.why-icon-01 {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAMAAADUivDaAAAAnFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+TINBkAAAAM3RSTlMA4LDwgDDAkP3SuooG9SwM+mk/D9fFtahTOR7khXt0NiMa7emimG5ZTUgXFQLKeGReRTFFLK1BAAABu0lEQVRYw+3V2XKqQBRA0SZwYzMIGGecpzhm3P//bzdRmmglNg0pX1Ksp/YcaivwoKjcUODP0bP9QJ9Ykq+rLcyAgaUFJLrEA3hCz4OHnMRdTuLuVondP+XFKPGSXb9Lh2O+mCTOjU9D+xcJ+zQEeZ8aGCUG6nIJKmGrfc0oUVNnu0rcOjEsnairmWOU8NW5DtkhKpRw0mOUffkTbEsltvB0OvmwLJVYZvcUggxLJEIJ4dfUbRZONN2zi6d1aO8LJvZtqE+zcU/CohEcE55RImgsQPbO5q8xYHdHHWjnJO6hM+raQPx6sei3SA1yEhapVl9cChouJ3ttoSk5cj/u+7vpeuS4sNYmetByRuupuOox75V0YSy0ZpI40e1jZJL/zlaadQ06Ikcf5OTq9l2CehHam7WaV3ZRSz0qrd0CvODHVeDBfCbyvcmPRvTTb+iA3AgTDaAVfhuHLvAozDQkxP7lA2kOY1UwsrEBu9Y/pJ8Pk9pxshHmkg6fbG81dIYrb84nLxGFvLW51N6KwkLfRXH9d1FONOnVoTeJRHnqP69KVIk/lBi7VkaClXGfD2aFZ65zzBKWJmGJis5/dVByEF0/JsQAAAAASUVORK5CYII=) no-repeat;
+}
+
+.why-icon-02 {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAMAAADUivDaAAAAqFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8j1z1tAAAAN3RSTlMAoED0BPzx6+bMZ/gwiCgc0MC7r3I6LSQgGBQL9tjIkl5LRUPh3riOgjWpo5h8eVkWDwezYlNIIZfPEQAAAl1JREFUWMPtlmmTokAMhlFaLkG8UAbwwBvvc/v//7NNGpBjUQE/bE3pW1M1RZJ+hoR0MtynSJf50ZsIjVLaeA9RAUT1fyJ641FnyANi1lrv3J+ix8ltI9KkmlqvAOBHE2mWhmOSD3BcOtEpXhCEevQ4H+chKEJweLF3zTMzWZ6ynYVvor7MoeVHdm52urqaxDy1/XPCVGRRWzPLeT4MGKRtPSGM6yzkYTsShf2Jgfm4DOh3FO6JrDXGSP0H7it6Z71X5a4jQ8/0TWrgk193oSFiLnaGp4+e5ilP52NkJ6NSMnaOle/2YOt0/zHvsJvyTgbM2UmX1MQijbm82uO3T9nWLL38wib+k7ComIZeANGAt5YTlg0gVlwRLeHENH65gCmcCiEsmGeX2HMXkEuumEZwHY/R4xAQ8I1O6rSqptuOeOo5MQ6MidHHasAZJbJiZ6uaf5VrctcKW2jVEnFm1RcHEjTExh8awkXRoRcXd8SBQhiNxLPO89ox06CK06RJ41HwQ6K00rrYRKslTV0CYWl5UZ8EckRAM3UW/m/kBKymbxhWllpFDsKuIcLPb97FKpnXIQ0lrMwKfn5j64QvvwvqpC8ZWAsRjL675+UCEtU+3hei7r+o1IhdNSd+T/jUFdPZxF+Q2E61WRrV9Jichw83ia6Tg6kGWeiJtazCjNikr1qzzz1UtTJqpDb78TAhv/P/iy/ii/giPgHRcO03ES7sr/N7iC2cVEOEUQqxCtc2ri2zFGIKJ0WPIyu2K8qJbR5JYPu4JELlaaA24UrKkIIVb3OlddrL4qzjcp+jv1RTjBRGmxUFAAAAAElFTkSuQmCC) no-repeat;
+}
+
+.why-icon-03 {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAMAAADUivDaAAAAflBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////vroaSAAAAKXRSTlMAkKDwvgo38XBAsPcE/UKsqWQwlGgd68i7s3ZYT9HPtI1IJhAP49mDU5XDkocAAAE/SURBVFjD7dTZcoIwGIbhX1nUEmSV3bV2yf3fYGOn9QOOyNf2oCPvWUjyDDOEyP+odYvCbYVPRfqzSLGCV+uvao8UXH3P9XghSJIABiVsRbYwSAEGL8DgBMaAsPLxxF/BIATCgMAaEFgDAmtAYA0IrAGBNSCwBgTWgMAaEFgDAmtAYA0IrKEqCNONSgnKIdgYuaADBBvjICg0406s6syWcESc7YjziNibsRMvLYods2UvaK2p1oJUyQilkl7XyF6IrjIsbU4Li05NKn+T+ulSFYXlbhrw7IYV/jHUaq2zaUTT/6Cjs/E0jViapYsHIi7JRXrtEt+W8EMdpD3B0bqzJDIzehvejLElgVWYnImZIAjPv51Hd/Pd0Yzizb3FYLK+Tabjq+xVW3ccEokmGr7HOyGEo8s6KxzLXnKZ+/U+AHzygiQKYwXrAAAAAElFTkSuQmCC) no-repeat;
+}
+
+.star-front,
+.star-after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: .3;
+}
+
+.star-front {
+	width: 100%;
+	height: 185px;
+	background: url(https://images-web.newnewbank.com/pc-starFront20180416.png);
+}
+
+.star-after {
+	width: 100%;
+	height: 183px;
+	background: url(https://images-web.newnewbank.com/pc-starAfter20180416.png);
+}
+
+.w-840 {
+	width: 840px;
+}
+
+.left-img-around {
+	padding-left: 190px;
+}
+
+.right-img-around {
+	padding-right: 350px;
+}
+
+.left-img-around:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 171px;
+	height: 171px;
+	background: url(https://images-web.newnewbank.com/pc-logo20180416.png) no-repeat;
+}
+
+.right-img-around:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 321px;
+	height: 224px;
+	background: url(https://images-web.newnewbank.com/pc-img20180416.png) no-repeat;
+}
+
+.storageMode {
+	width: 1150px;
+	height: 429px;
+	background: url(https://images-web.newnewbank.com/pc-storageMode20180416.png) no-repeat;
+}

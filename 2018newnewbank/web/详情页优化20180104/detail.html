@@ -1,0 +1,845 @@
+<!--保理页面-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="牛牛bank（www.newnewbank.com）、牛牛bank、牛牛bankP2P、牛牛银行、牛牛bank投资、牛牛bankP2P投资、投资、个人投资、互联网投资、网贷投资、投资网站、P2P投资、网络投资、牛牛投资、票据、保理、租赁、股权、社区宝、豪车宝、装修宝、金珠宝、衣、食、住、行、育、医、娱、寿">
+		<meta name="Description" content="牛牛bank专注于为各个投资者提供安全有保障的投资服务，为投资者提供安全、流动性好的创新型互联网投资产品，是您的网络借贷、网络投资专家。">
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=0, must-revalidate" />
+		<meta http-equiv="Expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>牛牛bank</title>
+		<link rel="shortcut icon" href="https://www.newnewbank.com/logo.ico" type="image/x-icon">
+		<!-- 新头部样式 -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-head-1.1.1.css">
+		<!-- 新头部样式 end-->
+		<!--  投资投资列表头部样式start  -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.1/product-details-1.1.1.css">
+		<!--  投资投资列表头部样式end  -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/base.css" />
+		<!-- 新购买弹框样式 -->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/newWeb1.1.2/buyPopup.css" />
+		<script src="https://www.newnewbank.com/js/html5media.min.js" type="text/javascript"></script>
+
+		<script src="https://www.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script>
+			window.web_context = 'https://www.newnewbank.com/';
+		</script>
+		<style type="text/css">
+			.popup-btn span.plink {
+				text-decoration: underline;
+				color: #f44975;
+				font-size: 16px;
+			}
+			
+			#foot {
+				padding-bottom: 28px;
+			}
+		</style>
+
+
+
+
+		<!--add 2018-01-04 start-->
+		<link rel="stylesheet" type="text/css" href="https://www.newnewbank.com/css/common/web-base-color.css">
+		<style type="text/css">
+			.pro-details {
+				background-color: #f7f7f7;
+			}
+			
+			.container {
+				background: #f7f7f7;
+			}
+			
+			.usable-money {
+				margin-top: 45px;
+			}
+			
+			.big-box01 {
+				border-bottom: 0!important;
+			}
+			
+			.buy-box {
+				height: 390px;
+				background: #fff;
+			}
+			
+			.buy-money {
+				margin: 40px auto 0 auto;
+			}
+			
+			.d-btn {
+				margin: 36px auto 0 auto;
+			}
+			.tb-box{
+				margin-bottom: 0;
+			}
+			.fbrk_con_tb{
+				padding-bottom: 15px;
+			}
+			.r-big-box{
+				margin-top: 0;
+			}
+		</style>
+		<style type="text/css">
+			.lm-hint-text {
+				font-size: 12px;
+				text-align: center;
+				padding-top: 40px;
+			}
+			
+			.lm-main {
+				width: 1200px;
+				border: 1px solid #ddd;
+				box-sizing: border-box;
+				margin: 0 auto;
+				background-color: #fff;
+			}
+			.lm-w-1200{
+				width: 1200px;
+				margin: 0 auto;
+				box-sizing: border-box;				
+				padding: 50px 0;
+			}
+			.lm-details-box{
+				width: 100%;
+			}
+			.lm-d-big-box02{
+				width: 100%;
+			    border: 1px solid #dddddd;
+			    border-radius: 2px;
+			    background-color: #fff;
+			}
+			.lm-table_nav{
+				height: 76px;
+				border-bottom: 1px solid #ebebeb;
+				font-size: 18px;
+			}
+			.lm-table_nav ul li{
+				float: left;
+				cursor: pointer;
+			    height: 100%;
+			    line-height: 76px;
+			    color: #333;
+			    padding: 0 35px;
+			    position: relative;
+			}
+			.lm-current {
+			    color: #F44975!important;
+			}
+			.lm-current .navUnderline {
+			    position: absolute;
+			    left: 0;
+			    bottom: -2px;
+			    width: 100%;
+			    height: 3px;
+			    background: #F44975;
+			}
+			.lm-table table ,.table table tr{
+				width: 100%;
+				border: 0;
+				outline: none;
+			}
+			.lm-table table tr th{
+				font-weight: lighter;
+			}
+			.lm-active{
+				display: block;
+			}
+			.lm-side{
+				padding: 36px 36px 0;
+			}
+			.lm-title{
+				height: 52px;
+				line-height: 52px;	
+				font-size: 16px;
+				color: #666;
+				background-image:linear-gradient(to right,rgba(238,238,238,1) 0%,rgba(238,238,238,.1) 100%);
+				background-image: -webkit-linear-gradient(to right,rgba(238,238,238,1) 0%,rgba(238,238,238,.1) 100%);			
+			}
+			.lm-icon{
+				float: left;
+				width: 15px;
+				height: 19px;
+				background: url(https://images-web.newnewbank.com/icon20180104.png) no-repeat;
+				margin: 17px 15px;
+			}
+			.lm-w-30{
+				width: 30%;
+			}
+			.lm-w-35{
+				width: 35%;
+			}
+			.lm-look{
+				color: #999;
+			}
+			.lm-text-box{
+				color: #999;
+				font-size:14px ;
+				padding: 30px 15px 60px;
+				line-height: 30px;
+				position: relative;
+			}
+			.lm-text-indent{
+				text-indent: 2em;
+			}
+			.lm-text-center{
+				text-align: center;
+			}
+			.lm-imgCenter{
+				width: 250px;
+				height: 250px;
+				margin: 10px 10px;
+			}
+			.padding-top-30{
+				padding-top: 30px;
+			}
+			.lm-img-float{
+				margin-top: 36px;
+			}
+			.lm-img-float li{
+				float: left;
+				margin:10px;
+			}
+			.lm-img-float li img{
+				width: 190px;
+				height: 180px;
+			}
+			.lm-table-record tr th{
+			    height: 60px;
+			    background-color: #eee!important;
+			    text-align: center;
+			    font: normal 16px/60px "Microsoft YaHei";
+			    color: #333333;
+			}
+			.lm-table-record tr td{
+				padding: 18px 0;
+				text-align: center;
+			}
+			.lm-table-record tr:nth-child(odd) td{
+				background-color: #fff;
+				
+			}
+			.lm-table-record tr:nth-child(even) td{
+				background-color: #fafafa;
+			}
+			.lm-table-border tr th{
+				background: #f5f5f5;
+				padding: 20px 0;
+			}
+			.lm-table table.lm-table-border{
+				border: 1px solid #dcdcdc;
+				width:90%;
+				text-align: center;
+				color: #333;
+				font-size: 16px;
+				margin: 70px auto;
+			}
+			.lm-table table.lm-table-border tr th,.lm-table table.lm-table-border tr td{
+				border-right:1px solid #dcdcdc;
+				border-bottom:1px solid #dcdcdc;
+			}
+			.lm-table table.lm-table-border tr td{
+				padding: 20px 0;
+			}
+			.float_left{
+				float: left;
+			}
+			.clearfloat:after {
+				display: block;
+				clear: both;
+				content: "";
+				visibility: hidden;
+				height: 0
+			}
+			
+			.clearfloat {
+				zoom: 1
+			}
+			.mar-right-50{
+				margin-right: 50px;
+			}
+			.text_center{
+				text-align: center;
+			}
+			
+			.lm-border-box{
+				/*width: 964px;*/
+				border: 1px solid #dcdcdc;
+				padding: 20px 0 0;
+				border-radius: 5px;
+				margin: 0 auto;
+				position: relative;
+			}
+	        .lm-box {	        	
+	            height: 350px;
+	            margin: 0 auto;
+	            overflow: hidden;
+	            position: relative;
+	        }
+			.lm-ul {
+            	position: absolute;
+	            top: 0;
+	            left: 0;
+	           /*width: 1000%;*/
+	        }
+	
+	        ul.lm-ul li {
+	        	/*width: 229px;*/
+	            list-style: none;
+	            float: left;
+	            margin: 0 5px;
+	            cursor: pointer;
+	            border: 1px solid #999;
+	        }
+	        img.lm-img {
+	            width: 229px;
+	            height: 294px;
+	        }
+	
+	        .lm-pageNum {
+	            position: absolute;
+	            bottom: 0;
+	            left: 0;
+	            width: 100%;
+	            height: 44px;
+	            line-height: 44px;
+	            text-align: center;
+	            color: #666;
+	        }
+	
+	        [btn="next"],
+	        [btn="prev"] {
+	            cursor: pointer;
+	            width: 14px;
+	            height: 24px;
+	            position: absolute;
+	            top: 40%;
+	            background-image: url(https://images-web.newnewbank.com/product_details_icon_20160420.png);
+	            background-repeat: no-repeat;
+	        }
+	
+	        [btn="next"] {
+	            left: 10px;
+	            background-position: -36px -40px;
+	        }
+	
+	        [btn="prev"] {
+	            right: 10px;
+	            background-position: -78px -40px;
+	        }
+	
+	        .not-allow {
+	            display: none;
+	        }
+			
+		</style>
+		<!--add 2018-01-04 end-->
+	</head>
+
+	<body class="pro-details">
+
+		<!--  页面内容start  -->
+		<div class="container">
+			<!--保理 -->
+			<div id="bg" class="pro-top-bg" style="background: url(https://images-web.newnewbank.com/product_details_baoli_top_bg_20160425.jpg) no-repeat center top;"></div>
+			<div class="main-box clearfix">
+				<!--  左侧内容start  -->
+				<div class="main-left fl">
+					<div class="left-box1">
+						<!--保理 -->
+						<div class="pro-head"><img src="https://images-web.newnewbank.com/head_baoli_20160425.jpg" /></div>
+						<div class="pro-info">
+							<h3>牛牛通第177期（豪车宝）</h3>
+							<p>发布时间：2018-01-03</p>
+							<div class="sm-box01 clearfix">
+								<div class="col col01 fl">
+									<strong><span id="perlv">10.87</span>%</strong>
+									<p>历史年化</p>
+								</div>
+								<div class="col col02 fl">
+									<strong>234天</strong>
+									<p>投资周期</p>
+								</div>
+								<div class="col col03 fl">
+									<strong>323,664.32元</strong>
+									<p>转让金额</p>
+								</div>
+							</div>
+						</div>
+						<div class="big-box01">
+							<h4>汽车电商服务公司项目</h4>
+							<div class="details-progress clearfix">
+								<div class="d-line-progress fl">
+									<div class="d-progress" style="width:0%"><i></i></div>
+								</div>
+								<span class="fl">0%</span>
+							</div>
+							<div class="sm-box02 clearfix">
+								<p class="remain-money fl">剩余可投金额：<span id="remainMoney">323664.32</span>元</p>
+								<p class="countdown fl"><i></i> 筹标剩余时间：
+									<em id="restTime2"></em>
+								</p>
+							</div>
+							<div class="sm-box03 clearfix">
+								<p class="fl"><i></i> 购买成功立刻起息
+								</p>
+								<p class="fl"><i></i>按季付息</p>
+								<p class="fl"><i></i>不支持提前还款 </p>
+								<p class="fl"><i></i><span id="endDate">2018-08-24</span>结息</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  左侧内容end  -->
+
+				<!--  右侧内容start  -->
+				<div class="main-right fl">
+					<!--  购买框start  -->
+					<div class="buy-box">
+						<div class="usable-money">
+							<p>可用金额：
+								<span id="loginLeave">请先 <a href="javascript:;">登录</a></span></p>
+						</div>
+						<div class="buy-money">
+							<input type="text" name="" value="" id="moneyNums" values="" readonly="readonly" />
+							<em></em>
+							<label>元</label>
+						</div>
+						<div class="earnings" style="display:none;"><i></i>预期收益：<span id="getNums">0</span></div>
+						<p class="protocol clearfix">
+							<input name="" type="checkbox" checked="checked" class="reg" disabled="disabled">
+							<span>我同意《<a target="_blank" href="https://www.newnewbank.com/contractDetail/2017041301.shtml">借款合同</a>》</span>
+						</p>
+						<span id="toBuy" style="position: relative;"><a class="d-btn buyNow" id="buyNow" href="javascript:;" btn-triggle="expandUp">立即购买</em></a></span>
+
+						<p class="lm-hint-text">温馨提示：投资有风险，购买需谨慎</p>
+
+					</div>
+					<!--  购买框end  -->
+
+				</div>
+				<!--  右侧内容end  -->
+				
+				
+			</div>
+
+
+
+			<!--add 2018-01-04 start-->
+			<div class="lm-main">
+				<div class="lm-table_nav bgColor_fff">
+					<ul class="inline_block clearfloat">
+						<li  class="nav-term lm-current">项目详情<i class="navUnderline"></i></li>                                                                
+						<li  class="nav-term ">风险保障<i class="navUnderline"></i></li>
+						<li  class="nav-term ">投资记录<i class="navUnderline"></i></li>
+						<li  class="nav-term ">合同/资料 <i class="navUnderline"></i></li>
+						<li  class="nav-term ">还款计划<i class="navUnderline"></i></li>
+					</ul>						
+				</div>
+				<div class="lm-contain ">
+					<!--项目详情  start-->
+					<div class="lm-table lm-active none">
+						<div class="lm-side">
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>项目描述</p>
+								<div class="lm-text-box">
+									<p class="lm-text-indent">承租企业深圳市佳鸿集团控股有限公司（原深圳佳鸿贸易发展有限公司）是全中国优秀的豪华及超豪华汽车授权经销商集团，公司拥有一批大量必备的固定资产设备，设备价格昂贵，该资产总价庞大，是公司运营中不可或缺部分。设备过程中寿命周期长，企业为了补充流动资金，更好地发展壮大公司业务，该公司将旗下多家4s店的设备与深圳南海国际融资租赁有限公司以售后回租的形式进行融资租赁业务。</p>
+									<p class="lm-text-indent">深圳南海国际融资租赁有限公司根据企业运转的实际资金需要，依托牛牛bank平台，向投资者借款，还款来源为承租企业支付的设备租金。   </p>
+								</div>
+							</div>
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>承租人信息</p>
+								<div class="lm-text-box">
+									<p class="lm-text-indent">深圳佳鸿贸易发展有限公司成立于2001年，主要经营豪华、超豪华进口车及二手豪华车的销售及售后等汽车业务，是目前全中国最大的豪华及超豪华汽车授权经销商。具体情况：</p>
+									1、取得了近20个豪华汽车的品牌授权，超豪华品牌汽车如劳斯莱斯、宾利、法拉利、玛莎拉蒂及豪华品牌如宝马、捷豹、路虎、凯迪拉克、进口大众，MINI、奥迪、英菲尼迪，沃尔沃等。<br>
+									2、拥有近50家豪华及超豪华汽车旗舰4S及5S 店，遍布在深圳、东莞、广州、济南、惠州、佛山、厦门、珠海、泉州、昆明、贵阳、重庆、大连、青岛、太原、长沙、柳州、杭州、晋中、成都、郑州、鄂尔多斯、呼和浩特等地。<br>
+									3、除了进口汽车的销售及售后模块，公司的业务范畴还伸延到了二手豪车、豪车租赁、保险、物流、文化、矿业、投资等领域。<br>
+									4、将与银行、企业、保险、商会等机构强强联手，为佳鸿尊贵的“Key Customer”大客户群提供一对一的私人定制服务。 
+								</div>
+							</div>
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>融资租赁物信息</p>
+								<div class="lm-text-box">
+									<p >租赁物类型  &nbsp; &nbsp; &nbsp;     宝马750、宝马X5、路虎发现4、路虎揽胜运动等</p>
+									<p >租赁物总价   &nbsp; &nbsp; &nbsp;     10,230,700.00元 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--项目详情  end-->
+					<!--风险保障  start-->
+					<div class="lm-table  none">
+						<div class="lm-side">
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>尽职调查</p>
+								<div class="lm-text-box">									
+									<p >牛牛bank风控团队由多位原银行高管组成，针对此融资租赁产品进行了深入的尽职调查。</p>
+									<div class="lm-text-center padding-top-30">
+										<img src="" class="lm-imgCenter"/><img src="" class="lm-imgCenter"/><img src="" class="lm-imgCenter"/><br>
+										<img src="" class="lm-imgCenter"/><img src="" class="lm-imgCenter"/><img src="" class="lm-imgCenter"/>																
+									</div>
+								</div>
+							</div>
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>设备投保</p>
+								<div class="lm-text-box">
+									<p >深圳南海国际融资租赁对设备进行投保，设备在租赁期间由于自然灾害或者意外及员工操作不当所造成的损失，由民安保险全额承保。</p>
+								</div>
+							</div>
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>债权回购</p>
+								<div class="lm-text-box">
+									<p >深圳南海国际融资租赁有限公司注册资本26000万港币，系新华社融资租赁信息咨询部专属执行机构，为新华社金融信息交易所系统内唯一一家负责融资租赁业务信息咨询的机构，公司依托于新华社金融信息交易所，开展融资租赁信息咨询服务业务。深圳南海国际融资租赁在项目到期后对债权进行回购，承担100%的还款责任。</p>
+									<ul class="lm-img-float">
+										<li><img src=""/></li>
+										<li><img src=""/></li>
+										<li><img src=""/></li>
+										<li><img src=""/></li>
+										<li><img src=""/></li>
+									</ul>
+									<div style="clear: both;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--风险保障  end-->
+					<!--投资记录  start-->
+					<div class="lm-table  none">
+						<div class="lm-side">
+							<div class="lm-page">
+								<p class="lm-title"><i class="lm-icon"></i>投资记录（13人已投资）</p>
+								<div class="lm-text-box">									
+									<table class="lm-table-record">
+										<tr>                                                                                                                                                                                              
+											<th>投资用户</th>
+											<th>投资金额    </th>
+											<th>投资时间  </th>
+											<th>投资方式</th>
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+										<tr>
+											<td>*******1714</td>
+											<td>￥12356.03</td>
+											<td>2017-12-25 16:21:51</td>
+											<td>微信端</td>											
+										</tr>
+									</table>
+									<div class="paging-box">
+										<div class="paging-btns">
+											<a href="javascript:;" class="prev-page">&nbsp;<b></b></a> 
+											<a href="javascript:;" class="selected">1</a>
+											<a href="javascript:;" p="2">2</a>
+											<a href="javascript:;" p="3">3</a>
+											<a href="javascript:;" class="next-page" p="2">&nbsp;<b></b></a> 
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--投资记录  end-->
+					<!--合同/资料  start-->
+					<div class="lm-table   none">
+						<div class="lm-side clearfloat">
+							<div class="lm-page ">
+								<p class="lm-title"><i class="lm-icon"></i>企业相关材料</p>
+								<div class="lm-text-box ">
+									<div class="lm-border-box">									
+										<div class="lm-box" id="lm-box">
+									        <ul id="lm-ul" class="lm-ul"></ul>
+									        <p class="lm-pageNum" id="lm-circleDot">正在加载...</p>									        
+									    </div>
+									    <p class="text_center" id="lm-leftRBtn">
+								            <a btn="next"></a>
+								            <a btn="prev"></a>
+								        </p>
+									</div>
+								</div>	
+							</div>
+							<div class="lm-page ">
+								<p class="lm-title"><i class="lm-icon"></i>合同协议</p>
+								<div class="lm-text-box">
+									<div class="lm-border-box">									
+										<div class="lm-box" id="lm-box2">
+									        <ul  class="lm-ul" id="lm-ul2"></ul>
+									        <p class="lm-pageNum" id="lm-circleDot2">正在加载...</p>									        
+									    </div>
+									    <p class="text_center" id="lm-leftRBtn2">
+								            <a btn="next"></a>
+								            <a btn="prev"></a>
+								        </p>
+									</div>									
+								</div>		
+							</div>
+							<div class="lm-page ">
+								<p class="lm-title"><i class="lm-icon"></i>担保合同</p>
+								<div class="lm-text-box">
+									<div class="lm-border-box">									
+										<div class="lm-box" id="lm-box3">
+									        <ul  class="lm-ul" id="lm-ul3"></ul>
+									        <p class="lm-pageNum" id="lm-circleDot3">正在加载...</p>									        
+									    </div>
+									    <p class="text_center" id="lm-leftRBtn3">
+								            <a btn="next"></a>
+								            <a btn="prev"></a>
+								        </p>
+									</div>											
+								</div>	
+							</div>
+						</div>
+					</div>
+					<!--合同/资料  end-->
+					<!--还款计划  start-->
+					<div class="lm-table  none">
+						<table class="lm-table-border">
+							<tr>
+								<th>还款方式</th>
+								<th>还款期数</th>
+								<th>预计还款日期</th>
+								<th>应还本金(元）</th>
+								<th>应还利息</th>
+								<th>还款状态</th>
+								<th>实际还款日期</th>
+							</tr>
+							<tr>
+								<td  rowspan="10">按月付息<br>到期还本</td>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+							<tr>
+								<td>【01期】</td>
+								<td>2018-01-15</td>
+								<td>0</td>
+								<td>46849.32</td>
+								<td>未还款</td>								
+								<td></td>
+							</tr>
+						</table>
+						
+						
+						
+					</div>
+					<!--还款计划  end-->
+				</div>
+			</div>
+			
+			<!--  回款公告start  -->
+			<div class="lm-w-1200">
+				<div class="lm-details-box" >
+					<div class="d-sm-box01 clearfix"><h3 class="fl">回款公告</h3></div>
+					<div class="lm-d-big-box02">
+						<div class="tb-box">
+							<span id="investRecords">
+								<div class="fbrk_con_tb">
+									<table class="fbrk_table2">										
+										<tr class="fbrk_th">
+											<th class="lm-w-35">项目名称</th>                                                                                                                                              
+											<th class="lm-w-30">回款时间</th>
+											<th class="lm-w-35">回款详情</th>
+										</tr>																	
+										<tr class="fbrk_tr">
+											<td>牛牛银票第1738期</td>                                                                                                                                                  
+											<td> 2017/12/12</td>
+											<td> <a href="javascript;" class="lm-look"> 查看> </a> </td>
+										</tr>					
+										<tr class="fbrk_tr">
+											<td>牛牛通第1738期（惠农宝）</td>                                                                                                                                                  
+											<td> 2017/12/12</td>
+											<td><a href="javascript;" class="lm-look"> 查看> </a> </td>
+										</tr>	
+										<tr class="fbrk_tr">
+											<td>牛牛银票第1738期</td>                                                                                                                                                  
+											<td> 2017/12/12</td>
+											<td><a href="javascript;" class="lm-look"> 查看> </a> </td>
+										</tr>
+										<tr class="fbrk_tr">
+											<td>牛牛银票第1738期</td>                                                                                                                                                  
+											<td> 2017/12/12</td>
+											<td><a href="javascript;" class="lm-look"> 查看> </a> </td>
+										</tr>	
+										<tr class="fbrk_tr">
+											<td>牛牛银票第1738期</td>                                                                                                                                                  
+											<td> 2017/12/12</td>
+											<td><a href="javascript;" class="lm-look"> 查看> </a> </td>
+										</tr>	
+									</table>
+								</div>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--  回款公告end  -->
+			<!--add 2018-01-04 end-->
+
+
+
+
+
+		</div>
+		<!--  页面内容end  -->
+		<script src="https://www.newnewbank.com/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="js/myubo2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+		//  项目详情          风险保障          投资记录         合同/资料        还款计划     导航切换
+		$('.nav-term').on('click', function() {
+			var i = $(this).index();
+			$(this).addClass('lm-current').siblings('.nav-term').removeClass('lm-current');
+			$('.lm-contain .none').eq(i).addClass('lm-active').siblings('.none').removeClass('lm-active');
+		});
+	
+	
+		 var arrImg=[
+                    'https://images-nnb.newnewbank.com/201708106dae31d6fe1340619b706266327288c9.jpg', 
+                    'https://images-nnb.newnewbank.com/20170810797177c47e494ede82429c2d5923739a.jpg', 
+                    'https://images-nnb.newnewbank.com/2017081069b1546d6c22420faa3ea2c38a05099d.jpg', 
+                    'https://images-nnb.newnewbank.com/201708106ad2afb169534367ba82e21738c3a783.jpg'];
+                    
+        var arrImg2=[
+                    'https://images-nnb.newnewbank.com/20170810f7bfafb0c8ad4d46aa5ed50452eeb7af.jpg',
+                    'https://images-nnb.newnewbank.com/2017081059745790b72e4b2695d5075131011394.jpg'];
+                    
+        var arrImg3=[
+        	    'https://images-nnb.newnewbank.com/20171215360ebae43efd42d5889855fed3b6da10.jpg',
+        		'https://images-nnb.newnewbank.com/2017121531b5cce96cb34d16976ad0b80847a9ae.jpg',
+        		'https://images-nnb.newnewbank.com/20171215bae2d2410ed74bdfa98f45aa2980f158.jpg',
+        		'https://images-nnb.newnewbank.com/20171215ab4897709c1a44b6a15c783155b72549.jpg',
+        		'https://images-nnb.newnewbank.com/20171215fce936f621f04359b9509b0069ecdd89.jpg',
+        		'https://images-nnb.newnewbank.com/20171215b539b16b47af40e79c58e529ac345c0a.png',
+        		'https://images-nnb.newnewbank.com/201712151e269a468145471eabdabab7f4620e5a.jpg'
+           ]
+
+        scollTab(arrImg,'lm-ul','lm-circleDot','lm-box','lm-leftRBtn');
+        scollTab(arrImg2,'lm-ul2','lm-circleDot2','lm-box2','lm-leftRBtn2');
+		scollTab(arrImg3,'lm-ul3','lm-circleDot3','lm-box3','lm-leftRBtn3');
+		
+	</script>
+	</body>
+	
+
+</html>

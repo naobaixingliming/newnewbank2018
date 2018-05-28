@@ -1,0 +1,71 @@
+/*未实名认证、开通快捷支付、有优惠券 弹框  start*/
+
+.shadow-info {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	z-index: 1000;
+}
+
+.Six-goName,
+.Six-goBank,
+.Six-coupon {
+	width: 80%;
+	position: fixed;
+	top: 30%;
+	left: 10%;
+	z-index: 2000;
+}
+
+.Six-top-border {
+	border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.Six-bottom-border {
+	border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.Six-head {
+	width: 2.175rem;
+	height: 2.325rem;
+	background: url(https://images-wap.newnewbank.com/phone20170629.png) no-repeat;
+	background-size: cover;
+}
+
+.Six-bank {
+	width: 3.475rem;
+	height: 2.5rem;
+	background: url(https://images-wap.newnewbank.com/bank20170629.png) no-repeat;
+	background-size: cover;
+}
+
+.Six-circle {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	padding: 0.25rem;
+	margin: -2.25rem auto 0;
+}
+
+.Six-couponIcon {
+	width: 4rem;
+	height: 4rem;
+	background: #fff url(https://images-wap.newnewbank.com/coupon20170630.png) no-repeat 0.475rem 0.325rem;
+	background-size: 2.825rem 2.8rem;
+	border-radius: 50%;
+	box-shadow: 0.125rem 0.2rem 0.25rem rgba(0, 0, 0, .2);
+}
+
+.font-pos {
+	position: absolute;
+	top: 1.75rem;
+	left: 30%;
+}
+
+
+/*未实名认证、开通快捷支付、有优惠券 弹框  end */

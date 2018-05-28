@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<script src="../js/flexible.0.3.4.js" type="text/javascript" charset="utf-8"></script>
+		<title>提现</title>
+		<link rel="stylesheet" type="text/css" href="../css/loginRegister.min.css" +Math.random()/>
+		<link rel="stylesheet" type="text/css" href="../css/ctsAll.css" />
+		
+	</head>
+
+	<body>
+		<div class="wholeInterface">
+			<!--popup start-->
+			<div class="cover none"></div>
+			<div class="popupBox bgColor_fff none">
+				<p class="text_center color_333 font_24 padding-top-40 padding-bottom-40">15:00之前申请，预计到账日期T+1</br>
+					15:00之前申请，预计到账日期T+2</br>
+					(不区分工作日）
+				</p>
+				<p class="text_center">
+					<button class="h-60 line-height-60 font_30 color_fff bgColor_2196e8 forwardBtn">确 定</button>
+				</p>					
+			</div>	
+			<!--popup end-->			
+			<div class="h-64" style="margin: 0 0.546875rem ;">
+				<i class="warmIcon float_left mar-top_15"></i>
+				<a class="color_ccc font_20">单笔限额5万，当日累计限额50万</a>
+			</div>			
+			<div class="payment bgColor_fff ">
+				<div class="h-90 line-height-90 mar-left-right-35">
+					<i class="font_24 color_333">到账银行</i>
+					<span class="float_right delegate">
+						<i class="font_20 color_999 cardNumber" style="line-height: 0;">招商银行(6225201622221898)</i>
+					</span>
+				</div>
+				<p class="under_line"></p>
+				<p style="height:0.15625rem;background-color: #efeff4;"></p>
+				<div class="h-90 line-height-90 mar-left-right-35">
+					<i class="font_24 color_333">提现金额(元)</i>
+					<span class="float_right delegate">
+						<i class="float_right doubtNumber" >?</i>
+					</span>
+				</div>
+				<div class="padding-bottom-60 padding-top-40 mar-left-right-35 clearfloat">
+					<i class="font_36 color_333 padding-right-60 float_left">￥</i>
+					<input type="text" class="inputEle float_left padding-top-20" placeholder="账户余额：20000.00元" />
+					<a class="float_right color_2196e8 font_22" href="javascript:;">全部提现</a>					
+				</div>
+				<p class="under_line"></p>				
+			</div>			
+			<p class="h-90 line-height-90 color_fff font_36 text_center bgColor_2196e8 sureRecharge" >确定提现</p>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			(function() {
+				var withdrawalVm = {
+					init: function() {
+						this.bindEvent();
+					},
+					bindEvent: function() {
+						//弹框							
+						$('.doubtNumber').on('click',function(){
+							$('.cover').show();
+							$('.popupBox').slideDown(100);							
+						});
+						$('.forwardBtn').on('click',function(){
+							$('.cover').hide();
+							$('.popupBox').slideUp(100);							
+						});						
+					}
+				}
+				withdrawalVm.init();
+			})()
+		</script>
+	</body>
+
+</html>

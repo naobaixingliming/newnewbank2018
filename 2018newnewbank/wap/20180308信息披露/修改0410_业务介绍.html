@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8" src="js/adapter.0.6.4.min.js"></script>
+		<title>业务介绍</title>
+		<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/wap_infoDisclosure.css" />
+		<style type="text/css">
+			.h-100-pre {
+				height: 100%;
+			}
+			
+			.ulFloat li {
+				float: left;
+			}
+			
+			.linkTab li {
+				width: 3.65rem;
+				height: 1.2rem;
+				border: 1px solid #dcdcdc;
+				border-radius: 0.6rem;
+				text-align: center;
+				box-shadow: 0 0.125rem 5px 0 #ddd;
+				margin: 0 0.5rem 0.6rem;
+			}
+			
+			.consume-icon-1 {
+				width: 2.75rem;
+				height: 0.925rem;
+				background: url(data:image/png;base64,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) no-repeat;
+				background-size: cover;
+			}
+			
+			.consume-icon-2 {
+				width: 3.25rem;
+				height: 0.475rem;
+				background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAATCAMAAABr5yUpAAAAllBMVEUAAACybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgKybgLIue1pAAAAMXRSTlMAzu8FxzsTCTfnsKOM3UPz67oh+uKDYFMyGtWddIh5wKpZLii1mUoOk2xO2XFn9n4/qAZ1CgAABL5JREFUSMfNlonWmjAQhQcElH2TfRNFRQT1vv/LdRK0tX9foN/xGBxC5s6SIL1JO5TRZpnob4rT5odlq2+/fuU/767Tr+LRP/N+riFn/OBVAlbEoza8LYYu2Gkws52+myz9s2YPM+GBJzM1DgbfGOfN1Q569lSZaX6kxedQyqAm5mYb1N9DGU/6W4Cp3gz6JgWQkcQN1nEHn1EBxKoYLCIlCJMksQA0SQNNxOEB+TQbgA+gY4kqmGMOnDZAT0wAjSa+LkK+V9GbMyD0tOE7QRfgwRk9TS/+gfIta57btnWBsW1vblewBMB07/tS0dzyYSoGKQqb+OO42NvLSUpSbLGWVdKoViLOGWavmUKiZVVtSlGgMmYIiAtAW+sXAznlGpiZInjSelNdres0Rem6Tn0oHKGGezQ1QvZxURQeRgxZ+kCo+9DX6u3jIudQl0BJTF7V42TCbocSCO13syTPxnGcPVA5Tpsua/JbkRQPOHte45/pFK1zlUCrqnEcz+cKrsiPBsEY7eV4YYtabjn1nDlMnMsjpzMOAJR2eAe0cNBpQD5gKsCTpmxWnxzAxyd90XE2rsBL9m66/WOGtcI+HSlh74W4XaszcNuIPq+hN3h6ngqYCnDdmKoN58Grs1PZbsfoAmQX+IsDhiXv7mGt6xbQ656rnEii4UgOavpQT2+zmaVzXafZAOjSENLeJyaG6MXIj8E6WaAJW8GdZQVmjz7Yb64T4DVyAwBKANVkIS1E9XR805HEionuiOhDWMmhBBCU7t3H43HfSgl2ing47E3hVOOM9TegvfULS+pRrc8whwUSXvPqAvllVA6XnBJocquhOp0OwOWUAU+S7A9Cwo5WMlJsUZHNazeiPLIiuPkpke043DSOORzAjd9ytsUiadUYwGkGr0JmkCBR70afAInOx9pBCjnC5+dtmYWd9OsAhqjWTBIsRAPsdxVKChYeDV+xRJbNAPztynMBSk6TCCVeCx3uVUCN/SbGtpUSArNGHQQcAbAGdIc/2xp44q79SHDkuXBiZZ/y48bt+j6bPJbo8ciWM9yLrjyTJt1lXc3pcHEI5hbNxgAmj8O6PusY1o5S+NRICSUkSWKzI03smhyP2fUBt/spoaDotwTFWnfcM4ocuL9PzAGwnYdtu6EzqlZBWx+XBLEZ3SGoSETx4BTREwOdpQRxKhpjo0LyqOUcsVlB7PZvCflXFnYuR7TtIDjTBycA7jH2Cg+8ZCI0Cx826Zc893RDVG9UoSFwMVElJWQZGa8kNDibeK2Li4z3iEP12P8lgVF/tyPNiyxbcx7rS20fkqO0jlCpxvhEJ+R6pKMUz0Np5huTGFdUBbAorJNWCcXsmGDJhpiYf941LR8sTGh9NqUtJMTypFjoTb6V52FWuRDssw1tLqzWjOEkkPRc7aPH/vGh2PatzzcMRQRcYeDmAGPrsqdYNK0eb8IYnViHKzSVQyazsKW0q75e6LXmxmB8xys20W5DBh4edZxFh90eYleng0ZDuaFoGQ8hI0p2PUAt1k1sQXRUM/TG582nvyWY17SJiCnV2+//DpZokb/xbBMItKfxx8KX20u0vjKEmQX/S258Ll7Ft93YFauvK4+fOL9W0DMO8//hFxHisJ2zyU3nAAAAAElFTkSuQmCC) no-repeat;
+				background-size: cover;
+			}
+			
+			.consume-icon-3 {
+				width: 2.175rem;
+				height: 0.9rem;
+				background: url(data:image/png;base64,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) no-repeat;
+				background-size: cover;
+			}
+			
+			.padding-side-20 {
+				padding-left: .5rem;
+				padding-right: .5rem;
+			}
+			
+			.padding-top-10 {
+				padding-top: .25rem;
+			}
+			
+			.padding-top-60 {
+				padding-top: 1.5rem;
+			}
+			
+			.padding-top-bottom-40 {
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+			
+			.process-Img {
+				width: 13.075rem;
+				height: 8.175rem;
+				background: url(https://images-wap.newnewbank.com/wap_structureChart20180410.png) no-repeat;
+				background-size: cover;
+				margin-bottom: 1rem;
+			}
+			
+			.frame-box {
+				width: 13.75rem;
+				box-shadow: 0 0 1rem 0 #dcdcdc;
+				background-color: #fff;
+				border-radius: 0.25rem;
+				padding: 0.75rem 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.padding-left-90 {
+				padding-left: 2.25rem;
+			}
+			
+			.padding-right-24 {
+				padding-right: 0.6rem;
+			}
+			
+			.red-btn-ver {
+				width: 1rem;
+				position: absolute;
+				top: 1rem;
+				left: .7rem;
+				background-color: #00b7ee;
+				border-radius: 0.5rem;
+				font-size: 0.5rem;
+				color: #fff;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.padding-top-bottom-20 {
+				padding: .5rem 0;
+			}
+			
+			.line-height-40 {
+				line-height: 1rem;
+			}
+			
+			.item-process-img {
+				width: 14.775rem;
+				height: 8.1rem;
+				background: url(https://images-wap.newnewbank.com/wap_consumeProcess02-20180410.png) no-repeat;
+				background-size: cover;
+				margin-left: -.3rem;
+			}
+			
+			.supply-process-img {
+				width: 11.925rem;
+				height: 8.2rem;
+				background: url(https://images-wap.newnewbank.com/wap_supplyChain20180410.png) no-repeat;
+				background-size: cover;
+				margin-bottom: 1rem;
+			}
+			
+			.supply-process-img1 {
+				width: 10.825rem;
+				height: 10rem;
+				background: url(https://images-wap.newnewbank.com/wap_supplyProcess20180410.png) no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="rootNode">
+			<header class="bgColor_fff">
+				<div class="mar-side-25">
+					<ul class="flex_parent text_center">
+						<li class="flex_child ">
+							<a class="_block" href="备案信息.html">
+								<div class="all_center h-90"><i class="info-icon-1"></i></div>
+								<div class="font_22 color_333">备案信息</div>
+							</a>
+						</li>
+						<li class="flex_child">
+							<a class="_block" href="组织信息.html">
+								<div class="all_center h-90"><i class="info-icon-2"></i></div>
+								<div class="font_22 color_333">组织信息</div>
+							</a>
+						</li>
+						<li class="flex_child cur">
+							<a class="_block" href="业务介绍.html">
+								<div class="all_center h-90"><i class="info-icon-3"></i></div>
+								<div class="font_22 color_333">业务介绍</div>
+							</a>
+						</li>
+						<li class="flex_child">
+							<a class="_block" href="审核信息.html">
+								<div class="all_center h-90"><i class="info-icon-4"></i></div>
+								<div class="font_22 color_333">审核信息</div>
+							</a>
+						</li>
+					</ul>
+					<ul class="flex_parent text_center" style="padding: 0.3rem 0 0.65rem;">
+						<li class="flex_child ">
+							<a class="_block" href="经营信息.html">
+								<div class="all_center h-90"><i class="info-icon-5"></i></div>
+								<div class="font_22 color_333">经营信息</div>
+							</a>
+						</li>
+						<li class="flex_child">
+							<a class="_block" href="风险信息.html">
+								<div class="all_center h-90"><i class="info-icon-6"></i></div>
+								<div class="font_22 color_333">风险信息</div>
+							</a>
+						</li>
+						<li class="flex_child">
+							<a class="_block" href="了解更多.html">
+								<div class="all_center h-90"><i class="info-icon-7"></i></div>
+								<div class="font_22 color_333">了解更多</div>
+							</a>
+						</li>
+						<li class="flex_child">
+							<a class="_block" href="javascript:;">
+								<div class="all_center h-90"><i class="info-icon-8"></i></div>
+								<div class="font_22 color_333"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="page-box">
+				<div class="mar-side-25 h-80 ">
+					<span class="h-80"><div class="vertical_center h-80"><i class="icon-theme"></i><i class="color_333 font_28">消费金融</i></div></span>
+					<span class="relative float_right click-arrow"><i class="arrow-down"></i></span>
+				</div>
+				<p class="under_line"></p>
+				<div class="mar-side-25 padding-top-bottom-26 navContent active">
+					<div class="padding-side-10">
+
+						<div class="font_26 color_333 padding-bottom-20">核心企业</div>
+						<div class="color_999 font_18 ">
+							<ul class="ulFloat clearfloat linkTab">
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-1"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-2"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-3"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="font_26 color_333 padding-bottom-20 padding-top-10">简介</div>
+						<div class="color_999 font_18 text_indext line-height-30">
+							消费金融是指面向各阶层消费者提供消费贷款的现代金融服务。在真实消费场景下（购买3C、家电、教育培训、医疗美容等产品／服务），消费者由于自身财务安排需要向特定机构或个人借款，先提前享用产品／服务，然后按月分期还本付息给资金出借人，从而形成特定的债权债务关系。类似的金融产品有淘宝花呗与京东白条。
+						</div>
+
+						<div class="font_26 color_333 padding-bottom-20 padding-top-40">消费金融服务</div>
+						<div class="color_999 font_18 text_indext line-height-30">
+							针对核心企业经销商、终端客户的消费需求，针对具体的业务场景，以消费分期、消费信贷等方式对资金需求方提供消费 金融服务。
+						</div>
+						<div class="text_center padding-top-40"><i class="process-Img"></i></div>
+						<div class="frame-box">
+							<div class="padding-left-90 padding-right-24 font_20 color_999 relative">
+								<i class="red-btn-ver padding-top-bottom-20">业<br>务<br>模<br>式</i>
+								<div class="line-height-40"><i class="color_333 bold">合作模式：</i>对真实消费需求的借款人/消费者提供受托支付，消费信贷服务。</div>
+								<div class="line-height-40"><i class="color_333 bold ">业务基础：</i>基于核心企业所在的业务场景，评估借款人的信用、消费需求、消费数据</div>
+								<div class="line-height-40"><i class="color_333 bold">风控把控：</i>核心企业承担连带责任保障，或到期追诉借款人还款义务。</div>
+							</div>
+						</div>
+						<div class="text_center padding-top-60 padding-bottom-40"><i class="item-process-img"></i></div>
+						<div class="frame-box">
+							<div class="padding-left-90 padding-right-24 font_20 color_999 relative">
+								<i class="red-btn-ver padding-top-bottom-20">创<br>新<br>点<br></i>
+								<div class="line-height-40"><i class="color_333 bold">智能风控：</i>通过反欺诈技术，确认客户本人真实操作，用规则引擎代替人工手工操作，智能匹配需求，精准服务客户。</div>
+								<div class="line-height-40"><i class="color_333 bold">数据挖掘：</i>通过大数据基础，建立有效的风控模型，通过机器学习算法，不断修正风控模型。</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="page-box">
+				<div class="mar-side-25 h-80 ">
+					<span class="h-80"><div class="vertical_center h-80"><i class="icon-theme"></i><i class="color_333 font_28">供应链金融</i></div></span>
+					<span class="relative float_right click-arrow"><i class="arrow-right"></i></span>
+				</div>
+				<p class="under_line"></p>
+				<div class="mar-side-25 padding-top-bottom-26 navContent">
+					<div class="padding-side-10">
+
+						<div class="font_26 color_333 padding-bottom-20">核心企业</div>
+						<div class="color_999 font_18 ">
+							<ul class="ulFloat clearfloat linkTab">
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-1"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-2"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-3"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-1"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-2"></i>
+									</a>
+								</li>
+								<li>
+									<a class="all_center h-100-pre" href="javascript:;">
+										<i class="company-icon consume-icon-3"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="font_26 color_333 padding-bottom-20">简介</div>
+						<div class="color_999 font_18 text_indext line-height-30 padding-bottom-30">
+							供应链金融是对供应链的某个环节或全链条提供定制化的金融服务，通过整合信息、资金、物流等资源，达到提高资金使用效率、为各方创造价值和降低风险的作用。这种服务是穿插在交易过程中的，其主要模式是以核心企业的上下游为服务对象，以真实的交易为前提，在采购、生产、销售的各个环节提供的金融服务。基于大数据信用评价技术的互联网供应链金融不依赖由合计信息产生的财务报表，而是采用企业留存在供应链 IT 系统中电子交易明细数据，通过对订单、库存、下线、结算、付款等海量明细记录的交互验证，识别数据的真伪，进行信用评价。
+						</div>
+						<div class="pro-details padding-10 border-5">
+							<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" poster="https://images-web.newnewbank.com/video-2-20170808.jpg" data-setup='{"example_option":true}'>
+								<source src="https://resource-nnb.newnewbank.com/video/v_supplyChain20170808.mp4" type='video/mp4' />
+								<source src="https://resource-nnb.newnewbank.com/video/v_supplyChain20170808.webm" type='video/webm' />
+								<source src="https://resource-nnb.newnewbank.com/video/v_supplyChain20170808.ogv" type='video/ogg' />
+							</video>
+						</div>
+						<div class="text_center color_333 font_18 padding-top-20 padding-bottom-40">3分钟读懂供应链金融</div>
+
+						<div class="color_999 font_18 text_indext line-height-30">
+							信息的可靠性体现在：数据量巨大，几乎难以人为作假；能够反映企业最真实的经营状况;所有明细数据都是可以互推和计算的。
+						</div>
+						<div class="color_999 font_18 text_indext line-height-30">
+							互联网供应链金融实现了从事后风险到事前预警，大数据信用技术提供依据供应链产生的实时交易数据，进行实时跟踪，实时的风险计算，实时的风险预警、预测，从而实现了全过程风险控制。数据信息客观性强效率高，降低了人的主观性和人为风险系数，技术可以实现数据采集、清洗、分析、评价的全流程计算机自动化完成。
+						</div>
+
+						<div class="text_center padding-top-40"><i class="supply-process-img"></i></div>
+						<div class="frame-box">
+							<div class="padding-left-90 padding-right-24 font_20 color_999 relative">
+								<i class="red-btn-ver padding-top-bottom-20">业<br>务<br>模<br>式</i>
+								<div class="line-height-40"><i class="color_333 bold">合作模式：</i>对核心企业审核，形成总额授信，由核心企业推荐供应商借款。</div>
+								<div class="line-height-40"><i class="color_333 bold ">业务基础：</i>基于核心企业与供应商的业务基础，以商票为质押，提前获得流动资金。</div>
+								<div class="line-height-40"><i class="color_333 bold">风控把控：</i>核心企业承担连带责任保障，到期有偿还本金义务。</div>
+							</div>
+						</div>
+
+						<div class="color_999 font_20  line-height-30 padding-top-bottom-40 padding-side-20">
+							在线供应链融资项目从传统的 “核心企业担保+线下融资 ”向 “核心企业提供数据+根据数据判断风险+线上融资”模式过渡。
+						</div>
+
+						<div class="text_center padding-bottom-40"><i class="supply-process-img1"></i></div>
+						<div class="frame-box">
+							<div class="padding-left-90 padding-right-24 font_20 color_999 relative">
+								<i class="red-btn-ver padding-top-bottom-20" style="top: .5rem;">创<br>新<br>点<br></i>
+								<div class="line-height-40"><i class="color_333 bold">智能风控：</i>通过反欺诈技术，确认客户本人真实操作，用规则引擎代替人工手工操作，智能匹配</div>
+								<div class="line-height-40"><i class="color_333 bold ">数据挖掘：</i>通过大数据基础，建立有效的风控模型，通过机器学习算法，不断修正风控模型。</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="page-box">
+				<div class="mar-side-25 h-80 ">
+					<span class="h-80"><div class="vertical_center h-80"><i class="icon-theme"></i><i class="color_333 font_28">三农金融</i></div></span>
+					<span class="relative float_right click-arrow"><i class="arrow-right"></i></span>
+				</div>
+				<p class="under_line"></p>
+				<div class="mar-side-25 padding-top-bottom-26 navContent relative ">
+					<i class="ver_line"></i>
+					<div class="padding-side-40">
+						<div class="font_26 color_333 padding-bottom-20 relative">简介<i class="green-border"></i></div>
+						<div class="color_999 font_18 text_indext line-height-30 padding-bottom-30">
+							互联网金融助推“三农”发展是国家近几年指导工作的重心之一。国家明确提出要增强金融扶持实体经济的力度，指出农业供给侧结构性改革的主要目标是增加农民收入、保障有效供给。为积极响应落实国家惠农政策、助力农业供给侧改革，牛牛bank经过考察及调研后结合陕西某果汁集团有限公司资金需求，依托供应链金融系统，动态授信，在实现精准风险控制后对其提供借款服务。开发金融惠农产品“惠农宝”，加快整个农业供销链条中的资金流动性，缩短农户销售果品后的资金回款周期，从而很好的支持了地方农业发展。
+						</div>
+						<div class="pro-details padding-10 border-5">
+							<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" poster="https://images-web.newnewbank.com/video201707078.jpg" data-setup='{"example_option":true}'>
+								<source src="https://resource-nnb.newnewbank.com/video/product20170707.mp4" type='video/mp4' />
+								<source src="https://resource-nnb.newnewbank.com/video/product20170707.webm" type='video/webm' />
+								<source src="https://resource-nnb.newnewbank.com/video/product20170707.ogv" type='video/ogg' />
+							</video>
+						</div>
+						<div class="text_center color_333 font_18 padding-top-20 padding-bottom-40">牛牛bank"惠农宝"助力三农,3分钟了解什么是惠农宝?</div>
+						<div class="font_26 color_333 padding-bottom-20 relative">流程<i class="green-border"></i></div>
+						<div class="text_center padding-bottom-20">
+							<i class="threeImg"></i>
+						</div>
+						<div class="color_999 font_18  line-height-30 ">
+							借款需求：作为国内一流国际知名的果汁生产企业，该果汁集团有限公司超过80%的果汁原料由农户供应，以企业目前的年产值以及出口销量，自有的种植基地无法保证其生产所需的果品数量的要求。西北地区作为中国主要的苹果产地，企业依托周边主要果品生产地，从种植户手中收购果品。外在用于收购当地更多种植户的优质果品，内在提高其运行效率和竞争能力。
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

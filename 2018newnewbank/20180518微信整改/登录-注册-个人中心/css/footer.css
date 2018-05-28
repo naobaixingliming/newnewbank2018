@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*foot*/
+
+.menu,
+.fixedB {
+	height: 90px;
+	/*height:55px;*/
+	line-height: 1.5;
+	width: 100%
+}
+
+
+/*2015/7/17*/
+
+.fixedB {
+	position: fixed;
+	bottom: 0;
+	background: #ededed;
+	border-top: 1px solid #cecece;
+	height: 90px;
+	z-index: 100
+}
+
+.menu ul {
+	display: -webkit-box;
+	text-align: center;
+}
+
+
+/*等比居中*/
+
+.menu li {
+	-webkit-box-flex: 1;
+}
+
+.menu li .icon {
+	width: 47px;
+	height: 44px;
+	display: block;
+	margin: 0 auto;
+	background: url(https://wap.newnewbank.com/images/menu_icon.png) no-repeat 0 0;
+}
+
+.menu li a {
+	color: #888;
+	display: block;
+	padding: 5px 0 0;
+	font-size: 24px;
+}
+
+.menu li a:active {
+	color: #f44975;
+}
+
+.menu li .money {
+	background-position: 0 -51px;
+}
+
+.menu li .partnerBtImg {
+	background-position: 0 -256px;
+}
+
+.menu li .fdj {
+	background-position: 0 -158px;
+}
+
+.menu li .kehu {
+	background-position: 0 -207px;
+}
+
+.menu li a:active .home {
+	background-position: -50px 0;
+}
+
+.menu li a:active .money {
+	background-position: -50px -51px;
+}
+
+.menu li a:active .partnerBtImg {
+	background-position: -50px -256px;
+}
+
+.menu li a:active .fdj {
+	background-position: -50px -158px;
+}
+
+.menu li a:active .kehu {
+	background-position: -50px -207px;
+}
+
+.menu li.currentf a {
+	color: #f44975;
+}
+
+.menu li.currentf a div.home {
+	background-position: -50px 0;
+}
+
+.menu li.currentf a div.money {
+	background-position: -50px -51px;
+}
+
+.menu li.currentf a div.fdj {
+	background-position: -50px -158px;
+}
+
+.menu li.currentf a div.kehu {
+	background-position: -50px -207px;
+}
+
+.menu li.currentf a div.partnerBtImg {
+	background-position: -50px -256px;
+}
+
+@media(max-width:480px) {
+	.menu,
+	.fixedB {
+		height: 60px;
+		/*height:45px;*/
+		line-height: 2;
+		width: 100%;
+		padding-top: 2px;
+	}
+	/*2015/7/17*/
+	.fixedB {
+		position: fixed;
+		bottom: 0;
+		background: #ededed;
+		border-top: 1px solid #cecece;
+		height: 58px;
+	}
+	.menu li .icon {
+		width: 24px;
+		height: 24px;
+		display: block;
+		margin: 0 auto;
+		background: url(https://wap.newnewbank.com/images/menu_icon.png) no-repeat;
+		background-size: 50px 153px;
+	}
+	/*2015/7/16*/
+	.menu li a {
+		font-size: 15px;
+	}
+	.menu li .money {
+		background-position: 0 -25px;
+	}
+	.menu li .partnerBtImg {
+		background-position: 0 -128px;
+	}
+	.menu li .fdj {
+		background-position: 0 -78px;
+	}
+	.menu li .kehu {
+		background-position: 0 -103px;
+	}
+	.menu li a:active .home {
+		background-position: -25px 0;
+	}
+	.menu li a:active .money {
+		background-position: -25px -25px;
+	}
+	.menu li a:active .partnerBtImg {
+		background-position: -25px -128px;
+	}
+	.menu li a:active .fdj {
+		background-position: -25px -78px;
+	}
+	.menu li a:active .kehu {
+		background-position: -25px -103px;
+	}
+	.menu,
+	.fixedB {
+		line-height: 1.2
+	}
+	.menu li.currentf a div.home {
+		background-position: -25px 0;
+	}
+	.menu li.currentf a div.money {
+		background-position: -25px -25px;
+	}
+	.menu li.currentf a div.fdj {
+		background-position: -25px -79px;
+	}
+	.menu li.currentf a div.kehu {
+		background-position: -25px -103px;
+	}
+	.menu li.currentf a div.partnerBtImg {
+		background-position: -25px -128px;
+	}
+}
+
+@media(max-width:320px) {
+	.menu,
+	.fixedB {
+		height: 50px;
+		line-height: 1.2;
+		width: 100%
+	}
+	.fixedB {
+		position: fixed;
+		bottom: 0;
+		background: #ededed;
+		border-top: 1px solid #cecece;
+		height: 50px;
+	}
+	.menu li .icon {
+		width: 24px;
+		height: 24px;
+		display: block;
+		margin: 0 auto;
+		background: url(https://wap.newnewbank.com/images/menu_icon.png) no-repeat;
+		background-size: 50px 153px;
+	}
+	.menu li a {
+		font-size: 14px;
+	}
+	.menu li .money {
+		background-position: 0 -25px;
+	}
+	.menu li .partnerBtImg {
+		background-position: 0 -128px;
+	}
+	.menu li .fdj {
+		background-position: 0 -79px;
+	}
+	.menu li .kehu {
+		background-position: 0 -103px;
+	}
+	.menu li a:active .home {
+		background-position: -25px 0;
+	}
+	.menu li a:active .money {
+		background-position: -25px -25px;
+	}
+	.menu li a:active .partnerBtImg {
+		background-position: -25px -128px;
+	}
+	.menu li a:active .fdj {
+		background-position: -25px -79px;
+	}
+	.menu li a:active .kehu {
+		background-position: -25px -103px;
+	}
+	.menu li.currentf a div.home {
+		background-position: -25px 0;
+	}
+	.menu li.currentf a div.money {
+		background-position: -25px -25px;
+	}
+	.menu li.currentf a div.fdj {
+		background-position: -25px -79px;
+	}
+	.menu li.currentf a div.kehu {
+		background-position: -25px -103px;
+	}
+	.menu li.currentf a div.partnerBtImg {
+		background-position: -25px -128px;
+	}
+}
+
+
+/*foot end*/
+
+
+/*new add*/
+
+
+/*.menu li.currentf a div.home{ background-position:-25px 0; }
+.menu li.currentf a div.money{ background-position:-25px -25px; }
+.menu li.currentf a div.fdj{ background-position:-25px -79px; }
+.menu li.currentf a div.kehu{ background-position:-25px -103px; }	*/

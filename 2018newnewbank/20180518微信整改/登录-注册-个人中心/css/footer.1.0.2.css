@@ -1,0 +1,109 @@
+/*  底部菜单start  */
+.foot-nav{
+	width:100%;
+	height:2.2rem;
+}
+.navbar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;				
+	width: 100%;
+	height: 1.5625rem;
+	background-color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+	-webkit-box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+	-moz-box-shadow: 0 0 0.15625rem 0 rgba(155, 143, 143, 0.3);
+}
+.navBar_item {
+	display: block;
+	position: relative;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 0.0625rem 0 0;
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}			
+.navBar_icon {
+	margin: 0.2rem auto 0.15625rem;
+	width: 0.625rem;
+	height: 0.625rem;
+}			
+.navBar_icon_center {
+	width:1.25rem;
+	height: 1.25rem;
+	text-align: center;
+	border: 0.15625rem solid #FFFFFF;
+	position: relative;
+	left: 50%;
+	margin-top: -0.6rem;
+	margin-left: -0.725rem;
+	border-radius: 50%;
+	box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+	-webkit-box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+	-moz-box-shadow: 0 -1px 2px 0 rgba(155, 143, 143, 0.3);
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}					
+.nbi01 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_home_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.nbi02 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_invest_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.nbi03 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_partner_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.nbi04 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_personal_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.nbi05 {
+	background: #f44975 url(https://images-wap.oss-cn-hangzhou.aliyuncs.com/icon_nav_gift_20170510.png) no-repeat 50% 50%;
+	background-size: 0.725rem 0.725rem;
+}
+.navBar_item_on .navBar_label {
+	color: #F44975;
+}
+.navBar_item_on .nbi01 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_home_on_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.navBar_item_on .nbi02 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_invest_on_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.navBar_item_on .nbi03 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_partner_on_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+
+.navBar_item_on .nbi04 {
+	background: url(https://images-weixinnew.oss-cn-hangzhou.aliyuncs.com/icon_nav_personal_on_20160525.png) no-repeat 50% 50%;
+	background-size: 100% 100%;
+}
+.navBar_label {
+	text-align: center;
+	color: #333333;
+	margin-top: 0.03125rem;
+	/*font-size: 0.28125rem;*/
+	font-size: 0.34375rem;
+}
+			/*  底部菜单end  */

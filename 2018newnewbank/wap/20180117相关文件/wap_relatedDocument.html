@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta name="wap-font-scale" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="wap-font-scale" content="no">
+		<script type="text/javascript" charset="utf-8" src="js/adapter.0.6.4.min.js"></script>
+		<title>相关文件</title>
+		<link rel="stylesheet" type="text/css" href="css/wap_relatedDocument.css" />
+		
+	</head>
+
+	<body>
+		<div class="rootNode">
+			<!--popup start-->
+			<div class="all-popup none">
+				<i class="shadow"></i>
+				<div class="pupup-box relative">					
+					<div class="gray-box ">
+						<i class="deleteBtn"></i>
+						<div class="all_center img-box">
+							
+						</div>
+						<p class="bottom-gray font_22 color_fff">保理合同</p>
+					</div>
+				</div>				
+			</div>
+			<!--popup end-->
+			<p class="font_18 color_999 all_center hintText">温馨提示：市场有风险，投资需谨慎</p>
+			
+			<div class="bgColor_fff">
+				<p class="title-nav font_26 color_999 vertical_center"><i class="title-icon-1"></i>保理合同</p>
+				<div class="content">
+					<ul class="contract-img clearfloat overflow">
+						<li>
+							<div class="all_center white-box">
+								
+							</div>
+						</li>
+						<li>
+							<div class="all_center white-box">
+								
+							</div>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			
+			<div class="bgColor_fff mar-top-16">
+				<p class="title-nav font_26 color_999 vertical_center"><i class="title-icon-1"></i>保理合同</p>
+				<div class="content">
+					<ul class="contract-img clearfloat overflow">
+						<li>
+							<div class="all_center white-box"></div>
+						</li>
+						<li>
+							<div class="all_center white-box"></div>
+						</li>
+					</ul>
+				</div>				
+			</div>
+			<div class="occupying">
+				<p class="getBuy bgColor_f44975"><a class="all_center font_30  color_fff">立即抢购</a></p>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			if('addEventListener' in document) {
+				document.addEventListener('DOMContentLoaded', function() {
+					FastClick.attach(document.body);
+				}, false);
+			}
+					
+			var imgArr=['https://images-nnb.newnewbank.com/201712152a387f1d84ec41ed85003600bbdd06c4.jpg',
+						'https://images-nnb.newnewbank.com/20171215c179c27d5a39405a9c07673b3466c4a2.jpg',
+						'https://images-nnb.newnewbank.com/201712152a387f1d84ec41ed85003600bbdd06c4.jpg',
+						'https://images-nnb.newnewbank.com/20171215c179c27d5a39405a9c07673b3466c4a2.jpg'						
+			];
+			
+			//仅为展示   代码
+			var i=0;
+			function init(){
+				console.log(i);
+				$('.content li').eq(i).find('.white-box').html('<img src="'+imgArr[i] +'"/>');
+				i++;
+				i%=imgArr.length;
+			}
+			for (var j=0;j<imgArr.length;j++) {
+				init();
+			}
+			
+			
+			$('.contract-img').delegate('li','click',function(){
+				$('.all-popup').show();
+				var imgEle= $(this).find('img').attr('src');
+				$('.img-box').html('<img src="'+imgEle+'"/>'); 
+			})
+			
+			$('.deleteBtn').on('click',function(){
+				$(this).parents('.all-popup').hide();				
+			})
+			
+			
+		</script>
+	</body>
+
+</html>

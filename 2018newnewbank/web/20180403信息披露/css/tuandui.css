@@ -1,0 +1,98 @@
+
+
+.border{
+	border-left:2px solid #e4476f;
+	background: #f5f5f5;
+	color: #E4476F;
+	
+}
+
+.right{
+	float: right;
+	width: 929px;
+	background:#fff;
+	padding-bottom:50px;
+}
+
+.color_999{
+	color: #999;
+}
+
+.banner{
+	width: 911px;
+	height: 224px;
+	margin: 0 auto;
+	margin-top: 9px;
+	background:url(https://images-web.newnewbank.com/banner_20171013.png)no-repeat;
+	text-align: center;
+}
+
+.title{
+	position: relative;
+	top: 62px;
+	font-size:48px;
+	color: #fff;
+	letter-spacing:2px;
+}
+
+.introduce{
+	width: 796px;
+	margin-top:50px;
+	margin-left: 50px;
+}
+
+.overflow{
+	overflow:hidden;
+}
+
+
+.img{
+	width: 190px;
+	height: 239px;
+	border: 2px solid #ccc;
+}
+
+.float_left{
+	float: left;
+}
+
+.float_right{
+	float: right;
+}
+
+.wenzi{
+	width: 562px;
+}
+
+.font_14{
+	font-size: 14px;
+	color: #666;
+	line-height: 21px;
+}
+
+.font_20{
+	font-size: 20px;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom:38px;
+	letter-spacing: 2px;
+}
+
+.font_24{
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	letter-spacing: 1px;
+}
+
+.m_25{
+	margin-top:22px;
+	font-size: 14px;
+	color: #666;
+}
+
+.margin{
+	margin-top: 100px;
+	margin-bottom: 115px;
+	padding-left:4px;
+}
